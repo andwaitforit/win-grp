@@ -24,6 +24,13 @@ and shows them next to public polling for the same race.
   and end-to-end tests. Backtest ground truth will come from the user. Don't
   treat the press reference points in the seed file as ground truth.
 
+## Prototype
+
+- `prototype/ma-01-dashboard.html` is a self-contained, interactive MA-01
+  dashboard with static sample data, built to get feedback from consultants.
+  Neal is "our side". Keep its sample-data banner; it must never be presented
+  as real FCC records. Open it directly in a browser; there is no build step.
+
 ## Domain glossary
 
 - **OPIF**: FCC Online Public Inspection File (publicfiles.fcc.gov). Stations

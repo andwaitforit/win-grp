@@ -1,0 +1,1004 @@
+<title>MA-01 Air War</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --bg: #f4f5f7;
+  --surface: #fcfcfb;
+  --surface-2: #eef0f3;
+  --ink: #0f1419;
+  --ink-2: #4a5360;
+  --muted: #7d8591;
+  --grid: #e1e3e8;
+  --axis: #c3c7cf;
+  --border: rgba(15,20,25,0.10);
+  --accent: #1f3a5f;
+  --s-neal: #2a78d6;
+  --s-milleron: #eb6834;
+  --s-whalen: #1baf7a;
+  --good: #0ca30c;
+  --good-ink: #006300;
+  --warn: #fab219;
+  --serious: #ec835a;
+  --critical: #d03b3b;
+  --banner-bg: #fff4d6;
+  --banner-ink: #5c4300;
+  --font: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0e1116;
+    --surface: #171a20;
+    --surface-2: #20242c;
+    --ink: #f3f5f8;
+    --ink-2: #c1c7d0;
+    --muted: #8a919c;
+    --grid: #2a2e36;
+    --axis: #3a3f49;
+    --border: rgba(255,255,255,0.10);
+    --accent: #9fc0ec;
+    --s-neal: #3987e5;
+    --s-milleron: #d95926;
+    --s-whalen: #199e70;
+    --good-ink: #0ca30c;
+    --banner-bg: #2e2610;
+    --banner-ink: #f3d68a;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0e1116;
+  --surface: #171a20;
+  --surface-2: #20242c;
+  --ink: #f3f5f8;
+  --ink-2: #c1c7d0;
+  --muted: #8a919c;
+  --grid: #2a2e36;
+  --axis: #3a3f49;
+  --border: rgba(255,255,255,0.10);
+  --accent: #9fc0ec;
+  --s-neal: #3987e5;
+  --s-milleron: #d95926;
+  --s-whalen: #199e70;
+  --good-ink: #0ca30c;
+  --banner-bg: #2e2610;
+  --banner-ink: #f3d68a;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.45;
+  padding-inline: 16px;
+  padding-block: 20px 48px;
+}
+.wrap { max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: 15px; font-weight: 600; }
+.eyebrow { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.num { font-variant-numeric: tabular-nums; }
+.mono { font-family: var(--mono); }
+
+.banner {
+  background: var(--banner-bg); color: var(--banner-ink);
+  border-radius: 8px; padding: 10px 14px; font-size: 13px;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.banner strong { font-weight: 700; }
+
+header.top { display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: flex-end; justify-content: space-between; }
+.race-meta { display: flex; flex-wrap: wrap; gap: 6px 20px; color: var(--ink-2); font-size: 13px; }
+.race-meta b { color: var(--ink); font-weight: 600; }
+.countdown { text-align: right; margin-left: auto; }
+.countdown .big { font-size: 30px; font-weight: 700; line-height: 1; }
+
+.filters {
+  display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center;
+  padding: 10px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+}
+.seg { display: inline-flex; background: var(--surface-2); border-radius: 8px; padding: 3px; gap: 2px; }
+.seg button {
+  font: inherit; font-size: 13px; border: 0; background: transparent; color: var(--ink-2);
+  padding: 5px 12px; border-radius: 6px; cursor: pointer;
+}
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,0.12); }
+.field { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink-2); }
+select, input[type="number"] {
+  font: inherit; font-size: 13px; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--axis); border-radius: 6px; padding: 5px 8px;
+}
+input[type="number"] { width: 84px; font-variant-numeric: tabular-nums; }
+button:focus-visible, select:focus-visible, input:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+.kpi .label { font-size: 12px; color: var(--ink-2); display: flex; align-items: center; gap: 6px; }
+.kpi .value { font-size: 26px; font-weight: 700; line-height: 1.15; }
+.kpi .sub { font-size: 12px; color: var(--muted); }
+.key { display: inline-block; width: 10px; height: 10px; border-radius: 2px; flex: none; }
+.chip { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); width: fit-content; }
+.chip .dot { width: 8px; height: 8px; border-radius: 50%; }
+
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.card-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 16px; }
+.card-head p { margin: 2px 0 0; color: var(--ink-2); font-size: 13px; }
+.linkbtn { font: inherit; font-size: 12px; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 6px 8px; }
+.legend button {
+  font: inherit; font-size: 12px; display: inline-flex; align-items: center; gap: 6px;
+  background: transparent; border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; color: var(--ink); cursor: pointer;
+}
+.legend button[aria-pressed="false"] { color: var(--muted); }
+.legend button[aria-pressed="false"] .key { opacity: 0.25; }
+.legend .static { font-size: 12px; color: var(--ink-2); display: inline-flex; align-items: center; gap: 6px; padding: 3px 4px; }
+
+.chart { width: 100%; position: relative; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart text { fill: var(--muted); font-family: var(--font); font-size: 11px; }
+.chart .t-ink { fill: var(--ink-2); }
+.seg-mark { cursor: pointer; }
+.seg-mark:hover, .seg-mark:focus { filter: brightness(1.12); outline: none; }
+
+.tooltip {
+  position: fixed; z-index: 20; pointer-events: none; background: var(--surface); color: var(--ink);
+  border: 1px solid var(--border); box-shadow: 0 6px 24px rgba(0,0,0,0.16); border-radius: 8px;
+  padding: 8px 10px; font-size: 12px; max-width: 260px; display: flex; flex-direction: column; gap: 3px;
+}
+.tooltip .tv { font-size: 15px; font-weight: 700; }
+.tooltip .tk { display: inline-block; width: 14px; height: 2px; vertical-align: middle; margin-right: 6px; }
+.tooltip .tm { color: var(--ink-2); }
+
+.grid-2 { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 16px; }
+@media (max-width: 860px) { .grid-2 { grid-template-columns: 1fr; } .countdown { text-align: left; } }
+
+.market { display: flex; flex-direction: column; gap: 6px; }
+.market + .market { margin-top: 10px; }
+.market-head { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; }
+.market-head b { font-weight: 600; }
+.bar-track { display: flex; gap: 2px; height: 22px; background: var(--surface-2); border-radius: 4px; overflow: hidden; }
+.bar-track > div { height: 100%; min-width: 0; }
+.market-note { font-size: 12px; color: var(--muted); }
+
+.alerts { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.alerts li { display: grid; grid-template-columns: 64px 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid var(--grid); }
+.alerts li:first-child { border-top: 0; padding-top: 2px; }
+.alerts time { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.alerts .what { font-size: 13px; }
+.alerts .what b { font-weight: 600; }
+.alerts .meta { font-size: 12px; color: var(--ink-2); }
+.tag { font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--grid); white-space: nowrap; }
+th { font-size: 12px; font-weight: 600; color: var(--ink-2); }
+th button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; }
+th[aria-sort="ascending"] button::after { content: "▲"; font-size: 9px; }
+th[aria-sort="descending"] button::after { content: "▼"; font-size: 9px; }
+td.r, th.r { text-align: right; }
+td .range { color: var(--muted); font-size: 12px; }
+.status { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; }
+.status i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.ours { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--s-neal); margin-left: 4px; }
+
+.assump { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: flex-end; }
+.assump label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--ink-2); }
+.formula { font-family: var(--mono); font-size: 12px; color: var(--ink-2); background: var(--surface-2); padding: 8px 10px; border-radius: 6px; overflow-x: auto; }
+.qs { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; max-width: 72ch; }
+footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
+@media (prefers-reduced-motion: no-preference) { .bar-track > div, .seg-mark { transition: opacity .15s; } }
+</style>
+
+<div class="wrap">
+  <div class="banner" role="note">
+    <span aria-hidden="true">⚠</span>
+    <div><strong>Prototype with sample data. These are not FCC records.</strong>
+      Primary-window station totals match figures reported by <em>Western Mass Politics &amp; Insight</em> (Aug 2026) and the Sep 1 primary result is real.
+      The weekly splits, general-election buys, polls, and alerts are invented to collect feedback on the product.</div>
+  </div>
+
+  <header class="top">
+    <div>
+      <div class="eyebrow">win-grp · Opponent air war</div>
+      <h1>MA-01: Neal vs. Milleron</h1>
+      <div class="race-meta">
+        <span>Our side: <b>Richard E. Neal (D)</b></span>
+        <span>Opponent: <b>Nadia Milleron (I)</b></span>
+        <span>Primary opponent: <b>Jeromie Whalen (D)</b>, lost Sep 1, 54.0–45.9</span>
+        <span>Demo: <b>A35+</b></span>
+      </div>
+    </div>
+    <div class="countdown">
+      <div class="big num">40 days</div>
+      <div class="eyebrow">to Nov 3 · as of Thu Sep 24</div>
+    </div>
+  </header>
+
+  <div class="filters" role="group" aria-label="Filters">
+    <div class="seg" id="f-window" role="group" aria-label="Time window">
+      <button type="button" data-v="primary" aria-pressed="false">Primary</button>
+      <button type="button" data-v="general" aria-pressed="true">General</button>
+      <button type="button" data-v="full" aria-pressed="false">Full cycle</button>
+    </div>
+    <label class="field">Market
+      <select id="f-market">
+        <option value="all">All markets</option>
+        <option value="spr">Springfield-Holyoke</option>
+        <option value="alb">Albany (Berkshire)</option>
+      </select>
+    </label>
+    <div class="seg" id="f-metric" role="group" aria-label="Measure">
+      <button type="button" data-v="grp" aria-pressed="true">GRPs</button>
+      <button type="button" data-v="usd" aria-pressed="false">Spend</button>
+    </div>
+    <label class="field"><input type="checkbox" id="f-ordered" checked> Include booked, not yet aired</label>
+  </div>
+
+  <section class="kpis" id="kpis" aria-label="Summary"></section>
+
+  <section class="card" aria-labelledby="h-weekly">
+    <div class="card-head">
+      <div>
+        <h2 id="h-weekly">Weekly weight by buyer</h2>
+        <p id="weekly-sub"></p>
+      </div>
+      <button class="linkbtn" id="toggle-weekly-table" type="button" aria-expanded="false">Show as table</button>
+    </div>
+    <div class="legend" id="legend"></div>
+    <div class="chart" id="weekly-chart"></div>
+    <div class="table-wrap" id="weekly-table" hidden></div>
+  </section>
+
+  <section class="card" aria-labelledby="h-polls">
+    <div class="card-head">
+      <div>
+        <h2 id="h-polls">Neal's margin in polling</h2>
+        <p>Neal minus the opponent, in points. Uses the same weeks as the chart above so you can line up spending and movement.</p>
+      </div>
+    </div>
+    <div class="chart" id="poll-chart"></div>
+  </section>
+
+  <div class="grid-2">
+    <section class="card" aria-labelledby="h-markets">
+      <div class="card-head"><div><h2 id="h-markets">Share of voice by market</h2><p>Each buyer's share of GRPs in the selected window.</p></div></div>
+      <div id="markets"></div>
+    </section>
+    <section class="card" aria-labelledby="h-alerts">
+      <div class="card-head"><div><h2 id="h-alerts">New filings</h2><p>From station political files. Opponent activity is flagged.</p></div></div>
+      <ul class="alerts" id="alerts"></ul>
+    </section>
+  </div>
+
+  <section class="card" aria-labelledby="h-stations">
+    <div class="card-head"><div><h2 id="h-stations">Buys by station</h2><p>Each row links to its source filing in the product. Links are off in this prototype.</p></div></div>
+    <div class="table-wrap" id="station-table"></div>
+  </section>
+
+  <section class="card" aria-labelledby="h-assump">
+    <div class="card-head"><div><h2 id="h-assump">Estimate assumptions</h2><p>GRPs aren't in the filings, so they're estimated from spend. Change a cost per point and every number on the page updates.</p></div>
+      <button class="linkbtn" id="reset-assump" type="button">Reset to defaults</button></div>
+    <div class="assump">
+      <label for="cpp-spr">Springfield CPP, A35+ ($)<input type="number" id="cpp-spr" min="10" step="5"></label>
+      <label for="cpp-alb">Albany CPP, A35+ ($)<input type="number" id="cpp-alb" min="10" step="5"></label>
+      <label for="comm">Agency commission (%)<input type="number" id="comm" min="0" max="30" step="1"></label>
+      <label for="band">Estimate range (±%)<input type="number" id="band" min="0" max="60" step="5"></label>
+    </div>
+    <div class="formula">GRPs ≈ gross × (1 − commission) ÷ CPP. Outside the lowest-unit-rate window, CPP × 1.2. Range = estimate ± band.</div>
+  </section>
+
+  <section class="card" aria-labelledby="h-qs">
+    <h2 id="h-qs">Questions for reviewers</h2>
+    <ol class="qs">
+      <li>Is weekly GRPs by market the number you'd check first? If not, what is?</li>
+      <li>Would you act on an estimate shown as a ±20% range? What would make you trust it more?</li>
+      <li>For a new-filing alert, what do you need to see before you call the media buyer?</li>
+      <li>Albany GRPs cover the whole market, and only about 1 in 10 of its TV homes are in Berkshire County. Should we show in-district GRPs instead?</li>
+      <li>What's missing? Cable, digital, outside groups, creative?</li>
+    </ol>
+  </section>
+
+  <footer>
+    LUR = lowest unit rate. Candidates get it 45 days before a primary (from Jul 18) and 60 days before a general (from Sep 4).
+    CPP defaults are placeholders until licensed cost-per-point data is imported. "Booked" means ordered in a station's political file but not aired yet.
+  </footer>
+</div>
+
+<div class="tooltip" id="tip" hidden></div>
+
+<script>
+(function () {
+  "use strict";
+
+  // ---------- Sample data ----------
+  const BUYERS = {
+    neal:     { name: "Neal",     committee: "Richard E. Neal for Congress", side: "us",  cssVar: "--s-neal" },
+    milleron: { name: "Milleron", committee: "Nadia for Congress",           side: "opp", cssVar: "--s-milleron" },
+    whalen:   { name: "Whalen",   committee: "Jeromie Whalen for Congress",  side: "opp", cssVar: "--s-whalen" }
+  };
+  const BUYER_ORDER = ["neal", "milleron", "whalen"];
+  const DMAS = { spr: "Springfield-Holyoke", alb: "Albany" };
+  const STATIONS = {
+    "WWLP":      { dma: "spr", net: "NBC",     rate: 420 },
+    "WGGB/WSHM": { dma: "spr", net: "ABC/CBS", rate: 260 },
+    "WNYT":      { dma: "alb", net: "NBC",     rate: 650 },
+    "WRGB":      { dma: "alb", net: "CBS",     rate: 600 },
+    "WTEN":      { dma: "alb", net: "ABC",     rate: 580 }
+  };
+  const PRIMARY_WEEKS = ["2026-07-13","2026-07-20","2026-07-27","2026-08-03","2026-08-10","2026-08-17","2026-08-24","2026-08-31"];
+  const GENERAL_WEEKS = ["2026-09-07","2026-09-14","2026-09-21","2026-09-28","2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"];
+  const ALL_WEEKS = PRIMARY_WEEKS.concat(GENERAL_WEEKS);
+  const CURRENT_WEEK = "2026-09-21";
+  const LUR = [["2026-07-18","2026-09-01"],["2026-09-04","2026-11-03"]];
+
+  // [buyer, station, gross total, weeks, weights]
+  const PLAN = [
+    // Primary: station totals as reported in the press. The weekly split is illustrative.
+    ["neal",   "WWLP",      70000, ["2026-08-03","2026-08-10","2026-08-17","2026-08-24","2026-08-31"], [0.10,0.15,0.20,0.25,0.30]],
+    ["neal",   "WGGB/WSHM", 35000, ["2026-08-03","2026-08-10","2026-08-17","2026-08-24","2026-08-31"], [0.10,0.15,0.20,0.25,0.30]],
+    ["neal",   "WNYT",      25000, ["2026-08-17","2026-08-24","2026-08-31"], [0.30,0.35,0.35]],
+    ["whalen", "WWLP",      31800, ["2026-08-17","2026-08-24","2026-08-31"], [0.25,0.35,0.40]],
+    ["whalen", "WGGB/WSHM", 14000, ["2026-08-17","2026-08-24","2026-08-31"], [0.25,0.35,0.40]],
+    // General: invented.
+    ["milleron", "WWLP",      150000, ["2026-09-21","2026-09-28","2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.08,0.10,0.12,0.15,0.17,0.20,0.18]],
+    ["milleron", "WGGB/WSHM",  90000, ["2026-09-21","2026-09-28","2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.08,0.10,0.12,0.15,0.17,0.20,0.18]],
+    ["milleron", "WNYT",      110000, ["2026-09-21","2026-09-28","2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.08,0.10,0.12,0.15,0.17,0.20,0.18]],
+    ["milleron", "WTEN",       70000, ["2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.15,0.18,0.22,0.25,0.20]],
+    ["milleron", "WRGB",       60000, ["2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.15,0.18,0.22,0.25,0.20]],
+    ["neal",     "WWLP",      120000, ["2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.15,0.20,0.22,0.25,0.18]],
+    ["neal",     "WGGB/WSHM",  70000, ["2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.15,0.20,0.22,0.25,0.18]],
+    ["neal",     "WNYT",       60000, ["2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.20,0.25,0.30,0.25]],
+    ["neal",     "WRGB",       40000, ["2026-10-19","2026-10-26","2026-11-02"], [0.30,0.40,0.30]]
+  ];
+
+  const BUYS = [];
+  PLAN.forEach(function (p) {
+    const st = STATIONS[p[1]];
+    p[3].forEach(function (wk, i) {
+      const gross = Math.round(p[2] * p[4][i] / 100) * 100;
+      const status = wk < CURRENT_WEEK ? "aired" : (wk === CURRENT_WEEK ? "airing" : "booked");
+      BUYS.push({ buyer: p[0], station: p[1], dma: st.dma, week: wk, gross: gross,
+        spots: Math.max(1, Math.round(gross / st.rate)), status: status });
+    });
+  });
+
+  // margin = Neal minus opponent, in points
+  const POLLS = [
+    { date: "2026-07-22", opp: "whalen",   margin: 22, pollster: "Internal (sample)", n: 400, pop: "LV", kind: "poll" },
+    { date: "2026-08-11", opp: "whalen",   margin: 16, pollster: "Internal (sample)", n: 400, pop: "LV", kind: "poll" },
+    { date: "2026-08-25", opp: "whalen",   margin: 11, pollster: "Internal (sample)", n: 500, pop: "LV", kind: "poll" },
+    { date: "2026-09-01", opp: "whalen",   margin: 8.1, pollster: "Primary result (real): 54.0 to 45.9", kind: "result" },
+    { date: "2026-09-15", opp: "milleron", margin: 24, pollster: "Internal (sample)", n: 400, pop: "LV", kind: "poll" },
+    { date: "2026-09-22", opp: "milleron", margin: 19, pollster: "Internal (sample)", n: 400, pop: "LV", kind: "poll" }
+  ];
+
+  const ALERTS = [
+    { date: "Sep 23", buyer: "neal",     text: "New order on WWLP", meta: "Oct 5 – Nov 3 · $120,000 gross · news and prime" },
+    { date: "Sep 22", buyer: "milleron", text: "Revised order on WGGB/WSHM", meta: "Flight extended to Nov 3 · now $90,000 gross" },
+    { date: "Sep 19", buyer: "milleron", text: "New orders on WTEN and WRGB", meta: "Oct 5 – Nov 3 · $130,000 gross combined · Albany market" },
+    { date: "Sep 18", buyer: "milleron", text: "First TV orders filed: WWLP, WNYT", meta: "Sep 21 – Nov 3 · $260,000 gross · first opponent TV of the general" },
+    { date: "Sep 2",  buyer: "whalen",   text: "Final invoice on WWLP", meta: "Aug 17 – Sep 1 · $31,800 aired" }
+  ];
+
+  const DEFAULTS = { cpp: { spr: 85, alb: 160 }, comm: 15, band: 20 };
+
+  // ---------- State ----------
+  const state = {
+    window: "general", market: "all", metric: "grp", ordered: true,
+    hidden: new Set(), showWeeklyTable: false,
+    cpp: { spr: DEFAULTS.cpp.spr, alb: DEFAULTS.cpp.alb }, comm: DEFAULTS.comm, band: DEFAULTS.band,
+    sort: { key: "grp", dir: -1 }
+  };
+  try {
+    const saved = JSON.parse(localStorage.getItem("ma01-view") || "null");
+    if (saved && typeof saved === "object") {
+      if (["primary","general","full"].indexOf(saved.window) >= 0) state.window = saved.window;
+      if (["all","spr","alb"].indexOf(saved.market) >= 0) state.market = saved.market;
+      if (["grp","usd"].indexOf(saved.metric) >= 0) state.metric = saved.metric;
+    }
+  } catch (e) { /* storage unavailable */ }
+  function saveView() {
+    try { localStorage.setItem("ma01-view", JSON.stringify({ window: state.window, market: state.market, metric: state.metric })); } catch (e) {}
+  }
+
+  // ---------- Helpers ----------
+  const $ = function (id) { return document.getElementById(id); };
+  const cssv = function (name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); };
+  const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  function parseD(s) { const p = s.split("-"); return new Date(Date.UTC(+p[0], +p[1] - 1, +p[2])); }
+  function fmtD(s) { const d = parseD(s); return MONTHS[d.getUTCMonth()] + " " + d.getUTCDate(); }
+  function addDays(s, n) { const d = parseD(s); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
+  function fmtUSD(v) { return v >= 1e6 ? "$" + (v / 1e6).toFixed(2) + "M" : v >= 1e4 ? "$" + Math.round(v / 1000) + "K" : "$" + Math.round(v).toLocaleString("en-US"); }
+  function fmtUSDfull(v) { return "$" + Math.round(v).toLocaleString("en-US"); }
+  function fmtN(v) { return Math.round(v).toLocaleString("en-US"); }
+  function inLUR(week) {
+    // a broadcast week counts as in-window if any of its days fall inside
+    const end = addDays(week, 6);
+    return LUR.some(function (w) { return week <= w[1] && end >= w[0]; });
+  }
+  function grpOf(b) {
+    const cpp = state.cpp[b.dma] * (inLUR(b.week) ? 1 : 1.2);
+    return b.gross * (1 - state.comm / 100) / cpp;
+  }
+  function flightEnd(week) {
+    // flights stop on election day
+    const end = addDays(week, 6);
+    const cap = week <= "2026-09-01" ? "2026-09-01" : "2026-11-03";
+    return end > cap ? cap : end;
+  }
+  function valueOf(b) { return state.metric === "grp" ? grpOf(b) : b.gross; }
+  function fmtVal(v) { return state.metric === "grp" ? fmtN(v) : fmtUSD(v); }
+  function lo(v) { return v * (1 - state.band / 100); }
+  function hi(v) { return v * (1 + state.band / 100); }
+  function windowWeeks() { return state.window === "primary" ? PRIMARY_WEEKS : state.window === "general" ? GENERAL_WEEKS : ALL_WEEKS; }
+  function filtered() {
+    const wk = new Set(windowWeeks());
+    return BUYS.filter(function (b) {
+      return wk.has(b.week) && (state.market === "all" || b.dma === state.market) && (state.ordered || b.status !== "booked");
+    });
+  }
+  function sum(arr, f) { return arr.reduce(function (a, x) { return a + f(x); }, 0); }
+  function niceMax(v) {
+    if (v <= 0) return 1;
+    const exp = Math.pow(10, Math.floor(Math.log10(v)));
+    const f = v / exp;
+    const nf = f <= 1 ? 1 : f <= 2 ? 2 : f <= 2.5 ? 2.5 : f <= 5 ? 5 : 10;
+    return nf * exp;
+  }
+  function el(tag, attrs, text) {
+    const e = document.createElement(tag);
+    if (attrs) Object.keys(attrs).forEach(function (k) { e.setAttribute(k, attrs[k]); });
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  const SVGNS = "http://www.w3.org/2000/svg";
+  function sv(tag, attrs, text) {
+    const e = document.createElementNS(SVGNS, tag);
+    if (attrs) Object.keys(attrs).forEach(function (k) { e.setAttribute(k, attrs[k]); });
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function visibleBuyers() {
+    return BUYER_ORDER.filter(function (k) {
+      if (state.hidden.has(k)) return false;
+      if (k === "whalen" && state.window === "general") return false;
+      if (k === "milleron" && state.window === "primary") return false;
+      return true;
+    });
+  }
+  function relevantBuyers() {
+    return BUYER_ORDER.filter(function (k) {
+      return !((k === "whalen" && state.window === "general") || (k === "milleron" && state.window === "primary"));
+    });
+  }
+
+  // ---------- Tooltip ----------
+  const tip = $("tip");
+  function showTip(evt, rows) {
+    tip.replaceChildren();
+    rows.forEach(function (r) {
+      const d = el("div", { class: r.cls || "" });
+      if (r.key) { const k = el("span", { class: "tk" }); k.style.background = r.key; d.appendChild(k); }
+      d.appendChild(document.createTextNode(r.text));
+      tip.appendChild(d);
+    });
+    tip.hidden = false;
+    let x, y;
+    if (evt.clientX != null && evt.type !== "focus") { x = evt.clientX; y = evt.clientY; }
+    else { const r = evt.target.getBoundingClientRect(); x = r.left + r.width / 2; y = r.top; }
+    const tw = tip.offsetWidth, th = tip.offsetHeight;
+    let left = x + 14, top = y - th - 10;
+    if (left + tw > window.innerWidth - 8) left = x - tw - 14;
+    if (top < 8) top = y + 16;
+    tip.style.left = Math.max(8, left) + "px";
+    tip.style.top = top + "px";
+  }
+  function hideTip() { tip.hidden = true; }
+
+  // ---------- KPIs ----------
+  function renderKPIs() {
+    const rows = filtered();
+    const grp = function (k) { return sum(rows.filter(function (b) { return b.buyer === k; }), grpOf); };
+    const usd = function (k) { return sum(rows.filter(function (b) { return b.buyer === k; }), function (b) { return b.gross; }); };
+    const ours = grp("neal");
+    const oppKeys = relevantBuyers().filter(function (k) { return BUYERS[k].side === "opp"; });
+    const opp = sum(oppKeys, grp);
+    const oppUSD = sum(oppKeys, usd);
+    const total = ours + opp;
+    const sov = total > 0 ? ours / total : 0;
+    const oppName = oppKeys.map(function (k) { return BUYERS[k].name; }).join(" + ");
+
+    let st;
+    if (total === 0) st = { label: "No TV yet", color: cssv("--muted") };
+    else if (sov >= 0.55) st = { label: "Ahead", color: cssv("--good") };
+    else if (sov >= 0.45) st = { label: "Parity", color: cssv("--warn") };
+    else st = { label: "Outweighed", color: cssv("--critical") };
+
+    const box = $("kpis");
+    box.replaceChildren();
+    function tile(labelKey, label, value, sub, extra) {
+      const t = el("div", { class: "kpi" });
+      const l = el("div", { class: "label" });
+      if (labelKey) { const k = el("span", { class: "key" }); k.style.background = labelKey; l.appendChild(k); }
+      l.appendChild(document.createTextNode(label));
+      t.appendChild(l);
+      t.appendChild(el("div", { class: "value num" }, value));
+      if (extra) t.appendChild(extra);
+      if (sub) t.appendChild(el("div", { class: "sub num" }, sub));
+      box.appendChild(t);
+    }
+    tile(cssv("--s-neal"), "Our GRPs (Neal)", fmtN(ours), "Range " + fmtN(lo(ours)) + "–" + fmtN(hi(ours)));
+    tile(cssv(oppKeys.length === 1 ? BUYERS[oppKeys[0]].cssVar : "--muted"), "Opponent GRPs (" + oppName + ")", fmtN(opp), "Range " + fmtN(lo(opp)) + "–" + fmtN(hi(opp)));
+    const chip = el("span", { class: "chip" });
+    const dot = el("span", { class: "dot" }); dot.style.background = st.color;
+    chip.appendChild(dot); chip.appendChild(document.createTextNode(st.label));
+    tile(null, "Our share of voice", total ? Math.round(sov * 100) + "%" : "—", "Share of all GRPs in this window", chip);
+    tile(null, "Opponent spend on file", fmtUSD(oppUSD), state.ordered ? "Gross; includes booked flights" : "Gross; aired only");
+  }
+
+  // ---------- Legend ----------
+  function renderLegend() {
+    const box = $("legend");
+    box.replaceChildren();
+    relevantBuyers().forEach(function (k) {
+      const b = el("button", { type: "button", "aria-pressed": state.hidden.has(k) ? "false" : "true" });
+      const key = el("span", { class: "key" }); key.style.background = cssv(BUYERS[k].cssVar);
+      b.appendChild(key);
+      b.appendChild(document.createTextNode(BUYERS[k].committee + (BUYERS[k].side === "us" ? " (us)" : "")));
+      b.addEventListener("click", function () {
+        if (state.hidden.has(k)) state.hidden.delete(k); else state.hidden.add(k);
+        renderAll();
+      });
+      box.appendChild(b);
+    });
+    const s = el("span", { class: "static" });
+    const k2 = el("span", { class: "key" });
+    k2.style.background = "repeating-linear-gradient(45deg, var(--muted) 0 2px, transparent 2px 5px)";
+    s.appendChild(k2); s.appendChild(document.createTextNode("Hatched = booked, not aired yet"));
+    box.appendChild(s);
+  }
+
+  // ---------- Weekly chart ----------
+  let lastLayout = null;
+  function weeklyData() {
+    const rows = filtered();
+    const vb = visibleBuyers();
+    return windowWeeks().map(function (wk) {
+      const segs = vb.map(function (k) {
+        const r = rows.filter(function (b) { return b.week === wk && b.buyer === k; });
+        return { buyer: k, value: sum(r, valueOf), spots: sum(r, function (b) { return b.spots; }),
+          status: r.length ? r[0].status : null };
+      });
+      return { week: wk, segs: segs, total: sum(segs, function (s) { return s.value; }) };
+    });
+  }
+
+  function xLayout(width, weeks) {
+    const m = { l: 48, r: 12, t: 22, b: 30 };
+    const iw = width - m.l - m.r;
+    const step = iw / weeks.length;
+    return { m: m, iw: iw, step: step, bw: Math.min(44, step * 0.62),
+      xOf: function (i) { return m.l + i * step + step / 2; } };
+  }
+
+  function renderWeekly() {
+    const box = $("weekly-chart");
+    const width = Math.max(320, box.clientWidth || 800);
+    const height = width < 560 ? 240 : 300;
+    const data = weeklyData();
+    const weeks = windowWeeks();
+    const L = xLayout(width, weeks);
+    lastLayout = { width: width, weeks: weeks, L: L };
+    const ih = height - L.m.t - L.m.b;
+    const maxV = niceMax(Math.max(1, Math.max.apply(null, data.map(function (d) { return d.total; }))));
+    const y = function (v) { return L.m.t + ih - (v / maxV) * ih; };
+
+    const svg = sv("svg", { viewBox: "0 0 " + width + " " + height, role: "img",
+      "aria-label": "Stacked weekly " + (state.metric === "grp" ? "GRPs" : "spend") + " by buyer" });
+    const defs = sv("defs");
+    BUYER_ORDER.forEach(function (k) {
+      const p = sv("pattern", { id: "hatch-" + k, width: "6", height: "6", patternUnits: "userSpaceOnUse", patternTransform: "rotate(45)" });
+      p.appendChild(sv("rect", { width: "6", height: "6", fill: cssv(BUYERS[k].cssVar), "fill-opacity": "0.35" }));
+      p.appendChild(sv("rect", { width: "2.5", height: "6", fill: cssv(BUYERS[k].cssVar) }));
+      defs.appendChild(p);
+    });
+    svg.appendChild(defs);
+
+    // grid + y ticks
+    for (let i = 0; i <= 4; i++) {
+      const v = maxV * i / 4, yy = y(v);
+      svg.appendChild(sv("line", { x1: L.m.l, x2: width - L.m.r, y1: yy, y2: yy, stroke: i === 0 ? cssv("--axis") : cssv("--grid"), "stroke-width": "1" }));
+      svg.appendChild(sv("text", { x: L.m.l - 8, y: yy + 4, "text-anchor": "end", class: "num" }, state.metric === "grp" ? fmtN(v) : fmtUSD(v)));
+    }
+
+    // today marker
+    const ci = weeks.indexOf(CURRENT_WEEK);
+    if (ci >= 0) {
+      const tx = L.m.l + ci * L.step + L.step * (3 / 7);
+      svg.appendChild(sv("line", { x1: tx, x2: tx, y1: L.m.t - 6, y2: L.m.t + ih, stroke: cssv("--ink-2"), "stroke-width": "1" }));
+      svg.appendChild(sv("text", { x: tx + 4, y: L.m.t - 8, class: "t-ink" }, "Today"));
+    }
+
+    // bars
+    const labelEvery = Math.ceil(weeks.length / Math.max(1, Math.floor(L.iw / 56)));
+    data.forEach(function (d, i) {
+      const cx = L.xOf(i);
+      let acc = 0;
+      const visibleSegs = d.segs.filter(function (s) { return s.value > 0; });
+      visibleSegs.forEach(function (s, j) {
+        const y0 = y(acc), y1 = y(acc + s.value);
+        acc += s.value;
+        const isTop = j === visibleSegs.length - 1;
+        const gap = j > 0 ? 2 : 0;
+        const h = Math.max(1, y0 - y1 - gap);
+        const fill = s.status === "booked" ? "url(#hatch-" + s.buyer + ")" : cssv(BUYERS[s.buyer].cssVar);
+        let shape;
+        const x = cx - L.bw / 2;
+        if (isTop && h > 4) {
+          const r = 4;
+          const path = "M" + x + "," + (y1 + h) + " L" + x + "," + (y1 + r) + " Q" + x + "," + y1 + " " + (x + r) + "," + y1 +
+            " L" + (x + L.bw - r) + "," + y1 + " Q" + (x + L.bw) + "," + y1 + " " + (x + L.bw) + "," + (y1 + r) +
+            " L" + (x + L.bw) + "," + (y1 + h) + " Z";
+          shape = sv("path", { d: path, fill: fill });
+        } else {
+          shape = sv("rect", { x: x, y: y1, width: L.bw, height: h, fill: fill });
+        }
+        shape.setAttribute("class", "seg-mark");
+        shape.setAttribute("tabindex", "0");
+        const lbl = BUYERS[s.buyer].name + ", week of " + fmtD(d.week) + ": " + fmtVal(s.value) + (state.metric === "grp" ? " GRPs" : "");
+        shape.setAttribute("aria-label", lbl);
+        const tipRows = function () {
+          const r = [
+            { text: fmtVal(s.value) + (state.metric === "grp" ? " GRPs" : " gross"), cls: "tv" },
+            { text: BUYERS[s.buyer].committee, key: cssv(BUYERS[s.buyer].cssVar) },
+            { text: "Week of " + fmtD(d.week) + " · " + s.spots + " spots", cls: "tm" }
+          ];
+          if (state.metric === "grp") r.push({ text: "Range " + fmtN(lo(s.value)) + "–" + fmtN(hi(s.value)), cls: "tm" });
+          r.push({ text: s.status === "booked" ? "Booked, not aired yet" : s.status === "airing" ? "Airing this week" : "Aired", cls: "tm" });
+          return r;
+        };
+        shape.addEventListener("pointermove", function (e) { showTip(e, tipRows()); });
+        shape.addEventListener("pointerleave", hideTip);
+        shape.addEventListener("focus", function (e) { showTip(e, tipRows()); });
+        shape.addEventListener("blur", hideTip);
+        svg.appendChild(shape);
+      });
+      if (i % labelEvery === 0) {
+        svg.appendChild(sv("text", { x: cx, y: height - 10, "text-anchor": "middle" }, fmtD(d.week)));
+      }
+    });
+
+    // direct label: the week with the largest total
+    let peak = 0;
+    data.forEach(function (d, i) { if (d.total > data[peak].total) peak = i; });
+    if (data[peak] && data[peak].total > 0) {
+      svg.appendChild(sv("text", { x: L.xOf(peak), y: y(data[peak].total) - 6, "text-anchor": "middle", class: "t-ink num" }, fmtVal(data[peak].total)));
+    }
+
+    box.replaceChildren(svg);
+
+    const sub = state.metric === "grp"
+      ? "Estimated GRPs against A35+, by broadcast week (Mon–Sun). Every week shown falls in a lowest-unit-rate window. Hover a bar for the range and spot count."
+      : "Gross dollars on file, by broadcast week (Mon–Sun).";
+    $("weekly-sub").textContent = sub + (state.market === "all" ? " All markets." : " " + DMAS[state.market] + " only.");
+
+    renderWeeklyTable(data);
+  }
+
+  function renderWeeklyTable(data) {
+    const wrap = $("weekly-table");
+    wrap.hidden = !state.showWeeklyTable;
+    if (!state.showWeeklyTable) return;
+    const vb = visibleBuyers();
+    const t = el("table");
+    const thead = el("thead"); const tr = el("tr");
+    tr.appendChild(el("th", null, "Week of"));
+    vb.forEach(function (k) { tr.appendChild(el("th", { class: "r" }, BUYERS[k].name)); });
+    tr.appendChild(el("th", { class: "r" }, "Total"));
+    tr.appendChild(el("th", null, "Status"));
+    thead.appendChild(tr); t.appendChild(thead);
+    const tb = el("tbody");
+    data.forEach(function (d) {
+      const r = el("tr");
+      r.appendChild(el("td", null, fmtD(d.week)));
+      d.segs.forEach(function (s) { r.appendChild(el("td", { class: "r num" }, s.value ? fmtVal(s.value) : "—")); });
+      r.appendChild(el("td", { class: "r num" }, d.total ? fmtVal(d.total) : "—"));
+      const stt = d.week < CURRENT_WEEK ? "Aired" : d.week === CURRENT_WEEK ? "Airing" : "Booked";
+      r.appendChild(el("td", null, stt));
+      tb.appendChild(r);
+    });
+    t.appendChild(tb);
+    wrap.replaceChildren(t);
+  }
+
+  // ---------- Poll chart ----------
+  function renderPolls() {
+    const box = $("poll-chart");
+    const width = Math.max(320, box.clientWidth || 800);
+    const height = 190;
+    const weeks = windowWeeks();
+    const L = xLayout(width, weeks);
+    const ih = height - L.m.t - L.m.b;
+    const first = parseD(weeks[0]).getTime();
+    const dayW = L.step / 7;
+    const xOfDate = function (s) { return L.m.l + (parseD(s).getTime() - first) / 864e5 * dayW; };
+    const endDate = addDays(weeks[weeks.length - 1], 7);
+    const polls = POLLS.filter(function (p) { return p.date >= weeks[0] && p.date < endDate; });
+    const maxM = 30;
+    const y = function (v) { return L.m.t + ih - (v / maxM) * ih; };
+
+    const svg = sv("svg", { viewBox: "0 0 " + width + " " + height, role: "img", "aria-label": "Neal polling margin over time" });
+    [0, 10, 20, 30].forEach(function (v) {
+      svg.appendChild(sv("line", { x1: L.m.l, x2: width - L.m.r, y1: y(v), y2: y(v), stroke: v === 0 ? cssv("--axis") : cssv("--grid") }));
+      svg.appendChild(sv("text", { x: L.m.l - 8, y: y(v) + 4, "text-anchor": "end", class: "num" }, v === 0 ? "Tie" : "+" + v));
+    });
+    const labelEvery = Math.ceil(weeks.length / Math.max(1, Math.floor(L.iw / 56)));
+    weeks.forEach(function (wk, i) {
+      if (i % labelEvery === 0) svg.appendChild(sv("text", { x: L.xOf(i), y: height - 10, "text-anchor": "middle" }, fmtD(wk)));
+    });
+    const ci = weeks.indexOf(CURRENT_WEEK);
+    if (ci >= 0) {
+      const tx = L.m.l + ci * L.step + L.step * (3 / 7);
+      svg.appendChild(sv("line", { x1: tx, x2: tx, y1: L.m.t, y2: L.m.t + ih, stroke: cssv("--ink-2") }));
+    }
+
+    ["whalen", "milleron"].forEach(function (opp) {
+      const pts = polls.filter(function (p) { return p.opp === opp; });
+      if (pts.length > 1) {
+        const d = pts.map(function (p, i) { return (i ? "L" : "M") + xOfDate(p.date) + "," + y(p.margin); }).join(" ");
+        svg.appendChild(sv("path", { d: d, fill: "none", stroke: cssv(BUYERS[opp].cssVar), "stroke-width": "2" }));
+      }
+    });
+    polls.forEach(function (p) {
+      const cx = xOfDate(p.date), cy = y(p.margin);
+      const color = cssv(BUYERS[p.opp].cssVar);
+      let mark;
+      if (p.kind === "result") {
+        mark = sv("path", { d: "M" + cx + "," + (cy - 7) + " L" + (cx + 7) + "," + cy + " L" + cx + "," + (cy + 7) + " L" + (cx - 7) + "," + cy + " Z",
+          fill: color, stroke: cssv("--surface"), "stroke-width": "2" });
+      } else {
+        mark = sv("circle", { cx: cx, cy: cy, r: 5, fill: color, stroke: cssv("--surface"), "stroke-width": "2" });
+      }
+      svg.appendChild(mark);
+      const hit = sv("circle", { cx: cx, cy: cy, r: 13, fill: "transparent", tabindex: "0", class: "seg-mark",
+        "aria-label": "Neal +" + p.margin + " vs " + BUYERS[p.opp].name + ", " + fmtD(p.date) });
+      const rows = function () {
+        const r = [{ text: "Neal +" + p.margin + " pts", cls: "tv" },
+          { text: "vs. " + BUYERS[p.opp].name, key: color },
+          { text: p.pollster, cls: "tm" },
+          { text: fmtD(p.date) + (p.n ? " · n=" + p.n + " " + p.pop : ""), cls: "tm" }];
+        return r;
+      };
+      hit.addEventListener("pointermove", function (e) { showTip(e, rows()); });
+      hit.addEventListener("pointerleave", hideTip);
+      hit.addEventListener("focus", function (e) { showTip(e, rows()); });
+      hit.addEventListener("blur", hideTip);
+      svg.appendChild(hit);
+      if (p.kind === "result") {
+        svg.appendChild(sv("text", { x: cx + 10, y: cy + 4, class: "t-ink" }, "Result +" + p.margin));
+      }
+    });
+    if (!polls.length) {
+      svg.appendChild(sv("text", { x: width / 2, y: L.m.t + ih / 2, "text-anchor": "middle", class: "t-ink" }, "No polls in this window"));
+    }
+    box.replaceChildren(svg);
+  }
+
+  // ---------- Markets ----------
+  function renderMarkets() {
+    const box = $("markets");
+    box.replaceChildren();
+    const wk = new Set(windowWeeks());
+    const dmas = state.market === "all" ? ["spr", "alb"] : [state.market];
+    dmas.forEach(function (dma) {
+      const rows = BUYS.filter(function (b) { return wk.has(b.week) && b.dma === dma && (state.ordered || b.status !== "booked"); });
+      const vb = visibleBuyers();
+      const vals = vb.map(function (k) { return { k: k, v: sum(rows.filter(function (b) { return b.buyer === k; }), grpOf) }; });
+      const total = sum(vals, function (x) { return x.v; });
+      const m = el("div", { class: "market" });
+      const head = el("div", { class: "market-head" });
+      head.appendChild(el("b", null, DMAS[dma]));
+      head.appendChild(el("span", { class: "num" }, fmtN(total) + " GRPs total"));
+      m.appendChild(head);
+      const track = el("div", { class: "bar-track", role: "img",
+        "aria-label": vals.map(function (x) { return BUYERS[x.k].name + " " + (total ? Math.round(x.v / total * 100) : 0) + "%"; }).join(", ") });
+      vals.forEach(function (x) {
+        if (!x.v) return;
+        const seg = el("div", { tabindex: "0" });
+        seg.style.width = (x.v / total * 100) + "%";
+        seg.style.background = cssv(BUYERS[x.k].cssVar);
+        const rowsFn = function () { return [
+          { text: Math.round(x.v / total * 100) + "% share", cls: "tv" },
+          { text: BUYERS[x.k].committee, key: cssv(BUYERS[x.k].cssVar) },
+          { text: fmtN(x.v) + " GRPs in " + DMAS[dma], cls: "tm" }]; };
+        seg.addEventListener("pointermove", function (e) { showTip(e, rowsFn()); });
+        seg.addEventListener("pointerleave", hideTip);
+        seg.addEventListener("focus", function (e) { showTip(e, rowsFn()); });
+        seg.addEventListener("blur", hideTip);
+        track.appendChild(seg);
+      });
+      m.appendChild(track);
+      const shares = el("div", { class: "market-note num" });
+      shares.textContent = total
+        ? vals.map(function (x) { return BUYERS[x.k].name + " " + Math.round(x.v / total * 100) + "%"; }).join(" · ")
+        : "No buys in this window.";
+      m.appendChild(shares);
+      if (dma === "alb") m.appendChild(el("div", { class: "market-note" }, "Albany GRPs cover the whole market. Only about 1 in 10 of its TV homes are in Berkshire County."));
+      box.appendChild(m);
+    });
+  }
+
+  // ---------- Alerts ----------
+  function renderAlerts() {
+    const ul = $("alerts");
+    ul.replaceChildren();
+    ALERTS.forEach(function (a) {
+      const li = el("li");
+      li.appendChild(el("time", null, a.date));
+      const w = el("div");
+      const tag = el("div", { class: "tag" }, BUYERS[a.buyer].side === "us" ? "Our side" : "Opponent");
+      tag.style.color = cssv(BUYERS[a.buyer].cssVar);
+      w.appendChild(tag);
+      const what = el("div", { class: "what" });
+      what.appendChild(el("b", null, BUYERS[a.buyer].committee));
+      what.appendChild(document.createTextNode(": " + a.text));
+      w.appendChild(what);
+      w.appendChild(el("div", { class: "meta" }, a.meta));
+      li.appendChild(w);
+      ul.appendChild(li);
+    });
+  }
+
+  // ---------- Station table ----------
+  function renderStations() {
+    const rows = filtered();
+    const groups = {};
+    rows.forEach(function (b) {
+      const k = b.station + "|" + b.buyer;
+      if (!groups[k]) groups[k] = { station: b.station, dma: b.dma, buyer: b.buyer, weeks: [], spots: 0, gross: 0, grp: 0, statuses: new Set() };
+      const g = groups[k];
+      g.weeks.push(b.week); g.spots += b.spots; g.gross += b.gross; g.grp += grpOf(b); g.statuses.add(b.status);
+    });
+    let list = Object.keys(groups).map(function (k) { return groups[k]; })
+      .filter(function (g) { return !state.hidden.has(g.buyer); });
+    list.forEach(function (g) {
+      g.weeks.sort();
+      g.flight = g.weeks[0];
+      g.status = g.statuses.has("booked") && (g.statuses.has("aired") || g.statuses.has("airing")) ? "Airing, more booked"
+        : g.statuses.has("booked") ? "Booked" : g.statuses.has("airing") ? "Airing" : "Aired";
+      g.buyerName = BUYERS[g.buyer].name;
+    });
+    const key = state.sort.key, dir = state.sort.dir;
+    list.sort(function (a, b) {
+      const va = a[key], vb = b[key];
+      if (typeof va === "number") return (va - vb) * dir;
+      return String(va).localeCompare(String(vb)) * dir;
+    });
+
+    const cols = [
+      { key: "station", label: "Station" },
+      { key: "dma", label: "Market" },
+      { key: "buyerName", label: "Buyer" },
+      { key: "flight", label: "Flight" },
+      { key: "spots", label: "Spots", r: true },
+      { key: "gross", label: "Gross", r: true },
+      { key: "grp", label: "Est. GRPs", r: true },
+      { key: "status", label: "Status" }
+    ];
+    const t = el("table");
+    const thead = el("thead"); const hr = el("tr");
+    cols.forEach(function (c) {
+      const th = el("th", { class: c.r ? "r" : "", scope: "col" });
+      if (state.sort.key === c.key) th.setAttribute("aria-sort", state.sort.dir > 0 ? "ascending" : "descending");
+      const btn = el("button", { type: "button" }, c.label);
+      btn.addEventListener("click", function () {
+        if (state.sort.key === c.key) state.sort.dir *= -1; else { state.sort.key = c.key; state.sort.dir = c.r ? -1 : 1; }
+        renderStations();
+      });
+      th.appendChild(btn); hr.appendChild(th);
+    });
+    thead.appendChild(hr); t.appendChild(thead);
+    const tb = el("tbody");
+    if (!list.length) {
+      const r = el("tr"); const td = el("td", { colspan: String(cols.length) }, "No buys match these filters.");
+      r.appendChild(td); tb.appendChild(r);
+    }
+    list.forEach(function (g) {
+      const r = el("tr");
+      const st = el("td"); st.appendChild(el("span", { class: "mono" }, g.station));
+      st.appendChild(el("span", { class: "range" }, " " + STATIONS[g.station].net));
+      r.appendChild(st);
+      r.appendChild(el("td", null, DMAS[g.dma]));
+      const bt = el("td");
+      const k = el("span", { class: "key" }); k.style.background = cssv(BUYERS[g.buyer].cssVar); k.style.marginRight = "6px";
+      bt.appendChild(k); bt.appendChild(document.createTextNode(g.buyerName));
+      if (BUYERS[g.buyer].side === "us") bt.appendChild(el("span", { class: "ours" }, "us"));
+      r.appendChild(bt);
+      r.appendChild(el("td", { class: "num" }, fmtD(g.weeks[0]) + " – " + fmtD(flightEnd(g.weeks[g.weeks.length - 1]))));
+      r.appendChild(el("td", { class: "r num" }, fmtN(g.spots)));
+      r.appendChild(el("td", { class: "r num" }, fmtUSDfull(g.gross)));
+      const gt = el("td", { class: "r num" }, fmtN(g.grp));
+      gt.appendChild(el("div", { class: "range" }, fmtN(lo(g.grp)) + "–" + fmtN(hi(g.grp))));
+      r.appendChild(gt);
+      const s = el("td"); const sp = el("span", { class: "status" });
+      const dot = el("i");
+      dot.style.background = g.status === "Aired" ? cssv("--muted") : g.status === "Booked" ? "transparent" : cssv("--good");
+      if (g.status === "Booked") dot.style.border = "1.5px solid " + cssv("--muted");
+      sp.appendChild(dot); sp.appendChild(document.createTextNode(g.status));
+      s.appendChild(sp); r.appendChild(s);
+      tb.appendChild(r);
+    });
+    t.appendChild(tb);
+    $("station-table").replaceChildren(t);
+  }
+
+  // ---------- Controls ----------
+  function syncControls() {
+    document.querySelectorAll("#f-window button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.v === state.window)); });
+    document.querySelectorAll("#f-metric button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.v === state.metric)); });
+    $("f-market").value = state.market;
+    $("f-ordered").checked = state.ordered;
+    $("cpp-spr").value = state.cpp.spr;
+    $("cpp-alb").value = state.cpp.alb;
+    $("comm").value = state.comm;
+    $("band").value = state.band;
+    $("toggle-weekly-table").textContent = state.showWeeklyTable ? "Hide table" : "Show as table";
+    $("toggle-weekly-table").setAttribute("aria-expanded", String(state.showWeeklyTable));
+  }
+
+  function renderAll() {
+    syncControls();
+    renderKPIs();
+    renderLegend();
+    renderWeekly();
+    renderPolls();
+    renderMarkets();
+    renderAlerts();
+    renderStations();
+  }
+
+  document.querySelectorAll("#f-window button").forEach(function (b) {
+    b.addEventListener("click", function () { state.window = b.dataset.v; saveView(); renderAll(); });
+  });
+  document.querySelectorAll("#f-metric button").forEach(function (b) {
+    b.addEventListener("click", function () { state.metric = b.dataset.v; saveView(); renderAll(); });
+  });
+  $("f-market").addEventListener("change", function (e) { state.market = e.target.value; saveView(); renderAll(); });
+  $("f-ordered").addEventListener("change", function (e) { state.ordered = e.target.checked; renderAll(); });
+  function numInput(id, apply) {
+    $(id).addEventListener("input", function (e) {
+      const v = parseFloat(e.target.value);
+      if (!isFinite(v)) return;
+      apply(v);
+      renderKPIs(); renderWeekly(); renderMarkets(); renderStations();
+    });
+  }
+  numInput("cpp-spr", function (v) { state.cpp.spr = Math.max(10, v); });
+  numInput("cpp-alb", function (v) { state.cpp.alb = Math.max(10, v); });
+  numInput("comm", function (v) { state.comm = Math.min(30, Math.max(0, v)); });
+  numInput("band", function (v) { state.band = Math.min(60, Math.max(0, v)); });
+  $("reset-assump").addEventListener("click", function () {
+    state.cpp = { spr: DEFAULTS.cpp.spr, alb: DEFAULTS.cpp.alb }; state.comm = DEFAULTS.comm; state.band = DEFAULTS.band;
+    renderAll();
+  });
+  $("toggle-weekly-table").addEventListener("click", function () { state.showWeeklyTable = !state.showWeeklyTable; renderAll(); });
+
+  let rt;
+  window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(function () { renderWeekly(); renderPolls(); }, 120); });
+  if (window.matchMedia) {
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    if (mq.addEventListener) mq.addEventListener("change", renderAll);
+  }
+  new MutationObserver(renderAll).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+  renderAll();
+})();
+</script>
