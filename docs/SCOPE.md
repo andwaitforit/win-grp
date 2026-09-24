@@ -15,6 +15,7 @@
 | D4 | **Pricing: organization tiers, each capping the number of active races** | Plan and race-cap enforcement is part of the MVP (§5, §9) |
 | D5 | **Internal (private) poll upload is in the MVP** | Tenant isolation for polls is a launch requirement |
 | D6 | **Allow FCC, VoteHub, and FEC hosts in the dev environment's network policy** | Pending: as of this review the sandbox still blocks `publicfiles.fcc.gov`, `api.votehub.com`, and `api.open.fec.gov` |
+| D7 | **Internal pilot race: MA-01 (Richard Neal), 2026.** The user supplies backtest data later | Brief in `docs/pilot/MA-01.md`, seed in `config/pilot/ma-01-2026.yaml`. Phase 0 station list = Springfield-Holyoke + Albany DMAs |
 
 ## 1. Problem
 
@@ -318,12 +319,13 @@ is Nov 3.** Heaviest spending is in the final 3–4 weeks.
 
 **Still open**
 
-- Which specific pilot races and orgs? (This determines the station list for
-  Phase 0.)
+- Additional pilot races and orgs beyond MA-01 (D7).
+- Whether to pull cable political files into the pilot for MA-01 (recommended
+  in `docs/pilot/MA-01.md`).
 - What format is the pilot users' CPP data in (SQAD export, spreadsheet),
   and which demos (A25-54, A35+, HH)? We need a sample to build the importer.
-- Past-race GRP figures: which races and cycles, and at what granularity
-  (weekly by DMA is ideal)?
+- Backtest data for MA-01 (pending from the user): ideally weekly GRPs by DMA
+  and buyer, covering both the primary and general windows.
 - Tier names, prices, and race caps (§9 has placeholders).
 
 ## 9. Pricing (D4)

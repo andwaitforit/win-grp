@@ -18,6 +18,11 @@ and shows them next to public polling for the same race.
 - **Current goal:** the **2026 Pilot Slice** (`docs/SCOPE.md` §6), live on 2026
   general-election races before election day (Nov 3, 2026). Prefer the
   smallest thing that works for pilot users over completeness.
+- **Internal pilot race: MA-01 (Richard Neal vs. Nadia Milleron; primary vs.
+  Jeromie Whalen).** Brief: `docs/pilot/MA-01.md`. Seed stations, committees,
+  and dates: `config/pilot/ma-01-2026.yaml`. Use this race for fixtures, demos,
+  and end-to-end tests. Backtest ground truth will come from the user. Don't
+  treat the press reference points in the seed file as ground truth.
 
 ## Domain glossary
 

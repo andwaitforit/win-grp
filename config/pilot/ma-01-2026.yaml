@@ -1,0 +1,93 @@
+# Internal pilot race: MA-01 (Richard Neal), 2026 cycle.
+# Seed data for Phase 0 / Pilot Slice. See docs/pilot/MA-01.md for sources.
+# Fields marked `verify: true` or `null` must be resolved from the FCC OPIF
+# facility API / OpenFEC before use. Do not guess facility or committee IDs.
+
+race:
+  id: us-house-ma-01-2026
+  state: MA
+  office: US House
+  district: "01"
+  cycle: 2026
+  dates:
+    primary: 2026-09-01
+    general: 2026-11-03
+  lur_windows:            # candidates get Lowest Unit Rate
+    primary: { start: 2026-07-18, end: 2026-09-01 }   # 45 days before primary
+    general: { start: 2026-09-04, end: 2026-11-03 }   # 60 days before general
+  geography: >-
+    Berkshire and Hampden counties; western Franklin County; western and
+    southern Hampshire County; southwestern edge of Worcester County.
+
+candidates:
+  - name: Richard E. Neal
+    party: DEM
+    incumbent: true
+    status: general_nominee
+    fec_candidate_id: H8MA02041
+    committees:
+      - { name: Richard E. Neal for Congress Committee, fec_id: C00226522, role: principal }
+    opif_purchaser_aliases: ["Richard E Neal for Congress", "Neal for Congress", "Richard Neal"]
+  - name: Nadia Milleron
+    party: IND
+    incumbent: false
+    status: general_nominee
+    fec_candidate_id: H4MA01091
+    committees:
+      - { name: Nadia for Congress, fec_id: C00868927, role: principal }
+    opif_purchaser_aliases: ["Nadia for Congress", "Nadia Milleron"]
+  - name: Jeromie Whalen
+    party: DEM
+    incumbent: false
+    status: lost_primary        # 2026-09-01; primary-window backtest only
+    fec_candidate_id: null      # resolve via OpenFEC
+    committees:
+      - { name: Jeromie Whalen for Congress, fec_id: null, role: principal }
+    opif_purchaser_aliases: ["Whalen for Congress", "Jeromie Whalen"]
+  # Republican general-election candidate: none confirmed as of 2026-09-24. Verify.
+
+# Outside groups (super PACs, party committees, issue advertisers) are
+# discovered from OPIF "Non-Candidate Issue Ads" and Federal/US House folders
+# on the stations below, plus FEC Schedule E filings that name these candidates.
+
+markets:
+  - dma: Springfield-Holyoke
+    role: primary             # covers Hampden, Hampshire, Franklin
+    stations:
+      - { call_sign: WWLP,    network: NBC, service: tv, notes: "22; subchannels carry other nets. Confirmed 2026 buys by Neal and Whalen" }
+      - { call_sign: WGGB-TV, network: ABC, service: tv, notes: "40; Fox on a subchannel. Confirmed 2026 buys" }
+      - { call_sign: WSHM-LD, network: CBS, service: tv, verify: true, notes: "Low-power CBS 3. May not have its own OPIF file; buys may be filed under WGGB-TV" }
+  - dma: Albany-Schenectady-Troy
+    role: primary             # covers Berkshire County
+    stations:
+      - { call_sign: WNYT, network: NBC, service: tv, notes: "Confirmed 2026 Neal primary buy (~$25K)" }
+      - { call_sign: WRGB, network: CBS, service: tv }
+      - { call_sign: WTEN, network: ABC, service: tv }
+      - { call_sign: WXXA-TV, network: FOX, service: tv }
+      - { call_sign: WCWN, network: CW, service: tv }
+  - dma: Hartford-New Haven
+    role: watch_only          # spill-in; rarely bought for MA-01
+    stations: []              # populate if filings appear
+  - dma: Boston
+    role: watch_only          # SW Worcester County edge; expensive, unlikely
+    stations: []
+
+  # Cable (Spectrum Reach / Comcast zones in Berkshire and Pioneer Valley) is
+  # probably material in this race. Cable political files are in OPIF too.
+  # Consider pulling cable into the pilot. See docs/pilot/MA-01.md.
+
+# Figures reported in the press, used ONLY to sanity-check the pilot's
+# extraction. These are not backtest ground truth; the user supplies that.
+press_reference_points:
+  source: "Western Mass Politics & Insight, Aug 2026 (from FCC political files)"
+  window: primary
+  items:
+    - { purchaser: Neal,   stations: [WWLP],               approx_usd: 70000, note: "incl. subchannels, mostly news" }
+    - { purchaser: Neal,   stations: [WGGB-TV, WSHM-LD],   approx_usd: 35000 }
+    - { purchaser: Neal,   stations: [WNYT],               approx_usd: 25000 }
+    - { purchaser: Whalen, stations: [WWLP],               approx_usd: 31800, note: "news + SNL reruns" }
+    - { purchaser: Whalen, stations: [WGGB-TV, WSHM-LD],   approx_usd: 14000, note: "incl. subchannels" }
+
+backtest:
+  ground_truth: pending       # user will supply GRP data later
+  windows: [primary, general]
