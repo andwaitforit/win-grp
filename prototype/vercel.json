@@ -1,5 +1,4 @@
 {
-  "cleanUrls": true,
   "rewrites": [{ "source": "/", "destination": "/ma-01-dashboard.html" }],
   "headers": [{ "source": "/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }]
 }
