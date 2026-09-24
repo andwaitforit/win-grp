@@ -30,6 +30,10 @@ and shows them next to public polling for the same race.
   dashboard with static sample data, built to get feedback from consultants.
   Neal is "our side". Keep its sample-data banner; it must never be presented
   as real FCC records. Open it directly in a browser; there is no build step.
+- Deployed to Vercel as project `win-grp-prototype` (root directory
+  `prototype/`, static, no framework). `prototype/vercel.json` serves the
+  dashboard at `/`. Access is Vercel login only (deployment protection on all
+  deployments). Don't make it public without the user's say-so.
 
 ## Domain glossary
 
