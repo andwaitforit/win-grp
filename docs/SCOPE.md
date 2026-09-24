@@ -1,9 +1,20 @@
 # win-grp: Initial Product Scope
 
-**Status:** Draft for review, 2026-09-24
+**Status:** Reviewed 2026-09-24. Decisions recorded in §0.
 **Working name:** win-grp (opponent GRP intelligence for political campaigns)
 
 ---
+
+## 0. Decisions (2026-09-24 review)
+
+| # | Decision | Consequence |
+|---|---|---|
+| D1 | **Pilot on live 2026 general-election races** | Election day is **Nov 3, 2026**, about 40 days away. The full MVP (§5) won't be ready in time, so a narrow **Pilot Slice** ships first (§6) |
+| D2 | **Pilot users have licensed CPP data and known GRP figures from past races** | Licensed CPP is a first-class, **tenant-scoped** input (§3.5). Past GRP figures become the backtest set (§6, Phase 3) |
+| D3 | **Stack: Supabase + Vercel** (with Python workers) | §7 is confirmed |
+| D4 | **Pricing: organization tiers, each capping the number of active races** | Plan and race-cap enforcement is part of the MVP (§5, §9) |
+| D5 | **Internal (private) poll upload is in the MVP** | Tenant isolation for polls is a launch requirement |
+| D6 | **Allow FCC, VoteHub, and FEC hosts in the dev environment's network policy** | Pending: as of this review the sandbox still blocks `publicfiles.fcc.gov`, `api.votehub.com`, and `api.open.fec.gov` |
 
 ## 1. Problem
 
@@ -122,11 +133,20 @@ and a marker for each individual poll. We are **not** building a forecasting mod
 - **TV households / population per DMA.** Nielsen universe estimates are
   licensed; published TVHH counts are available for rough use.
 - **Cost-per-point (CPP) benchmarks** by DMA, daypart, demo, and quarter.
-  Industry sources (SQAD, Nielsen) are licensed. MVP plan: seed with
-  published rule-of-thumb ranges and let users override. Over time, calibrate
-  from the rates we observe in parsed orders combined with any ratings the user
-  supplies. This is a moat: a proprietary political CPP table built from
-  filings.
+  Industry sources (SQAD, Nielsen) are licensed. Pilot users hold licensed CPP
+  data (D2), so CPP comes from a layered lookup. The first layer that has a
+  value wins:
+  1. **Org-licensed CPP import** (CSV/XLSX upload per org). **This data is
+     licensed to the customer, not to us. It is stored and used only inside
+     that org's tenant and never feeds shared tables or other orgs'
+     estimates.**
+  2. Per-race manual overrides.
+  3. Default benchmark table (published rule-of-thumb ranges, and later
+     calibrated from rates observed in parsed filings).
+
+  Each estimate records which layer supplied its CPP. Over time, the
+  proprietary political CPP table calibrated from filings becomes our moat.
+  Only non-licensed inputs may be used to calibrate it.
 
 ## 4. How we estimate GRPs
 
@@ -184,16 +204,22 @@ the ad ~10×").
    score, **every number links back to its source PDF page**, and anything
    below the confidence threshold goes to a human review queue.
 4. **GRP estimation.** Tier A for all buys, Tier B where schedules parse. Ranges
-   and confidence levels. Editable CPP assumptions per race.
-5. **Polling.** Import from VoteHub plus manual or CSV entry. Race trend line
-   with the GRP overlay.
+   and confidence levels. Layered CPP (org-licensed import → race override →
+   default), per §3.5.
+5. **Polling.** Import public polls from VoteHub. **Upload internal polls** by
+   form or CSV; these are tenant-private and marked "internal" in the UI.
+   Race trend line with the GRP overlay. Public and internal polls can be
+   shown together or separately.
 6. **Dashboard.** Race view (weekly GRP stacked bar by buyer, spend
    table, poll overlay), station drill-down, and source-document viewer.
 7. **Alerts.** Email/Slack when a watched purchaser opens a new file or makes a
    buy bigger than X.
 8. **Export.** CSV/XLSX and a shareable read-only race report.
-9. **Accounts.** Multi-tenant orgs, email/SSO login, per-org private data
-   (internal polls and CPP overrides are never shared across tenants).
+9. **Accounts and plans.** Multi-tenant orgs, email/SSO login, per-org private
+   data (internal polls, licensed CPP, and CPP overrides are never shared
+   across tenants). Each org is on a **plan tier with an active-race cap**
+   (§9). Enforce the cap on the server when a race is created or reactivated,
+   and let users archive races to free a slot.
 
 **Out of scope for MVP**
 
@@ -202,19 +228,30 @@ the ad ~10×").
 - State campaign-finance portals
 - Forecasting or vote-share modeling
 - Creative/ad-content tracking (which spot is running)
-- Nielsen/SQAD licensed data integrations (we design for pluggable CPP
-  sources instead)
+- Direct Nielsen/SQAD API integrations (MVP takes the customer's licensed CPP
+  as a file import instead)
+- Self-serve billing (pilot orgs get a tier assigned manually; Stripe comes
+  later)
 
 ## 6. Phased roadmap
 
-| Phase | Deliverable | Exit criterion |
-|---|---|---|
-| **0: Feasibility spike** (1–2 wks) | Facility directory, folder walker for ~20 stations, **confirmed sanctioned route to PDFs**, extraction prototype on 50 real orders | ≥90% field accuracy on spend/spot count and a documented legal/ToS stance |
-| **1: MVP** (6–8 wks) | Section 5 above, for TV broadcast | 3 pilot advisors using it on live races |
+Because of D1, the first milestone is a **2026 Pilot Slice** that fits the time
+left before the election. Everything in it survives into the MVP.
+
+Key 2026 dates: the general-election **LUR window opened Sep 4** (60 days
+before election day), so candidate buys in the pilot are at LUR. **Election day
+is Nov 3.** Heaviest spending is in the final 3–4 weeks.
+
+| Phase | Target | Deliverable | Exit criterion |
+|---|---|---|---|
+| **0: Feasibility spike** | ~Oct 2 | Facility directory, folder walker for the pilot races' stations, **decision on the sanctioned route to PDFs**, extraction prototype on ~50 real 2026 orders | ≥90% field accuracy on spend/spot count and a documented legal/ToS stance |
+| **P: 2026 Pilot Slice** | ~Oct 12 | Race setup for pilot races, new-filing alerts from folder metadata, PDF extraction (fetched or **user-uploaded**) with a review queue, Tier A GRPs using the org's licensed CPP import, VoteHub and internal polls, one race dashboard. Pilot orgs are provisioned manually | Pilot advisors using it on live races through Nov 3 |
+| **1: MVP** | Dec 2026 – Jan 2027 | The rest of §5: Tier B, station drill-down, exports, Slack alerts, plan tiers and race-cap enforcement in the UI | Paying orgs on tiered plans |
+| **1.5: Post-election backtest** | Nov – Dec 2026 | Compare our estimates with the pilot users' actual GRP figures (D2), for 2026 and prior races | Measured error by tier, market size, and buyer class |
 | **2: Coverage** | Cable/DBS/radio political files, FEC Schedule B/E, Google/Meta digital | "Total opponent media picture" view |
 | **3: Moat** | Proprietary political CPP table calibrated from filings, backtests vs. known GRP reports, state finance portals | Estimate error within ±20% vs. ground truth on backtest races |
 
-## 7. Proposed architecture (to confirm)
+## 7. Architecture (stack confirmed: D3)
 
 ```
                 ┌─────────────────────┐
@@ -241,8 +278,15 @@ the ad ~10×").
   auditable). The LLM handles the long tail.
 - **Core tables:** `station`, `dma`, `race`, `candidate`, `committee`,
   `purchaser` (normalized with aliases), `filing` (OPIF file + hash),
-  `buy` / `buy_version`, `line_item`, `cpp_assumption`, `grp_estimate`,
-  `poll`, `poll_result`, `alert_rule`, `org`, `user`.
+  `buy` / `buy_version`, `line_item`, `cpp_source` (org-licensed import,
+  org-scoped), `cpp_assumption`, `grp_estimate`, `poll` (with `visibility`:
+  public | internal + `org_id`), `poll_result`, `alert_rule`, `org`, `user`,
+  `plan` (tier, `max_active_races`), `org_plan`.
+- **Tenancy:** shared public data (stations, filings, public polls) is
+  readable by all orgs. Org data (races, internal polls, licensed CPP,
+  overrides, estimates) is protected by Supabase RLS on `org_id`. Every
+  org-scoped table gets an RLS policy and a test proving a second org can't
+  read it.
 
 ## 8. Risks and open questions
 
@@ -265,13 +309,37 @@ the ad ~10×").
    price, speed to insight for down-ballot races, and the poll ↔ GRP
    overlay.
 
-**Questions for you:**
+7. **Pilot timeline (D1).** About 40 days to election day. Mitigation: the
+   Pilot Slice depends on folder metadata and user-uploaded PDFs, so it
+   still works if sanctioned bulk PDF access isn't settled in time.
+8. **Licensed-data leakage (D2).** Customer CPP data is licensed to them.
+   Mitigation: org-scoped storage, RLS, excluded from shared calibration, and
+   an audit field on every estimate naming its CPP source.
 
-- Which cycle and race types do you want to pilot on (2026 general is live
-  right now, or build for the 2027–28 cycle)?
-- Do you or your pilot users have **Nielsen/SQAD CPP data** we could plug in,
-  or known GRP figures for past races we could backtest against?
-- Should the stack assume Supabase + Vercel (both already connected to this
-  environment), or do you have a preference?
-- Pricing model: per race/month, per seat, or per org tier?
-- Are internal polls in scope for v0.1 upload, or are public polls enough?
+**Still open**
+
+- Which specific pilot races and orgs? (This determines the station list for
+  Phase 0.)
+- What format is the pilot users' CPP data in (SQAD export, spreadsheet),
+  and which demos (A25-54, A35+, HH)? We need a sample to build the importer.
+- Past-race GRP figures: which races and cycles, and at what granularity
+  (weekly by DMA is ideal)?
+- Tier names, prices, and race caps (§9 has placeholders).
+
+## 9. Pricing (D4)
+
+Organization tiers, each capping **active races** (archived races don't
+count). Names, prices, and caps below are **placeholders** to confirm.
+
+| Tier | Active races | Seats | Notes |
+|---|---|---|---|
+| Starter | 3 | 3 | Public data, Tier A GRPs, email alerts |
+| Pro | 15 | 10 | + licensed CPP import, internal polls, Slack alerts, exports |
+| Enterprise | Custom / unlimited | Unlimited | + SSO, API access, priority onboarding |
+
+- Enforce race caps on the server (DB constraint or a check in the
+  race-create RPC), never only in the UI.
+- Downgrading below current usage: existing races stay read-only until the
+  org archives down to the cap.
+- Whether internal polls and licensed CPP are paid-tier features is still a
+  product decision. The pilot gets them regardless.

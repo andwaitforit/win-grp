@@ -10,9 +10,14 @@ and shows them next to public polling for the same race.
 
 - Product scope, data-source findings, and GRP methodology: `docs/SCOPE.md`.
   Read it before designing features.
-- **Status:** planning. No application code yet. The stack in
-  `docs/SCOPE.md` §7 (Next.js/Vercel web, Supabase Postgres, Python ingestion
-  workers) is a proposal. Confirm it before scaffolding.
+- **Status:** scope approved (decisions in `docs/SCOPE.md` §0). No application
+  code yet.
+- **Stack (confirmed):** Next.js (TypeScript) on Vercel; Supabase (Postgres,
+  Auth, RLS, Storage); Python workers for ingestion and PDF extraction; the
+  Claude API for structured extraction.
+- **Current goal:** the **2026 Pilot Slice** (`docs/SCOPE.md` §6), live on 2026
+  general-election races before election day (Nov 3, 2026). Prefer the
+  smallest thing that works for pilot users over completeness.
 
 ## Domain glossary
 
@@ -49,8 +54,22 @@ and shows them next to public polling for the same race.
 - Polling: preserve pollster, field dates, sample size, population (LV/RV/A),
   and the source URL. Show attribution for CC BY sources (VoteHub). Internal
   polls a customer uploads are tenant-private and must never leak across orgs.
+- **Licensed CPP data** uploaded by an org (SQAD/Nielsen-derived) belongs to
+  that org's license. Keep it org-scoped, never copy it into shared tables,
+  and never use it to calibrate the shared default CPP table. Every GRP
+  estimate records which CPP source it used.
 - API keys (FEC via api.data.gov, Anthropic, Supabase, Meta) come from env
   vars. Never commit them. Add new vars to `.env.example` with a comment.
+
+## Multi-tenancy and plans
+
+- Shared public data (stations, filings, public polls) and org-scoped data
+  (races, internal polls, licensed CPP, overrides, estimates) live in separate
+  tables or are separated by `org_id`. Every org-scoped table needs a Supabase
+  RLS policy **and** a test that a second org can't read or write it.
+- Pricing is **org tiers with an active-race cap** (`plan.max_active_races`).
+  Enforce the cap on the server (DB/RPC), not only in the UI. Archived races
+  don't count toward it.
 
 ## Engineering conventions (until the stack is finalized)
 
@@ -67,9 +86,11 @@ and shows them next to public polling for the same race.
 
 ## Environment notes
 
-- The cloud dev sandbox's egress proxy currently **blocks publicfiles.fcc.gov**
-  (and votehub.com). Live-API work needs those hosts added to the environment's
-  network allowlist. Until then, develop against saved fixtures.
+- The cloud dev environment needs these hosts on its network allowlist:
+  `publicfiles.fcc.gov`, `api.votehub.com` / `votehub.com`, and
+  `api.open.fec.gov`. They were still blocked as of 2026-09-24. If a request
+  fails with a proxy 403, develop against saved fixtures and flag it; don't
+  work around the proxy.
 
 ## Commands
 
