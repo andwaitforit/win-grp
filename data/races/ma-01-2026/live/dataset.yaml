@@ -1,0 +1,7 @@
+# LIVE dataset: real buys hand-entered from FCC political files.
+# Every buys.csv row needs a source_url pointing at its filing.
+is_sample: false
+# as_of: defaults to today when omitted
+demo: A35+
+commission_pct: 15
+band_pct: 20

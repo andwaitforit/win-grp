@@ -1,0 +1,11 @@
+# SAMPLE dataset for consultant feedback. Not FCC records.
+is_sample: true
+as_of: 2026-09-24
+demo: A35+
+commission_pct: 15
+band_pct: 20
+note: >-
+  Primary-window station totals match figures reported by Western Mass
+  Politics & Insight (Aug 2026), and the Sep 1 primary result is real. The
+  weekly splits, general-election buys, filings, and polls are invented to
+  collect feedback on the product.

@@ -20,9 +20,11 @@
   --axis: #c3c7cf;
   --border: rgba(15,20,25,0.10);
   --accent: #1f3a5f;
-  --s-neal: #2a78d6;
-  --s-milleron: #eb6834;
-  --s-whalen: #1baf7a;
+  --s-1: #2a78d6;
+  --s-2: #eb6834;
+  --s-3: #1baf7a;
+  --s-4: #eda100;
+  --s-5: #e87ba4;
   --good: #0ca30c;
   --good-ink: #006300;
   --warn: #fab219;
@@ -46,9 +48,11 @@
     --axis: #3a3f49;
     --border: rgba(255,255,255,0.10);
     --accent: #9fc0ec;
-    --s-neal: #3987e5;
-    --s-milleron: #d95926;
-    --s-whalen: #199e70;
+    --s-1: #3987e5;
+    --s-2: #d95926;
+    --s-3: #199e70;
+    --s-4: #c98500;
+    --s-5: #d55181;
     --good-ink: #0ca30c;
     --banner-bg: #2e2610;
     --banner-ink: #f3d68a;
@@ -66,9 +70,11 @@
   --axis: #3a3f49;
   --border: rgba(255,255,255,0.10);
   --accent: #9fc0ec;
-  --s-neal: #3987e5;
-  --s-milleron: #d95926;
-  --s-whalen: #199e70;
+  --s-1: #3987e5;
+  --s-2: #d95926;
+  --s-3: #199e70;
+  --s-4: #c98500;
+  --s-5: #d55181;
   --good-ink: #0ca30c;
   --banner-bg: #2e2610;
   --banner-ink: #f3d68a;
@@ -181,6 +187,10 @@ button:focus-visible, select:focus-visible, input:focus-visible, [tabindex]:focu
 .alerts .what { font-size: 13px; }
 .alerts .what b { font-weight: 600; }
 .alerts .meta { font-size: 12px; color: var(--ink-2); }
+.alerts .meta a, td a { color: var(--accent); text-underline-offset: 2px; }
+.struck { text-decoration: line-through; color: var(--muted); }
+.banner.live { background: var(--surface-2); color: var(--ink-2); }
+.err { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
 .tag { font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
 
 .table-wrap { overflow-x: auto; }
@@ -194,7 +204,7 @@ td.r, th.r { text-align: right; }
 td .range { color: var(--muted); font-size: 12px; }
 .status { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; }
 .status i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
-.ours { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--s-neal); margin-left: 4px; }
+.ours { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--s-1); margin-left: 4px; }
 
 .assump { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: flex-end; }
 .assump label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--ink-2); }
@@ -207,27 +217,20 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
 <body>
 
 <div class="wrap">
-  <div class="banner" role="note">
-    <span aria-hidden="true">⚠</span>
-    <div><strong>Prototype with sample data. These are not FCC records.</strong>
-      Primary-window station totals match figures reported by <em>Western Mass Politics &amp; Insight</em> (Aug 2026) and the Sep 1 primary result is real.
-      The weekly splits, general-election buys, polls, and alerts are invented to collect feedback on the product.</div>
+  <div class="banner" id="banner" role="note">
+    <span aria-hidden="true" id="banner-icon">⚠</span>
+    <div><strong id="banner-title"></strong> <span id="banner-text"></span></div>
   </div>
 
   <header class="top">
     <div>
       <div class="eyebrow">win-grp · Opponent air war</div>
-      <h1>MA-01: Neal vs. Milleron</h1>
-      <div class="race-meta">
-        <span>Our side: <b>Richard E. Neal (D)</b></span>
-        <span>Opponent: <b>Nadia Milleron (I)</b></span>
-        <span>Primary opponent: <b>Jeromie Whalen (D)</b>, lost Sep 1, 54.0–45.9</span>
-        <span>Demo: <b>A35+</b></span>
-      </div>
+      <h1 id="race-title"></h1>
+      <div class="race-meta" id="race-meta"></div>
     </div>
     <div class="countdown">
-      <div class="big num">40 days</div>
-      <div class="eyebrow">to Nov 3 · as of Thu Sep 24</div>
+      <div class="big num" id="countdown"></div>
+      <div class="eyebrow" id="countdown-sub"></div>
     </div>
   </header>
 
@@ -240,8 +243,6 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
     <label class="field">Market
       <select id="f-market">
         <option value="all">All markets</option>
-        <option value="spr">Springfield-Holyoke</option>
-        <option value="alb">Albany (Berkshire)</option>
       </select>
     </label>
     <div class="seg" id="f-metric" role="group" aria-label="Measure">
@@ -288,7 +289,7 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
   </div>
 
   <section class="card" aria-labelledby="h-stations">
-    <div class="card-head"><div><h2 id="h-stations">Buys by station</h2><p>Each row links to its source filing in the product. Links are off in this prototype.</p></div></div>
+    <div class="card-head"><div><h2 id="h-stations">Buys by station</h2><p>Numbers in the Filings column link to each source filing in the FCC political file.</p></div></div>
     <div class="table-wrap" id="station-table"></div>
   </section>
 
@@ -296,8 +297,7 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
     <div class="card-head"><div><h2 id="h-assump">Estimate assumptions</h2><p>GRPs aren't in the filings, so they're estimated from spend. Change a cost per point and every number on the page updates.</p></div>
       <button class="linkbtn" id="reset-assump" type="button">Reset to defaults</button></div>
     <div class="assump">
-      <label for="cpp-spr">Springfield CPP, A35+ ($)<input type="number" id="cpp-spr" min="10" step="5"></label>
-      <label for="cpp-alb">Albany CPP, A35+ ($)<input type="number" id="cpp-alb" min="10" step="5"></label>
+      <span id="cpp-inputs" style="display:contents"></span>
       <label for="comm">Agency commission (%)<input type="number" id="comm" min="0" max="30" step="1"></label>
       <label for="band">Estimate range (±%)<input type="number" id="band" min="0" max="60" step="5"></label>
     </div>
@@ -317,105 +317,68 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
 
   <footer>
     LUR = lowest unit rate. Candidates get it 45 days before a primary (from Jul 18) and 60 days before a general (from Sep 4).
-    CPP defaults are placeholders until licensed cost-per-point data is imported. "Booked" means ordered in a station's political file but not aired yet.
+    <span id="cpp-note"></span> "Booked" means ordered in a station's political file but not aired yet. <span id="generated"></span>
   </footer>
 </div>
 
 <div class="tooltip" id="tip" hidden></div>
 
+<script src="data/ma-01.js"></script>
 <script>
 (function () {
   "use strict";
 
-  // ---------- Sample data ----------
-  const BUYERS = {
-    neal:     { name: "Neal",     committee: "Richard E. Neal for Congress", side: "us",  cssVar: "--s-neal" },
-    milleron: { name: "Milleron", committee: "Nadia for Congress",           side: "opp", cssVar: "--s-milleron" },
-    whalen:   { name: "Whalen",   committee: "Jeromie Whalen for Congress",  side: "opp", cssVar: "--s-whalen" }
-  };
-  const BUYER_ORDER = ["neal", "milleron", "whalen"];
-  const DMAS = { spr: "Springfield-Holyoke", alb: "Albany" };
-  const STATIONS = {
-    "WWLP":      { dma: "spr", net: "NBC",     rate: 420 },
-    "WGGB/WSHM": { dma: "spr", net: "ABC/CBS", rate: 260 },
-    "WNYT":      { dma: "alb", net: "NBC",     rate: 650 },
-    "WRGB":      { dma: "alb", net: "CBS",     rate: 600 },
-    "WTEN":      { dma: "alb", net: "ABC",     rate: 580 }
-  };
-  const PRIMARY_WEEKS = ["2026-07-13","2026-07-20","2026-07-27","2026-08-03","2026-08-10","2026-08-17","2026-08-24","2026-08-31"];
-  const GENERAL_WEEKS = ["2026-09-07","2026-09-14","2026-09-21","2026-09-28","2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"];
-  const ALL_WEEKS = PRIMARY_WEEKS.concat(GENERAL_WEEKS);
-  const CURRENT_WEEK = "2026-09-21";
-  const LUR = [["2026-07-18","2026-09-01"],["2026-09-04","2026-11-03"]];
-
-  // [buyer, station, gross total, weeks, weights]
-  const PLAN = [
-    // Primary: station totals as reported in the press. The weekly split is illustrative.
-    ["neal",   "WWLP",      70000, ["2026-08-03","2026-08-10","2026-08-17","2026-08-24","2026-08-31"], [0.10,0.15,0.20,0.25,0.30]],
-    ["neal",   "WGGB/WSHM", 35000, ["2026-08-03","2026-08-10","2026-08-17","2026-08-24","2026-08-31"], [0.10,0.15,0.20,0.25,0.30]],
-    ["neal",   "WNYT",      25000, ["2026-08-17","2026-08-24","2026-08-31"], [0.30,0.35,0.35]],
-    ["whalen", "WWLP",      31800, ["2026-08-17","2026-08-24","2026-08-31"], [0.25,0.35,0.40]],
-    ["whalen", "WGGB/WSHM", 14000, ["2026-08-17","2026-08-24","2026-08-31"], [0.25,0.35,0.40]],
-    // General: invented.
-    ["milleron", "WWLP",      150000, ["2026-09-21","2026-09-28","2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.08,0.10,0.12,0.15,0.17,0.20,0.18]],
-    ["milleron", "WGGB/WSHM",  90000, ["2026-09-21","2026-09-28","2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.08,0.10,0.12,0.15,0.17,0.20,0.18]],
-    ["milleron", "WNYT",      110000, ["2026-09-21","2026-09-28","2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.08,0.10,0.12,0.15,0.17,0.20,0.18]],
-    ["milleron", "WTEN",       70000, ["2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.15,0.18,0.22,0.25,0.20]],
-    ["milleron", "WRGB",       60000, ["2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.15,0.18,0.22,0.25,0.20]],
-    ["neal",     "WWLP",      120000, ["2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.15,0.20,0.22,0.25,0.18]],
-    ["neal",     "WGGB/WSHM",  70000, ["2026-10-05","2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.15,0.20,0.22,0.25,0.18]],
-    ["neal",     "WNYT",       60000, ["2026-10-12","2026-10-19","2026-10-26","2026-11-02"], [0.20,0.25,0.30,0.25]],
-    ["neal",     "WRGB",       40000, ["2026-10-19","2026-10-26","2026-11-02"], [0.30,0.40,0.30]]
-  ];
-
-  const BUYS = [];
-  PLAN.forEach(function (p) {
-    const st = STATIONS[p[1]];
-    p[3].forEach(function (wk, i) {
-      const gross = Math.round(p[2] * p[4][i] / 100) * 100;
-      const status = wk < CURRENT_WEEK ? "aired" : (wk === CURRENT_WEEK ? "airing" : "booked");
-      BUYS.push({ buyer: p[0], station: p[1], dma: st.dma, week: wk, gross: gross,
-        spots: Math.max(1, Math.round(gross / st.rate)), status: status });
-    });
+  // ---------- Data (generated by `python -m pipeline build`) ----------
+  const D = window.WIN_GRP_DATA;
+  if (!D) {
+    const w = document.querySelector(".wrap");
+    const msg = document.createElement("div");
+    msg.className = "err";
+    msg.textContent = "No dashboard data found. Run `python -m pipeline build` to generate prototype/data/ma-01.js.";
+    w.replaceChildren(msg);
+    return;
+  }
+  const BUYERS = {};
+  D.buyers.forEach(function (b) {
+    BUYERS[b.key] = { name: b.short_name, committee: b.committee, side: b.side, windows: b.windows, cssVar: "--s-" + b.slot };
   });
-
-  // margin = Neal minus opponent, in points
-  const POLLS = [
-    { date: "2026-07-22", opp: "whalen",   margin: 22, pollster: "Internal (sample)", n: 400, pop: "LV", kind: "poll" },
-    { date: "2026-08-11", opp: "whalen",   margin: 16, pollster: "Internal (sample)", n: 400, pop: "LV", kind: "poll" },
-    { date: "2026-08-25", opp: "whalen",   margin: 11, pollster: "Internal (sample)", n: 500, pop: "LV", kind: "poll" },
-    { date: "2026-09-01", opp: "whalen",   margin: 8.1, pollster: "Primary result (real): 54.0 to 45.9", kind: "result" },
-    { date: "2026-09-15", opp: "milleron", margin: 24, pollster: "Internal (sample)", n: 400, pop: "LV", kind: "poll" },
-    { date: "2026-09-22", opp: "milleron", margin: 19, pollster: "Internal (sample)", n: 400, pop: "LV", kind: "poll" }
-  ];
-
-  const ALERTS = [
-    { date: "Sep 23", buyer: "neal",     text: "New order on WWLP", meta: "Oct 5 – Nov 3 · $120,000 gross · news and prime" },
-    { date: "Sep 22", buyer: "milleron", text: "Revised order on WGGB/WSHM", meta: "Flight extended to Nov 3 · now $90,000 gross" },
-    { date: "Sep 19", buyer: "milleron", text: "New orders on WTEN and WRGB", meta: "Oct 5 – Nov 3 · $130,000 gross combined · Albany market" },
-    { date: "Sep 18", buyer: "milleron", text: "First TV orders filed: WWLP, WNYT", meta: "Sep 21 – Nov 3 · $260,000 gross · first opponent TV of the general" },
-    { date: "Sep 2",  buyer: "whalen",   text: "Final invoice on WWLP", meta: "Aug 17 – Sep 1 · $31,800 aired" }
-  ];
-
-  const DEFAULTS = { cpp: { spr: 85, alb: 160 }, comm: 15, band: 20 };
+  const BUYER_ORDER = D.buyers.map(function (b) { return b.key; });
+  const OUR = D.meta.our_side;
+  const DMAS = {}, MARKET_NOTES = {};
+  D.markets.forEach(function (m) { DMAS[m.key] = m.short_name; MARKET_NOTES[m.key] = m.note; });
+  const MARKET_KEYS = D.markets.map(function (m) { return m.key; });
+  const STATIONS = {};
+  Object.keys(D.stations).forEach(function (k) { STATIONS[k] = { dma: D.stations[k].market, net: D.stations[k].network }; });
+  const PRIMARY_WEEKS = D.weeks.primary;
+  const GENERAL_WEEKS = D.weeks.general;
+  const ALL_WEEKS = PRIMARY_WEEKS.concat(GENERAL_WEEKS);
+  const AS_OF = D.meta.as_of;
+  const LUR = D.lur;
+  const BUYS = D.buys.map(function (b) {
+    return { buyer: b.buyer, station: b.station, dma: b.market, week: b.week, gross: b.gross_cents / 100,
+      spots: b.spots, status: b.status, confirmed: b.confirmed, filing: b.filing_id, source: b.source_url };
+  });
+  const POLLS = D.polls;
+  const ALERTS = D.alerts;
+  const DEFAULTS = { cpp: Object.assign({}, D.defaults.cpp), comm: D.defaults.commission_pct, band: D.defaults.band_pct };
 
   // ---------- State ----------
   const state = {
     window: "general", market: "all", metric: "grp", ordered: true,
     hidden: new Set(), showWeeklyTable: false,
-    cpp: { spr: DEFAULTS.cpp.spr, alb: DEFAULTS.cpp.alb }, comm: DEFAULTS.comm, band: DEFAULTS.band,
+    cpp: Object.assign({}, DEFAULTS.cpp), comm: DEFAULTS.comm, band: DEFAULTS.band,
     sort: { key: "grp", dir: -1 }
   };
   try {
-    const saved = JSON.parse(localStorage.getItem("ma01-view") || "null");
+    const saved = JSON.parse(localStorage.getItem("wingrp-view-" + D.meta.race_id) || "null");
     if (saved && typeof saved === "object") {
       if (["primary","general","full"].indexOf(saved.window) >= 0) state.window = saved.window;
-      if (["all","spr","alb"].indexOf(saved.market) >= 0) state.market = saved.market;
+      if (saved.market === "all" || MARKET_KEYS.indexOf(saved.market) >= 0) state.market = saved.market;
       if (["grp","usd"].indexOf(saved.metric) >= 0) state.metric = saved.metric;
     }
   } catch (e) { /* storage unavailable */ }
   function saveView() {
-    try { localStorage.setItem("ma01-view", JSON.stringify({ window: state.window, market: state.market, metric: state.metric })); } catch (e) {}
+    try { localStorage.setItem("wingrp-view-" + D.meta.race_id, JSON.stringify({ window: state.window, market: state.market, metric: state.metric })); } catch (e) {}
   }
 
   // ---------- Helpers ----------
@@ -438,11 +401,13 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
     return b.gross * (1 - state.comm / 100) / cpp;
   }
   function flightEnd(week) {
-    // flights stop on election day
+    // flights stop on primary or election day
     const end = addDays(week, 6);
-    const cap = week <= "2026-09-01" ? "2026-09-01" : "2026-11-03";
+    const cap = week <= D.window_end.primary ? D.window_end.primary : D.window_end.general;
     return end > cap ? cap : end;
   }
+  function weekOf(s) { const d = parseD(s); d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7)); return d.toISOString().slice(0, 10); }
+  const CURRENT_WEEK = weekOf(AS_OF);
   function valueOf(b) { return state.metric === "grp" ? grpOf(b) : b.gross; }
   function fmtVal(v) { return state.metric === "grp" ? fmtN(v) : fmtUSD(v); }
   function lo(v) { return v * (1 - state.band / 100); }
@@ -475,18 +440,13 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
     if (text != null) e.textContent = text;
     return e;
   }
-  function visibleBuyers() {
-    return BUYER_ORDER.filter(function (k) {
-      if (state.hidden.has(k)) return false;
-      if (k === "whalen" && state.window === "general") return false;
-      if (k === "milleron" && state.window === "primary") return false;
-      return true;
-    });
-  }
   function relevantBuyers() {
     return BUYER_ORDER.filter(function (k) {
-      return !((k === "whalen" && state.window === "general") || (k === "milleron" && state.window === "primary"));
+      return state.window === "full" || BUYERS[k].windows.indexOf(state.window) >= 0;
     });
+  }
+  function visibleBuyers() {
+    return relevantBuyers().filter(function (k) { return !state.hidden.has(k); });
   }
 
   // ---------- Tooltip ----------
@@ -517,7 +477,7 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
     const rows = filtered();
     const grp = function (k) { return sum(rows.filter(function (b) { return b.buyer === k; }), grpOf); };
     const usd = function (k) { return sum(rows.filter(function (b) { return b.buyer === k; }), function (b) { return b.gross; }); };
-    const ours = grp("neal");
+    const ours = grp(OUR);
     const oppKeys = relevantBuyers().filter(function (k) { return BUYERS[k].side === "opp"; });
     const opp = sum(oppKeys, grp);
     const oppUSD = sum(oppKeys, usd);
@@ -544,7 +504,7 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
       if (sub) t.appendChild(el("div", { class: "sub num" }, sub));
       box.appendChild(t);
     }
-    tile(cssv("--s-neal"), "Our GRPs (Neal)", fmtN(ours), "Range " + fmtN(lo(ours)) + "–" + fmtN(hi(ours)));
+    tile(cssv(BUYERS[OUR].cssVar), "Our GRPs (" + BUYERS[OUR].name + ")", fmtN(ours), "Range " + fmtN(lo(ours)) + "–" + fmtN(hi(ours)));
     tile(cssv(oppKeys.length === 1 ? BUYERS[oppKeys[0]].cssVar : "--muted"), "Opponent GRPs (" + oppName + ")", fmtN(opp), "Range " + fmtN(lo(opp)) + "–" + fmtN(hi(opp)));
     const chip = el("span", { class: "chip" });
     const dot = el("span", { class: "dot" }); dot.style.background = st.color;
@@ -607,7 +567,8 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
     const L = xLayout(width, weeks);
     lastLayout = { width: width, weeks: weeks, L: L };
     const ih = height - L.m.t - L.m.b;
-    const maxV = niceMax(Math.max(1, Math.max.apply(null, data.map(function (d) { return d.total; }))));
+    const dataMax = Math.max.apply(null, data.map(function (d) { return d.total; }));
+    const maxV = dataMax > 0 ? niceMax(dataMax) : (state.metric === "grp" ? 100 : 10000);
     const y = function (v) { return L.m.t + ih - (v / maxV) * ih; };
 
     const svg = sv("svg", { viewBox: "0 0 " + width + " " + height, role: "img",
@@ -692,6 +653,9 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
       svg.appendChild(sv("text", { x: L.xOf(peak), y: y(data[peak].total) - 6, "text-anchor": "middle", class: "t-ink num" }, fmtVal(data[peak].total)));
     }
 
+    if (!(dataMax > 0)) {
+      svg.appendChild(sv("text", { x: width / 2, y: L.m.t + ih / 2, "text-anchor": "middle", class: "t-ink" }, "No buys in this window"));
+    }
     box.replaceChildren(svg);
 
     const sub = state.metric === "grp"
@@ -759,7 +723,7 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
       svg.appendChild(sv("line", { x1: tx, x2: tx, y1: L.m.t, y2: L.m.t + ih, stroke: cssv("--ink-2") }));
     }
 
-    ["whalen", "milleron"].forEach(function (opp) {
+    BUYER_ORDER.filter(function (k) { return BUYERS[k].side !== "us"; }).forEach(function (opp) {
       const pts = polls.filter(function (p) { return p.opp === opp; });
       if (pts.length > 1) {
         const d = pts.map(function (p, i) { return (i ? "L" : "M") + xOfDate(p.date) + "," + y(p.margin); }).join(" ");
@@ -782,8 +746,8 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
       const rows = function () {
         const r = [{ text: "Neal +" + p.margin + " pts", cls: "tv" },
           { text: "vs. " + BUYERS[p.opp].name, key: color },
-          { text: p.pollster, cls: "tm" },
-          { text: fmtD(p.date) + (p.n ? " · n=" + p.n + " " + p.pop : ""), cls: "tm" }];
+          { text: p.pollster + (p.visibility === "internal" ? " · internal" : ""), cls: "tm" },
+          { text: p.kind === "result" ? p.our_pct + " to " + p.opp_pct : fmtD(p.date) + (p.n ? " · n=" + p.n + " " + p.pop : ""), cls: "tm" }];
         return r;
       };
       hit.addEventListener("pointermove", function (e) { showTip(e, rows()); });
@@ -806,7 +770,7 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
     const box = $("markets");
     box.replaceChildren();
     const wk = new Set(windowWeeks());
-    const dmas = state.market === "all" ? ["spr", "alb"] : [state.market];
+    const dmas = state.market === "all" ? MARKET_KEYS : [state.market];
     dmas.forEach(function (dma) {
       const rows = BUYS.filter(function (b) { return wk.has(b.week) && b.dma === dma && (state.ordered || b.status !== "booked"); });
       const vb = visibleBuyers();
@@ -840,7 +804,7 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
         ? vals.map(function (x) { return BUYERS[x.k].name + " " + Math.round(x.v / total * 100) + "%"; }).join(" · ")
         : "No buys in this window.";
       m.appendChild(shares);
-      if (dma === "alb") m.appendChild(el("div", { class: "market-note" }, "Albany GRPs cover the whole market. Only about 1 in 10 of its TV homes are in Berkshire County."));
+      if (MARKET_NOTES[dma]) m.appendChild(el("div", { class: "market-note" }, MARKET_NOTES[dma]));
       box.appendChild(m);
     });
   }
@@ -849,18 +813,28 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
   function renderAlerts() {
     const ul = $("alerts");
     ul.replaceChildren();
+    if (!ALERTS.length) ul.appendChild(el("li", { style: "display:block" }, "No filings entered yet."));
+    const DOC = { order: "Order", revision: "Revised order", invoice: "Invoice" };
     ALERTS.forEach(function (a) {
       const li = el("li");
-      li.appendChild(el("time", null, a.date));
+      li.appendChild(el("time", null, fmtD(a.date)));
       const w = el("div");
       const tag = el("div", { class: "tag" }, BUYERS[a.buyer].side === "us" ? "Our side" : "Opponent");
       tag.style.color = cssv(BUYERS[a.buyer].cssVar);
       w.appendChild(tag);
       const what = el("div", { class: "what" });
       what.appendChild(el("b", null, BUYERS[a.buyer].committee));
-      what.appendChild(document.createTextNode(": " + a.text));
+      what.appendChild(document.createTextNode(": " + DOC[a.doc_type] + " on " + a.station));
       w.appendChild(what);
-      w.appendChild(el("div", { class: "meta" }, a.meta));
+      const meta = el("div", { class: "meta" + (a.superseded ? " struck" : "") },
+        fmtD(a.flight_start) + " – " + fmtD(a.flight_end) + " · " + fmtUSDfull(a.gross_cents / 100) +
+        (a.doc_type === "invoice" ? " aired" : " gross") + (a.superseded ? " · replaced by a later revision" : ""));
+      w.appendChild(meta);
+      if (a.source_url) {
+        const m2 = el("div", { class: "meta" });
+        const link = el("a", { href: a.source_url, target: "_blank", rel: "noopener" }, "View filing");
+        m2.appendChild(link); w.appendChild(m2);
+      }
       li.appendChild(w);
       ul.appendChild(li);
     });
@@ -872,9 +846,10 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
     const groups = {};
     rows.forEach(function (b) {
       const k = b.station + "|" + b.buyer;
-      if (!groups[k]) groups[k] = { station: b.station, dma: b.dma, buyer: b.buyer, weeks: [], spots: 0, gross: 0, grp: 0, statuses: new Set() };
+      if (!groups[k]) groups[k] = { station: b.station, dma: b.dma, buyer: b.buyer, weeks: [], spots: 0, gross: 0, grp: 0, statuses: new Set(), sources: {} };
       const g = groups[k];
       g.weeks.push(b.week); g.spots += b.spots; g.gross += b.gross; g.grp += grpOf(b); g.statuses.add(b.status);
+      if (b.source) g.sources[b.filing] = b.source;
     });
     let list = Object.keys(groups).map(function (k) { return groups[k]; })
       .filter(function (g) { return !state.hidden.has(g.buyer); });
@@ -884,6 +859,7 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
       g.status = g.statuses.has("booked") && (g.statuses.has("aired") || g.statuses.has("airing")) ? "Airing, more booked"
         : g.statuses.has("booked") ? "Booked" : g.statuses.has("airing") ? "Airing" : "Aired";
       g.buyerName = BUYERS[g.buyer].name;
+      g.nfilings = Object.keys(g.sources).length;
     });
     const key = state.sort.key, dir = state.sort.dir;
     list.sort(function (a, b) {
@@ -900,7 +876,8 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
       { key: "spots", label: "Spots", r: true },
       { key: "gross", label: "Gross", r: true },
       { key: "grp", label: "Est. GRPs", r: true },
-      { key: "status", label: "Status" }
+      { key: "status", label: "Status" },
+      { key: "nfilings", label: "Filings" }
     ];
     const t = el("table");
     const thead = el("thead"); const hr = el("tr");
@@ -943,6 +920,17 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
       if (g.status === "Booked") dot.style.border = "1.5px solid " + cssv("--muted");
       sp.appendChild(dot); sp.appendChild(document.createTextNode(g.status));
       s.appendChild(sp); r.appendChild(s);
+      const ft = el("td");
+      const ids = Object.keys(g.sources);
+      if (ids.length) {
+        ids.forEach(function (id, i) {
+          if (i) ft.appendChild(document.createTextNode(" "));
+          ft.appendChild(el("a", { href: g.sources[id], target: "_blank", rel: "noopener", title: "Filing " + id }, String(i + 1)));
+        });
+      } else {
+        ft.appendChild(el("span", { class: "range" }, D.meta.is_sample ? "sample" : "—"));
+      }
+      r.appendChild(ft);
       tb.appendChild(r);
     });
     t.appendChild(tb);
@@ -955,8 +943,7 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
     document.querySelectorAll("#f-metric button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.v === state.metric)); });
     $("f-market").value = state.market;
     $("f-ordered").checked = state.ordered;
-    $("cpp-spr").value = state.cpp.spr;
-    $("cpp-alb").value = state.cpp.alb;
+    MARKET_KEYS.forEach(function (k) { $("cpp-" + k).value = state.cpp[k]; });
     $("comm").value = state.comm;
     $("band").value = state.band;
     $("toggle-weekly-table").textContent = state.showWeeklyTable ? "Hide table" : "Show as table";
@@ -974,6 +961,55 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
     renderStations();
   }
 
+  // ---------- Page setup from data ----------
+  function setupPage() {
+    const m = D.meta;
+    const banner = $("banner");
+    if (m.is_sample) {
+      $("banner-title").textContent = "Prototype with sample data. These are not FCC records.";
+      $("banner-text").textContent = m.note || "";
+    } else {
+      banner.classList.add("live");
+      $("banner-icon").textContent = "ⓘ";
+      $("banner-title").textContent = "Hand-entered from FCC political files.";
+      $("banner-text").textContent = "GRPs are estimates from spend. Each buy links to its source filing. " + (m.note || "");
+    }
+    $("race-title").textContent = m.title;
+    document.title = m.title.split(":")[0] + " Air War";
+    const meta = $("race-meta");
+    function item(label, value, extra) {
+      const sp = el("span"); sp.appendChild(document.createTextNode(label + ": "));
+      sp.appendChild(el("b", null, value)); if (extra) sp.appendChild(document.createTextNode(extra));
+      meta.appendChild(sp);
+    }
+    item("Our side", D.buyers[0].name);
+    D.buyers.slice(1).forEach(function (b) {
+      const win = b.windows.length === 1 ? (b.windows[0] === "primary" ? "Primary opponent" : "General opponent") : "Opponent";
+      item(b.side === "ally" ? "Ally" : win, b.name);
+    });
+    item("Demo", m.demo);
+    const days = Math.round((parseD(m.election_day) - parseD(m.as_of)) / 864e5);
+    $("countdown").textContent = days > 1 ? days + " days" : days === 1 ? "1 day" : days === 0 ? "Election day" : "Election over";
+    const asOf = parseD(m.as_of);
+    $("countdown-sub").textContent = (days >= 0 ? "to " + fmtD(m.election_day) + " · " : "") + "as of " +
+      ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"][asOf.getUTCDay()] + " " + fmtD(m.as_of);
+    const sel = $("f-market");
+    D.markets.forEach(function (mk) { sel.appendChild(el("option", { value: mk.key }, mk.short_name)); });
+    const box = $("cpp-inputs");
+    D.markets.forEach(function (mk) {
+      const lab = el("label", { for: "cpp-" + mk.key });
+      lab.appendChild(document.createTextNode(mk.short_name + " CPP, " + m.demo + " ($)"));
+      lab.appendChild(el("input", { type: "number", id: "cpp-" + mk.key, min: "10", step: "5" }));
+      box.appendChild(lab);
+    });
+    const srcs = D.markets.map(function (mk) { return D.defaults.cpp_source[mk.key]; });
+    $("cpp-note").textContent = srcs.every(function (x) { return x === "default"; })
+      ? "CPP defaults are placeholders until licensed cost-per-point data is imported."
+      : "CPP source by market: " + D.markets.map(function (mk) { return mk.short_name + " " + D.defaults.cpp_source[mk.key].replace("_", " "); }).join(", ") + ".";
+    $("generated").textContent = "Data built " + m.generated_at.replace("T", " ") + ".";
+  }
+  setupPage();
+
   document.querySelectorAll("#f-window button").forEach(function (b) {
     b.addEventListener("click", function () { state.window = b.dataset.v; saveView(); renderAll(); });
   });
@@ -990,12 +1026,11 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
       renderKPIs(); renderWeekly(); renderMarkets(); renderStations();
     });
   }
-  numInput("cpp-spr", function (v) { state.cpp.spr = Math.max(10, v); });
-  numInput("cpp-alb", function (v) { state.cpp.alb = Math.max(10, v); });
+  MARKET_KEYS.forEach(function (k) { numInput("cpp-" + k, function (v) { state.cpp[k] = Math.max(10, v); }); });
   numInput("comm", function (v) { state.comm = Math.min(30, Math.max(0, v)); });
   numInput("band", function (v) { state.band = Math.min(60, Math.max(0, v)); });
   $("reset-assump").addEventListener("click", function () {
-    state.cpp = { spr: DEFAULTS.cpp.spr, alb: DEFAULTS.cpp.alb }; state.comm = DEFAULTS.comm; state.band = DEFAULTS.band;
+    state.cpp = Object.assign({}, DEFAULTS.cpp); state.comm = DEFAULTS.comm; state.band = DEFAULTS.band;
     renderAll();
   });
   $("toggle-weekly-table").addEventListener("click", function () { state.showWeeklyTable = !state.showWeeklyTable; renderAll(); });

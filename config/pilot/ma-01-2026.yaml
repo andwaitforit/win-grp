@@ -20,7 +20,11 @@ race:
     southern Hampshire County; southwestern edge of Worcester County.
 
 candidates:
-  - name: Richard E. Neal
+  - key: neal
+    name: Richard E. Neal
+    short_name: Neal
+    our_side: true
+    windows: [primary, general]
     party: DEM
     incumbent: true
     status: general_nominee
@@ -29,7 +33,10 @@ candidates:
       - { name: Richard E. Neal for Congress Committee, fec_id: C00226522, role: principal }
     opif_purchaser_aliases: ["Richard E Neal for Congress", "Neal for Congress", "Richard Neal", "Richard Neal Congress Dist 1 Mass"]
     # WNYT files Neal under a district folder "MA-01"; match on file name there.
-  - name: Nadia Milleron
+  - key: milleron
+    name: Nadia Milleron
+    short_name: Milleron
+    windows: [general]
     party: IND
     incumbent: false
     status: general_nominee
@@ -37,7 +44,10 @@ candidates:
     committees:
       - { name: Nadia for Congress, fec_id: C00868927, role: principal }
     opif_purchaser_aliases: ["Nadia for Congress", "Nadia Milleron", "Nadia for Congress Nadia Milleron"]
-  - name: Jeromie Whalen
+  - key: whalen
+    name: Jeromie Whalen
+    short_name: Whalen
+    windows: [primary]
     party: DEM
     incumbent: false
     status: lost_primary        # 2026-09-01; primary-window backtest only
@@ -47,29 +57,41 @@ candidates:
     opif_purchaser_aliases: ["Whalen for Congress", "Jeromie Whalen", "Whalen Committee For Congress"]
   # Republican general-election candidate: none confirmed as of 2026-09-24. Verify.
 
+# Outside groups that file political buys in this race. Add one entry per
+# purchaser seen in the political files so buys.csv can reference it, e.g.
+#   - { key: wmpac, name: "Western Mass Future PAC", short_name: WMF PAC,
+#       side: opp, windows: [general], aliases: ["WMF PAC"] }
+outside_groups: []
+
 # Outside groups (super PACs, party committees, issue advertisers) are
 # discovered from OPIF "Non-Candidate Issue Ads" and Federal/US House folders
 # on the stations below, plus FEC Schedule E filings that name these candidates.
 
 markets:
-  - dma: Springfield-Holyoke
+  - key: spr
+    dma: Springfield-Holyoke
     role: primary             # covers Hampden, Hampshire, Franklin
     stations:
       - { call_sign: WWLP, opif_entity_id: "6868",    network: NBC, service: tv, notes: "22; subchannels carry other nets. Confirmed 2026 buys by Neal and Whalen" }
-      - { call_sign: WGGB-TV, opif_entity_id: "25682", network: ABC, service: tv, notes: "40; Fox on a subchannel. Confirmed 2026 buys" }
+      - { call_sign: WGGB-TV, opif_entity_id: "25682", network: ABC/CBS, service: tv, notes: "40; Fox on a subchannel. Confirmed 2026 buys" }
       - { call_sign: WSHM-LD, network: CBS, service: tv, opif_entity_id: null, notes: "Low-power CBS 3. No OPIF facility of its own (checked 2026-10-05); WSHM buys are filed in WGGB-TV political folders, often named WSHM in the file name" }
-  - dma: Albany-Schenectady-Troy
+  - key: alb
+    dma: Albany-Schenectady-Troy
+    short_name: Albany
     role: primary             # covers Berkshire County
+    note: "Albany GRPs cover the whole market. Only about 1 in 10 of its TV homes are in Berkshire County."
     stations:
       - { call_sign: WNYT, opif_entity_id: "73363", network: NBC, service: tv, notes: "Confirmed 2026 Neal primary buy (~$25K)" }
       - { call_sign: WRGB, opif_entity_id: "73942", network: CBS, service: tv }
       - { call_sign: WTEN, opif_entity_id: "74422", network: ABC, service: tv }
       - { call_sign: WXXA-TV, opif_entity_id: "11970", network: FOX, service: tv }
       - { call_sign: WCWN, opif_entity_id: "73264", network: CW, service: tv }
-  - dma: Hartford-New Haven
+  - key: hfd
+    dma: Hartford-New Haven
     role: watch_only          # spill-in; rarely bought for MA-01
     stations: []              # populate if filings appear
-  - dma: Boston
+  - key: bos
+    dma: Boston
     role: watch_only          # SW Worcester County edge; expensive, unlikely
     stations: []
 
