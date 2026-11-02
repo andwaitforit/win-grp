@@ -10,8 +10,9 @@ and shows them next to public polling for the same race.
 
 - Product scope, data-source findings, and GRP methodology: `docs/SCOPE.md`.
   Read it before designing features.
-- **Status:** scope approved (decisions in `docs/SCOPE.md` §0). No application
-  code yet.
+- **Status:** scope approved (decisions in `docs/SCOPE.md` §0). Building the
+  Pilot Slice: OPIF ingestion worker (`workers/`) and schema
+  (`supabase/migrations/`) exist; no web app yet.
 - **Stack (confirmed):** Next.js (TypeScript) on Vercel; Supabase (Postgres,
   Auth, RLS, Storage); Python workers for ingestion and PDF extraction; the
   Claude API for structured extraction.
@@ -100,8 +101,31 @@ and shows them next to public polling for the same race.
 - Put money in integer cents and dates in ISO-8601. Broadcast weeks run
   Monday–Sunday. Store both gross and net (after agency commission).
 
+## FCC OPIF access (verified 2026-10-05; PDF download re-tested 2026-11-02)
+
+- Works (plain identified client): facility search
+  `/api/service/facility/search/{CALLSIGN}` (no `.json` suffix),
+  `/api/service/tv/facility/getall`, folder walk `/api/manager/folder/...`, and
+  the change feed `/api/manager/file/history.json` (date range, optional
+  `entityId`; rows are `new`/`delete`/`purge` events). Ingestion polls the
+  change feed.
+- **PDF download works as of 2026-11-02:**
+  `/api/manager/download/{folder_id}/{file_manager_id}.pdf` 302s to
+  `files.fcc.gov/download/...`. Use `file_manager_id`; `file_id` returns 400.
+  It returned an Akamai 403 in October, so it can be blocked again. On a 403,
+  `OpifClient` raises `OpifBlocked` and the run stops. Don't work around it;
+  fall back to user upload.
+- FCC API terms require this notice in the app: "This product uses the FCC Data
+  API but is not endorsed or certified by the FCC".
+- Purchaser folder names are inconsistent across stations (Neal appears as
+  "Richard Neal", "Neal for Congress", "Richard Neal Congress Dist 1 Mass", and
+  under a district folder "MA-01" on WNYT). Albany stations also carry NY House
+  races. Match purchasers through aliases, never by folder name alone.
+
 ## Environment notes
 
+- Local Supabase runs on ports **553xx** (API 55321, DB 55322, Studio 55323),
+  not the defaults, so it can coexist with other local Supabase projects.
 - The cloud dev environment needs these hosts on its network allowlist:
   `publicfiles.fcc.gov`, `api.votehub.com` / `votehub.com`, and
   `api.open.fec.gov`. They were still blocked as of 2026-09-24. If a request
@@ -110,5 +134,22 @@ and shows them next to public polling for the same race.
 
 ## Commands
 
-None yet. Add build, test, lint, and run commands here once the project is
-scaffolded.
+```bash
+supabase start                      # local stack; applies supabase/migrations
+supabase db reset                   # rebuild local DB from migrations
+cd workers && uv run pytest         # tests (DB tests need DATABASE_URL)
+cd workers && uv run wingrp stations --config ../config/pilot/ma-01-2026.yaml
+cd workers && uv run wingrp sync     --config ../config/pilot/ma-01-2026.yaml [--since YYYY-MM-DD]
+cd workers && uv run wingrp reparse  # re-derive opif_file from stored events, no FCC calls
+cd workers && uv run wingrp filings  --config ../config/pilot/ma-01-2026.yaml
+cd workers && uv run wingrp fetch-contracts --config ../config/pilot/ma-01-2026.yaml  # download + parse + store orders
+cd workers && uv run wingrp contract PDF... [--json] [--store [--file-id UUID]]   # parse local PDFs
+```
+
+Contract extraction needs poppler (`pdftotext`). Downloaded PDFs are cached in
+`workers/.cache/opif-pdf/` (gitignored). Parsed contracts are in
+`opif_contract*`. Sum `opif_contract_current` or `opif_contract_week_current`,
+never `opif_contract` itself, which keeps every uploaded version.
+
+Workers read `DATABASE_URL` and `WINGRP_USER_AGENT` from the environment (see
+`.env.example`).

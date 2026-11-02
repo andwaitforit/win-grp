@@ -27,7 +27,8 @@ candidates:
     fec_candidate_id: H8MA02041
     committees:
       - { name: Richard E. Neal for Congress Committee, fec_id: C00226522, role: principal }
-    opif_purchaser_aliases: ["Richard E Neal for Congress", "Neal for Congress", "Richard Neal"]
+    opif_purchaser_aliases: ["Richard E Neal for Congress", "Neal for Congress", "Richard Neal", "Richard Neal Congress Dist 1 Mass"]
+    # WNYT files Neal under a district folder "MA-01"; match on file name there.
   - name: Nadia Milleron
     party: IND
     incumbent: false
@@ -35,7 +36,7 @@ candidates:
     fec_candidate_id: H4MA01091
     committees:
       - { name: Nadia for Congress, fec_id: C00868927, role: principal }
-    opif_purchaser_aliases: ["Nadia for Congress", "Nadia Milleron"]
+    opif_purchaser_aliases: ["Nadia for Congress", "Nadia Milleron", "Nadia for Congress Nadia Milleron"]
   - name: Jeromie Whalen
     party: DEM
     incumbent: false
@@ -43,7 +44,7 @@ candidates:
     fec_candidate_id: null      # resolve via OpenFEC
     committees:
       - { name: Jeromie Whalen for Congress, fec_id: null, role: principal }
-    opif_purchaser_aliases: ["Whalen for Congress", "Jeromie Whalen"]
+    opif_purchaser_aliases: ["Whalen for Congress", "Jeromie Whalen", "Whalen Committee For Congress"]
   # Republican general-election candidate: none confirmed as of 2026-09-24. Verify.
 
 # Outside groups (super PACs, party committees, issue advertisers) are
@@ -54,17 +55,17 @@ markets:
   - dma: Springfield-Holyoke
     role: primary             # covers Hampden, Hampshire, Franklin
     stations:
-      - { call_sign: WWLP,    network: NBC, service: tv, notes: "22; subchannels carry other nets. Confirmed 2026 buys by Neal and Whalen" }
-      - { call_sign: WGGB-TV, network: ABC, service: tv, notes: "40; Fox on a subchannel. Confirmed 2026 buys" }
-      - { call_sign: WSHM-LD, network: CBS, service: tv, verify: true, notes: "Low-power CBS 3. May not have its own OPIF file; buys may be filed under WGGB-TV" }
+      - { call_sign: WWLP, opif_entity_id: "6868",    network: NBC, service: tv, notes: "22; subchannels carry other nets. Confirmed 2026 buys by Neal and Whalen" }
+      - { call_sign: WGGB-TV, opif_entity_id: "25682", network: ABC, service: tv, notes: "40; Fox on a subchannel. Confirmed 2026 buys" }
+      - { call_sign: WSHM-LD, network: CBS, service: tv, opif_entity_id: null, notes: "Low-power CBS 3. No OPIF facility of its own (checked 2026-10-05); WSHM buys are filed in WGGB-TV political folders, often named WSHM in the file name" }
   - dma: Albany-Schenectady-Troy
     role: primary             # covers Berkshire County
     stations:
-      - { call_sign: WNYT, network: NBC, service: tv, notes: "Confirmed 2026 Neal primary buy (~$25K)" }
-      - { call_sign: WRGB, network: CBS, service: tv }
-      - { call_sign: WTEN, network: ABC, service: tv }
-      - { call_sign: WXXA-TV, network: FOX, service: tv }
-      - { call_sign: WCWN, network: CW, service: tv }
+      - { call_sign: WNYT, opif_entity_id: "73363", network: NBC, service: tv, notes: "Confirmed 2026 Neal primary buy (~$25K)" }
+      - { call_sign: WRGB, opif_entity_id: "73942", network: CBS, service: tv }
+      - { call_sign: WTEN, opif_entity_id: "74422", network: ABC, service: tv }
+      - { call_sign: WXXA-TV, opif_entity_id: "11970", network: FOX, service: tv }
+      - { call_sign: WCWN, opif_entity_id: "73264", network: CW, service: tv }
   - dma: Hartford-New Haven
     role: watch_only          # spill-in; rarely bought for MA-01
     stations: []              # populate if filings appear
