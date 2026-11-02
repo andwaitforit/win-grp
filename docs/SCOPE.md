@@ -296,6 +296,14 @@ is Nov 3.** Heaviest spending is in the final 3–4 weeks.
    bulk data from the FCC; a polite, low-rate, identified fetch if permitted
    by the terms; user-uploaded PDFs; a data partnership. **We do not build
    evasion.** This gets decided in Phase 0.
+
+   **Phase 0 result (2026-10-05):** metadata is fully available. Facility
+   search, folder walk, and the `/api/manager/file/history` change feed all work
+   for an identified, throttled client, and ingestion polls the change feed. The
+   PDF download endpoint returns an Akamai 403, and neither the OPIF developer
+   page nor the FCC API terms document any approved route. Pilot path:
+   metadata alerts plus user-uploaded PDFs. Next: send a sanctioned-access
+   request to developer@fcc.gov.
 2. **Estimate accuracy.** Without licensed ratings, GRPs are modeled. Mitigation:
    ranges, confidence scores, user-editable CPP, and later, backtesting.
 3. **Format diversity** across stations and traffic systems. Mitigation: parser
