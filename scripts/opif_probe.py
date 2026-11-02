@@ -127,8 +127,8 @@ def main() -> int:
 
     print("\n2. Facility record")
     facility_urls = [
-        f"{BASE}/api/service/facility/search/{target['call_sign']}.json",
-        f"{BASE}/api/service/{target['service']}/facility/search/{target['call_sign']}.json",
+        # No .json suffix: with it, search returns "No Facility Found".
+        f"{BASE}/api/service/facility/search/{target['call_sign']}",
     ]
     entity_id = None
     for u in facility_urls:
@@ -147,9 +147,8 @@ def main() -> int:
     if not target["folder_id"]:
         print("     URL has no folder ID; stopping.")
         return finish(c, report, args.out)
-    folder_urls = [f"{BASE}/api/manager/folder/id/{target['folder_id']}.json"]
-    if entity_id:
-        folder_urls.append(f"{BASE}/api/manager/folder/parentFolders/{entity_id}/{target['folder_id']}.json")
+    # folder/id returns 400 "EntityId is missing" without ?entityId=.
+    folder_urls = [f"{BASE}/api/manager/folder/id/{target['folder_id']}.json?entityId={entity_id}"] if entity_id else []
     files = []
     for u in folder_urls:
         st, _, body = c.get(u, "folder.json")
