@@ -1,0 +1,7 @@
+field_start,field_end,pollster,opponent,our_pct,opp_pct,n,population,kind,visibility,source_url
+2026-07-20,2026-07-22,Internal (sample),whalen,58,36,400,LV,poll,internal,
+2026-08-09,2026-08-11,Internal (sample),whalen,55,39,400,LV,poll,internal,
+2026-08-23,2026-08-25,Internal (sample),whalen,53,42,500,LV,poll,internal,
+,2026-09-01,Primary result (real),whalen,54.0,45.9,,,result,public,https://news.ballotpedia.org/2026/09/03/richard-neal-defeats-progressive-challenger-jeromie-whalen-in-democratic-primary-for-massachusetts-1st-district/
+2026-09-13,2026-09-15,Internal (sample),milleron,59,35,400,LV,poll,internal,
+2026-09-20,2026-09-22,Internal (sample),milleron,57,38,400,LV,poll,internal,

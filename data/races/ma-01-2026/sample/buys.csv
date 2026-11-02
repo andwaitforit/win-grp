@@ -1,0 +1,75 @@
+filing_id,doc_type,filed_date,buyer,station,flight_start,flight_end,spots,gross_usd,supersedes,source_url,notes
+S-01,order,2026-07-29,neal,WWLP,2026-08-03,2026-08-09,17,7000,,,sample: press-reported primary total
+S-01,order,2026-07-29,neal,WWLP,2026-08-10,2026-08-16,25,10500,,,sample: press-reported primary total
+S-01,order,2026-07-29,neal,WWLP,2026-08-17,2026-08-23,33,14000,,,sample: press-reported primary total
+S-01,order,2026-07-29,neal,WWLP,2026-08-24,2026-08-30,42,17500,,,sample: press-reported primary total
+S-01,order,2026-07-29,neal,WWLP,2026-08-31,2026-09-01,50,21000,,,sample: press-reported primary total
+S-02,order,2026-07-29,neal,WGGB-TV,2026-08-03,2026-08-09,13,3500,,,sample: press-reported primary total
+S-02,order,2026-07-29,neal,WGGB-TV,2026-08-10,2026-08-16,20,5200,,,sample: press-reported primary total
+S-02,order,2026-07-29,neal,WGGB-TV,2026-08-17,2026-08-23,27,7000,,,sample: press-reported primary total
+S-02,order,2026-07-29,neal,WGGB-TV,2026-08-24,2026-08-30,34,8800,,,sample: press-reported primary total
+S-02,order,2026-07-29,neal,WGGB-TV,2026-08-31,2026-09-01,40,10500,,,sample: press-reported primary total
+S-03,order,2026-08-12,neal,WNYT,2026-08-17,2026-08-23,12,7500,,,sample: press-reported primary total
+S-03,order,2026-08-12,neal,WNYT,2026-08-24,2026-08-30,14,8800,,,sample: press-reported primary total
+S-03,order,2026-08-12,neal,WNYT,2026-08-31,2026-09-01,14,8800,,,sample: press-reported primary total
+S-04,order,2026-08-12,whalen,WWLP,2026-08-17,2026-08-23,19,8000,,,sample: press-reported primary total
+S-04,order,2026-08-12,whalen,WWLP,2026-08-24,2026-08-30,26,11100,,,sample: press-reported primary total
+S-04,order,2026-08-12,whalen,WWLP,2026-08-31,2026-09-01,30,12700,,,sample: press-reported primary total
+S-05,order,2026-08-12,whalen,WGGB-TV,2026-08-17,2026-08-23,13,3500,,,sample: press-reported primary total
+S-05,order,2026-08-12,whalen,WGGB-TV,2026-08-24,2026-08-30,19,4900,,,sample: press-reported primary total
+S-05,order,2026-08-12,whalen,WGGB-TV,2026-08-31,2026-09-01,22,5600,,,sample: press-reported primary total
+S-06,invoice,2026-09-02,whalen,WWLP,2026-08-17,2026-08-23,19,8000,S-04,,sample: invented
+S-06,invoice,2026-09-02,whalen,WWLP,2026-08-24,2026-08-30,26,11100,S-04,,sample: invented
+S-06,invoice,2026-09-02,whalen,WWLP,2026-08-31,2026-09-01,30,12700,S-04,,sample: invented
+S-07,order,2026-09-18,milleron,WWLP,2026-09-21,2026-09-27,29,12000,,,sample: invented
+S-07,order,2026-09-18,milleron,WWLP,2026-09-28,2026-10-04,36,15000,,,sample: invented
+S-07,order,2026-09-18,milleron,WWLP,2026-10-05,2026-10-11,43,18000,,,sample: invented
+S-07,order,2026-09-18,milleron,WWLP,2026-10-12,2026-10-18,54,22500,,,sample: invented
+S-07,order,2026-09-18,milleron,WWLP,2026-10-19,2026-10-25,61,25500,,,sample: invented
+S-07,order,2026-09-18,milleron,WWLP,2026-10-26,2026-11-01,71,30000,,,sample: invented
+S-07,order,2026-09-18,milleron,WWLP,2026-11-02,2026-11-03,64,27000,,,sample: invented
+S-08,order,2026-09-18,milleron,WNYT,2026-09-21,2026-09-27,14,8800,,,sample: invented
+S-08,order,2026-09-18,milleron,WNYT,2026-09-28,2026-10-04,17,11000,,,sample: invented
+S-08,order,2026-09-18,milleron,WNYT,2026-10-05,2026-10-11,20,13200,,,sample: invented
+S-08,order,2026-09-18,milleron,WNYT,2026-10-12,2026-10-18,25,16500,,,sample: invented
+S-08,order,2026-09-18,milleron,WNYT,2026-10-19,2026-10-25,29,18700,,,sample: invented
+S-08,order,2026-09-18,milleron,WNYT,2026-10-26,2026-11-01,34,22000,,,sample: invented
+S-08,order,2026-09-18,milleron,WNYT,2026-11-02,2026-11-03,30,19800,,,sample: invented
+S-09,order,2026-09-18,milleron,WGGB-TV,2026-09-21,2026-09-27,28,7200,,,sample: invented
+S-09,order,2026-09-18,milleron,WGGB-TV,2026-09-28,2026-10-04,35,9000,,,sample: invented
+S-09,order,2026-09-18,milleron,WGGB-TV,2026-10-05,2026-10-11,42,10800,,,sample: invented
+S-09,order,2026-09-18,milleron,WGGB-TV,2026-10-12,2026-10-18,52,13500,,,sample: invented
+S-10,revision,2026-09-22,milleron,WGGB-TV,2026-09-21,2026-09-27,28,7200,S-09,,sample: invented
+S-10,revision,2026-09-22,milleron,WGGB-TV,2026-09-28,2026-10-04,35,9000,S-09,,sample: invented
+S-10,revision,2026-09-22,milleron,WGGB-TV,2026-10-05,2026-10-11,42,10800,S-09,,sample: invented
+S-10,revision,2026-09-22,milleron,WGGB-TV,2026-10-12,2026-10-18,52,13500,S-09,,sample: invented
+S-10,revision,2026-09-22,milleron,WGGB-TV,2026-10-19,2026-10-25,59,15300,S-09,,sample: invented
+S-10,revision,2026-09-22,milleron,WGGB-TV,2026-10-26,2026-11-01,69,18000,S-09,,sample: invented
+S-10,revision,2026-09-22,milleron,WGGB-TV,2026-11-02,2026-11-03,62,16200,S-09,,sample: invented
+S-11,order,2026-09-19,milleron,WTEN,2026-10-05,2026-10-11,18,10500,,,sample: invented
+S-11,order,2026-09-19,milleron,WTEN,2026-10-12,2026-10-18,22,12600,,,sample: invented
+S-11,order,2026-09-19,milleron,WTEN,2026-10-19,2026-10-25,27,15400,,,sample: invented
+S-11,order,2026-09-19,milleron,WTEN,2026-10-26,2026-11-01,30,17500,,,sample: invented
+S-11,order,2026-09-19,milleron,WTEN,2026-11-02,2026-11-03,24,14000,,,sample: invented
+S-12,order,2026-09-19,milleron,WRGB,2026-10-05,2026-10-11,15,9000,,,sample: invented
+S-12,order,2026-09-19,milleron,WRGB,2026-10-12,2026-10-18,18,10800,,,sample: invented
+S-12,order,2026-09-19,milleron,WRGB,2026-10-19,2026-10-25,22,13200,,,sample: invented
+S-12,order,2026-09-19,milleron,WRGB,2026-10-26,2026-11-01,25,15000,,,sample: invented
+S-12,order,2026-09-19,milleron,WRGB,2026-11-02,2026-11-03,20,12000,,,sample: invented
+S-13,order,2026-09-23,neal,WWLP,2026-10-05,2026-10-11,43,18000,,,sample: invented
+S-13,order,2026-09-23,neal,WWLP,2026-10-12,2026-10-18,57,24000,,,sample: invented
+S-13,order,2026-09-23,neal,WWLP,2026-10-19,2026-10-25,63,26400,,,sample: invented
+S-13,order,2026-09-23,neal,WWLP,2026-10-26,2026-11-01,71,30000,,,sample: invented
+S-13,order,2026-09-23,neal,WWLP,2026-11-02,2026-11-03,51,21600,,,sample: invented
+S-14,order,2026-09-23,neal,WGGB-TV,2026-10-05,2026-10-11,40,10500,,,sample: invented
+S-14,order,2026-09-23,neal,WGGB-TV,2026-10-12,2026-10-18,54,14000,,,sample: invented
+S-14,order,2026-09-23,neal,WGGB-TV,2026-10-19,2026-10-25,59,15400,,,sample: invented
+S-14,order,2026-09-23,neal,WGGB-TV,2026-10-26,2026-11-01,67,17500,,,sample: invented
+S-14,order,2026-09-23,neal,WGGB-TV,2026-11-02,2026-11-03,48,12600,,,sample: invented
+S-15,order,2026-09-23,neal,WNYT,2026-10-12,2026-10-18,18,12000,,,sample: invented
+S-15,order,2026-09-23,neal,WNYT,2026-10-19,2026-10-25,23,15000,,,sample: invented
+S-15,order,2026-09-23,neal,WNYT,2026-10-26,2026-11-01,28,18000,,,sample: invented
+S-15,order,2026-09-23,neal,WNYT,2026-11-02,2026-11-03,23,15000,,,sample: invented
+S-16,order,2026-09-23,neal,WRGB,2026-10-19,2026-10-25,20,12000,,,sample: invented
+S-16,order,2026-09-23,neal,WRGB,2026-10-26,2026-11-01,27,16000,,,sample: invented
+S-16,order,2026-09-23,neal,WRGB,2026-11-02,2026-11-03,20,12000,,,sample: invented

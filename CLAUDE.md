@@ -10,8 +10,10 @@ and shows them next to public polling for the same race.
 
 - Product scope, data-source findings, and GRP methodology: `docs/SCOPE.md`.
   Read it before designing features.
-- **Status:** scope approved (decisions in `docs/SCOPE.md` §0). No application
-  code yet.
+- **Status:** scope approved (decisions in `docs/SCOPE.md` §0). Working today:
+  a static dashboard fed by a small Python pipeline over hand-entered CSVs
+  (`pipeline/`, `data/`). No database, Next.js app, or automated FCC ingestion
+  yet.
 - **Stack (confirmed):** Next.js (TypeScript) on Vercel; Supabase (Postgres,
   Auth, RLS, Storage); Python workers for ingestion and PDF extraction; the
   Claude API for structured extraction.
@@ -26,10 +28,17 @@ and shows them next to public polling for the same race.
 
 ## Prototype
 
-- `prototype/ma-01-dashboard.html` is a self-contained, interactive MA-01
-  dashboard with static sample data, built to get feedback from consultants.
-  Neal is "our side". Keep its sample-data banner; it must never be presented
-  as real FCC records. Open it directly in a browser; there is no build step.
+- `prototype/ma-01-dashboard.html` is the interactive MA-01 dashboard. It
+  reads `prototype/data/ma-01.js` (generated; never edit by hand), built by
+  `python -m pipeline build` from a dataset folder under `data/races/`.
+  Neal is "our side" (`our_side: true` in the race config).
+- Datasets: `data/races/ma-01-2026/sample/` (invented; the dashboard shows the
+  sample-data banner, which must stay) and `.../live/` (real buys hand-entered
+  from FCC political files; `source_url` required on every row). Never mix
+  invented numbers into `live/`. Data-entry guide: `data/README.md`.
+- The dashboard repeats the GRP formula from `pipeline/estimate.py` in JS so
+  viewers can change CPP live. Keep them in sync; reference values are in
+  `tests/test_pipeline.py` (`EstimateTest`).
 - Deployed to Vercel as project `win-grp` (https://win-grp.vercel.app),
   static, no framework, built from `prototype/`. `prototype/vercel.json` serves
   the dashboard at `/`. Access requires a Vercel login (Vercel Authentication,
@@ -111,5 +120,13 @@ and shows them next to public polling for the same race.
 
 ## Commands
 
-None yet. Add build, test, lint, and run commands here once the project is
-scaffolded.
+```sh
+pip install -r requirements.txt                       # PyYAML only
+python -m unittest discover -s tests -t .             # tests
+python -m pipeline build --race config/pilot/ma-01-2026.yaml \
+  --data data/races/ma-01-2026/sample                 # or .../live
+python -m pipeline backtest --race config/pilot/ma-01-2026.yaml \
+  --estimates <estimates.csv> --truth <truth.csv>
+```
+
+Open `prototype/ma-01-dashboard.html` in a browser to view it locally.
