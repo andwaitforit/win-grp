@@ -47,7 +47,13 @@ and shows them next to public polling for the same race.
   root `vercel.json` sets `outputDirectory: prototype` (only that folder is
   served) and rewrites `/` to the dashboard. Access requires a Vercel login (Vercel Authentication,
   "all except custom domains"). Don't make it public without the user's
-  say-so. The prototype needs no database or env vars.
+  say-so.
+- Clients reach it on a custom domain through the access-code gate in
+  `middleware.js` (Routing Middleware; `*.vercel.app` passes straight
+  through). It needs Vercel env vars `ACCESS_CODES` (`label:code,...`; remove
+  a pair to revoke) and `ACCESS_COOKIE_SECRET` (32+ chars), and returns 503
+  without them. It gates the page only; the `dashboard_*` views stay
+  readable with the publishable key. Tests: `npm test`.
 
 ## Domain glossary
 
