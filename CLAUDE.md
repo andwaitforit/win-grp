@@ -42,8 +42,9 @@ and shows them next to public polling for the same race.
   viewers can change CPP live. Keep them in sync; reference values are in
   `tests/test_pipeline.py` (`EstimateTest`).
 - Deployed to Vercel as project `win-grp` (https://win-grp.vercel.app),
-  static, no framework, built from `prototype/`. `prototype/vercel.json` serves
-  the dashboard at `/`. Access requires a Vercel login (Vercel Authentication,
+  static, no framework. The project's Root Directory is the repo root, so the
+  root `vercel.json` sets `outputDirectory: prototype` (only that folder is
+  served) and rewrites `/` to the dashboard. Access requires a Vercel login (Vercel Authentication,
   "all except custom domains"). Don't make it public without the user's
   say-so. The prototype needs no database or env vars.
 
