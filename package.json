@@ -1,0 +1,12 @@
+{
+  "name": "win-grp-site",
+  "private": true,
+  "type": "module",
+  "description": "Static dashboard (prototype/) plus the access-code middleware.",
+  "scripts": {
+    "test": "node --test tests/middleware.test.mjs"
+  },
+  "dependencies": {
+    "@vercel/functions": "3.10.1"
+  }
+}
