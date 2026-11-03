@@ -73,6 +73,7 @@ markets:
     role: primary             # covers Hampden, Hampshire, Franklin
     stations:
       - { call_sign: WWLP, opif_entity_id: "6868",    network: NBC, service: tv, notes: "22; subchannels carry other nets. Confirmed 2026 buys by Neal and Whalen" }
+      - { call_sign: EWLP, opif_entity_id: null, network: NBC, service: tv, notes: "Channel printed on lines of WWLP contracts; filed in WWLP's political file" }
       - { call_sign: WGGB-TV, opif_entity_id: "25682", network: ABC/CBS, service: tv, notes: "40; Fox on a subchannel. Confirmed 2026 buys" }
       - { call_sign: WSHM-LD, network: CBS, service: tv, opif_entity_id: null, notes: "Low-power CBS 3. No OPIF facility of its own (checked 2026-10-05); WSHM buys are filed in WGGB-TV political folders, often named WSHM in the file name" }
   - key: alb

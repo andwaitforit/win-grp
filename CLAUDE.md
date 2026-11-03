@@ -14,8 +14,9 @@ and shows them next to public polling for the same race.
   Pilot Slice. Working today: a static dashboard fed by a small Python
   pipeline over hand-entered CSVs (`pipeline/`, `data/`), and an OPIF
   ingestion + contract-extraction worker (`workers/`) writing to Supabase
-  (`supabase/migrations/`). The dashboard doesn't read from Supabase yet; no
-  Next.js app yet.
+  (`supabase/migrations/`). A daily GitHub Actions job
+  (`.github/workflows/daily-sync.yml`) refreshes the hosted DB; live dashboard
+  builds read parsed orders from it in the browser. No Next.js app yet.
 - **Stack (confirmed):** Next.js (TypeScript) on Vercel; Supabase (Postgres,
   Auth, RLS, Storage); Python workers for ingestion and PDF extraction; the
   Claude API for structured extraction.
@@ -134,6 +135,23 @@ and shows them next to public polling for the same race.
   under a district folder "MA-01" on WNYT). Albany stations also carry NY House
   races. Match purchasers through aliases, never by folder name alone.
 
+## Hosted Supabase
+
+- Project ref `tlixbywvksgpyxkwxrtb` (org "WinGRP", us-east-1). The Supabase
+  MCP connector can't see this org; use the CLI (`supabase link` is done, so
+  `supabase db push --linked` applies new migrations).
+- The static dashboard reads `dashboard_*` views with the publishable key.
+  They're owner-rights views over `internal.race_contract` (schema not exposed
+  by the API) and are the only thing anon can read. Keep them to public FCC
+  data and explicit columns; never put org-scoped data behind them.
+- `race_buyer_alias` and `race_station` come from the race config via
+  `wingrp seed-race`. A purchaser that matches no alias doesn't show up.
+- `opif_file_extract` logs each PDF the extractor tried, so unsupported
+  formats aren't re-downloaded daily. Bumping a parser's `PARSER_VERSION`
+  re-tries them.
+- The daily job needs repo secret `DATABASE_URL` (session-pooler URI) and repo
+  variable `WINGRP_USER_AGENT`.
+
 ## Environment notes
 
 - Local Supabase runs on ports **553xx** (API 55321, DB 55322, Studio 55323),
@@ -156,6 +174,7 @@ cd workers && uv run wingrp reparse  # re-derive opif_file from stored events, n
 cd workers && uv run wingrp filings  --config ../config/pilot/ma-01-2026.yaml
 cd workers && uv run wingrp fetch-contracts --config ../config/pilot/ma-01-2026.yaml  # download + parse + store orders
 cd workers && uv run wingrp contract PDF... [--json] [--store [--file-id UUID]]   # parse local PDFs
+cd workers && uv run wingrp seed-race --config ../config/pilot/ma-01-2026.yaml  # race aliases + stations into the DB
 ```
 
 Contract extraction needs poppler (`pdftotext`). Downloaded PDFs are cached in
@@ -166,7 +185,8 @@ never `opif_contract` itself, which keeps every uploaded version.
 Workers read `DATABASE_URL` and `WINGRP_USER_AGENT` from the environment (see
 `.env.example`).
 
-Dashboard pipeline (hand-entered CSVs → static dashboard data):
+Dashboard pipeline (CSVs → static dashboard data; a dataset with a `supabase:`
+block in `dataset.yaml`, like `live/`, also loads parsed orders in the browser):
 
 ```sh
 pip install -r requirements.txt                       # PyYAML only

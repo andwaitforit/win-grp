@@ -6,6 +6,7 @@
   wingrp filings  --config ../config/pilot/ma-01-2026.yaml
   wingrp contract PDF... [--json] [--store [--file-id UUID]]
   wingrp fetch-contracts --config ../config/pilot/ma-01-2026.yaml [--limit N]
+  wingrp seed-race --config ../config/pilot/ma-01-2026.yaml
 """
 
 from __future__ import annotations
@@ -23,7 +24,7 @@ import yaml
 
 from .extract.pdftext import pdf_to_text
 from .extract.store import sha256, store_contract
-from .extract.wideorbit import is_wideorbit_contract, latest_versions, parse_contract
+from .extract.wideorbit import FORMAT, PARSER_VERSION, is_wideorbit_contract, latest_versions, parse_contract
 from .opif.client import OpifBlocked, OpifClient
 from .opif.store import (
     get_sync_cursor,
@@ -52,6 +53,52 @@ def _connect() -> psycopg.Connection:
 def _race_call_signs(config_path: Path) -> list[str]:
     cfg = yaml.safe_load(config_path.read_text())
     return [s["call_sign"] for m in cfg.get("markets", []) for s in m.get("stations") or []]
+
+
+def _race_aliases(cfg: dict) -> list[tuple[str, str]]:
+    """(buyer_key, alias) for every candidate and outside group in the race config."""
+    out = []
+    for c in cfg.get("candidates", []):
+        out += [(c["key"], a) for a in c.get("opif_purchaser_aliases") or []]
+    for g in cfg.get("outside_groups") or []:
+        out += [(g["key"], a) for a in g.get("aliases") or []]
+    return out
+
+
+def cmd_seed_race(args: argparse.Namespace) -> None:
+    """Load the race's buyer aliases and station markets into the DB (replaces previous rows)."""
+    cfg = yaml.safe_load(args.config.read_text())
+    race_id = cfg["race"]["id"]
+    aliases = _race_aliases(cfg)
+    stations = [(s["call_sign"], m["key"]) for m in cfg.get("markets", []) for s in m.get("stations") or []]
+    with _connect() as conn:
+        conn.execute("delete from public.race_buyer_alias where race_id = %s", (race_id,))
+        conn.execute("delete from public.race_station where race_id = %s", (race_id,))
+        with conn.cursor() as cur:
+            cur.executemany(
+                "insert into public.race_buyer_alias (race_id, buyer_key, alias) values (%s, %s, %s)"
+                " on conflict do nothing",
+                [(race_id, k, a) for k, a in aliases],
+            )
+            cur.executemany(
+                "insert into public.race_station (race_id, call_sign, market_key) values (%s, %s, %s)",
+                [(race_id, cs, mk) for cs, mk in stations],
+            )
+        conn.commit()
+    print(f"{race_id}: {len(aliases)} purchaser aliases, {len(stations)} stations")
+
+
+def _record_attempt(conn, file_id: str, sha: str | None, outcome: str) -> None:
+    conn.execute(
+        """
+        insert into public.opif_file_extract (file_id, pdf_sha256, outcome, parser, parser_version)
+        values (%s, %s, %s, %s, %s)
+        on conflict (file_id) do update
+          set pdf_sha256 = excluded.pdf_sha256, outcome = excluded.outcome, parser = excluded.parser,
+              parser_version = excluded.parser_version, attempted_at = now()
+        """,
+        (file_id, sha, outcome, FORMAT, PARSER_VERSION),
+    )
 
 
 def cmd_stations(args: argparse.Namespace) -> None:
@@ -199,12 +246,19 @@ def cmd_fetch_contracts(args: argparse.Namespace) -> None:
               and ((f.pol_category = 'Federal' and f.pol_office = %s)
                    or f.pol_category = 'Non-Candidate Issue Ads')
               and not exists (select 1 from public.opif_contract c where c.source_file_id = f.file_id)
+              and not exists (select 1 from public.opif_file_extract x
+                              where x.file_id = f.file_id and x.parser = %s and x.parser_version = %s)
+              -- Only this race's purchasers: Albany stations also carry NY House races.
+              and exists (select 1 from unnest(%s::text[]) a(alias)
+                          where lower(f.purchaser_folder) = lower(a.alias)
+                             or f.file_name ilike '%%' || a.alias || '%%')
             order by f.fcc_created_at
             limit %s
             """,
-            (call_signs, race["cycle"], race["office"], args.limit),
+            (call_signs, race["cycle"], race["office"], FORMAT, PARSER_VERSION,
+             [a for _, a in _race_aliases(cfg)], args.limit),
         ).fetchall()
-        print(f"{len(files)} order files without a parsed contract")
+        print(f"{len(files)} race order files not yet tried by {FORMAT} v{PARSER_VERSION}")
         stored = review = unsupported = 0
         with OpifClient() as fcc:
             for file_id, folder_id, fm_id, cs, name in files:
@@ -216,6 +270,8 @@ def cmd_fetch_contracts(args: argparse.Namespace) -> None:
                     data = fcc.download(folder_id, fm_id)
                     if data[:4] != b"%PDF":
                         print(f"  {cs:<8} {name[:70]}: response is not a PDF, skipped")
+                        _record_attempt(conn, file_id, None, "not_pdf")
+                        conn.commit()
                         continue
                     cached.write_bytes(data)
                 data = cached.read_bytes()
@@ -223,12 +279,15 @@ def cmd_fetch_contracts(args: argparse.Namespace) -> None:
                 if not is_wideorbit_contract(text):
                     unsupported += 1
                     print(f"  {cs:<8} {name[:70]}: not WideOrbit, needs another parser")
+                    _record_attempt(conn, file_id, sha256(data), "unsupported")
+                    conn.commit()
                     continue
                 k = parse_contract(text)
                 store_contract(
                     conn, k, pdf_sha256=sha256(data), raw_text=text,
                     source="fcc", source_file_id=file_id,
                 )  # fmt: skip
+                _record_attempt(conn, file_id, sha256(data), "stored")
                 conn.commit()
                 stored += 1
                 review += not k.reconciled
@@ -269,6 +328,10 @@ def main() -> None:
     p.add_argument("--config", type=Path, required=True)
     p.add_argument("--limit", type=int, default=200)
     p.set_defaults(fn=cmd_fetch_contracts)
+
+    p = sub.add_parser("seed-race", help="Load race buyer aliases and station markets into the DB")
+    p.add_argument("--config", type=Path, required=True)
+    p.set_defaults(fn=cmd_seed_race)
 
     args = parser.parse_args()
     try:

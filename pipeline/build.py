@@ -103,6 +103,8 @@ def build(race_path: Path, data_dir: Path, as_of: dt.date | None = None) -> tupl
             for p in polls
         ],
         "alerts": _alerts(filings),
+        # Browser-side source for parsed FCC orders (live datasets only).
+        "supabase": meta.get("supabase"),
     }
     estimates = _estimates(race, rows, cpp, meta)
     return data, estimates

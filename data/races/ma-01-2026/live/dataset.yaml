@@ -1,7 +1,14 @@
-# LIVE dataset: real buys hand-entered from FCC political files.
-# Every buys.csv row needs a source_url pointing at its filing.
+# LIVE dataset: real data from FCC political files.
+# Buys come from the hosted Supabase DB (station orders parsed by the workers,
+# refreshed daily). The dashboard reads them in the browser with the
+# publishable key, which only grants read access to the dashboard_* views.
+# Rows hand-entered in buys.csv are added on top; each needs a source_url.
 is_sample: false
 # as_of: defaults to today when omitted
 demo: A35+
 commission_pct: 15
 band_pct: 20
+note: "Buys are station orders parsed by win-grp. So far that covers WWLP and EWLP only; other stations file in formats we don't parse yet. Orders show what was booked, not confirmed airings."
+supabase:
+  url: https://tlixbywvksgpyxkwxrtb.supabase.co
+  key: sb_publishable_cT6n9oBkkps55BOkk_R_NA_Q2pRguAH

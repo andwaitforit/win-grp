@@ -1,0 +1,51 @@
+# Daily FCC political-file refresh for the pilot race, into the hosted
+# Supabase DB that the dashboard reads.
+#
+# Needs repo secret DATABASE_URL (Supabase session-pooler URI; GitHub runners
+# have no IPv6, so the direct db.<ref>.supabase.co host doesn't work) and repo
+# variable WINGRP_USER_AGENT. First run: dispatch it with `since` set for the
+# backfill; scheduled runs continue from each station's sync cursor.
+name: Daily FCC sync
+
+on:
+  schedule:
+    - cron: "0 11 * * *" # 06:00 / 07:00 US Eastern
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Backfill start date (YYYY-MM-DD). Leave empty to continue from the cursor."
+        required: false
+
+concurrency:
+  group: daily-sync
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      WINGRP_USER_AGENT: ${{ vars.WINGRP_USER_AGENT }}
+      CONFIG: ../config/pilot/ma-01-2026.yaml
+    defaults:
+      run:
+        working-directory: workers
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -q && sudo apt-get install -y -q poppler-utils
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --frozen
+      - name: Load race config
+        run: uv run wingrp seed-race --config "$CONFIG"
+      - name: Resolve stations
+        run: uv run wingrp stations --config "$CONFIG"
+      - name: Sync OPIF change feed
+        run: uv run wingrp sync --config "$CONFIG" ${SINCE:+--since "$SINCE"}
+        env:
+          SINCE: ${{ inputs.since }}
+      - name: Fetch and parse new orders
+        run: uv run wingrp fetch-contracts --config "$CONFIG"
