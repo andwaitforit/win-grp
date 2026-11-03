@@ -45,12 +45,12 @@ and shows them next to public polling for the same race.
 - Deployed to Vercel as project `win-grp` (https://win-grp.vercel.app),
   static, no framework. The project's Root Directory is the repo root, so the
   root `vercel.json` sets `outputDirectory: prototype` (only that folder is
-  served) and rewrites `/` to the dashboard. Access requires a Vercel login (Vercel Authentication,
-  "all except custom domains"). Don't make it public without the user's
-  say-so.
-- Clients reach it on a custom domain through the access-code gate in
-  `middleware.js` (Routing Middleware; `*.vercel.app` passes straight
-  through). It needs Vercel env vars `ACCESS_CODES` (`label:code,...`; remove
+  served) and rewrites `/` to the dashboard. **win-grp.vercel.app is public**:
+  Vercel's Standard Protection only covers deployment URLs
+  (`win-<hash>-story-nest1.vercel.app`). The user chose public on 2026-11-03
+  (it's public FCC data); the deployed data is the live dataset.
+- An access-code gate is in `middleware.js` (Routing Middleware), unused for
+  now. It covers custom domains only; `*.vercel.app` passes straight through. It needs Vercel env vars `ACCESS_CODES` (`label:code,...`; remove
   a pair to revoke) and `ACCESS_COOKIE_SECRET` (32+ chars), and returns 503
   without them. It gates the page only; the `dashboard_*` views stay
   readable with the publishable key. Tests: `npm test`.
@@ -181,7 +181,16 @@ cd workers && uv run wingrp filings  --config ../config/pilot/ma-01-2026.yaml
 cd workers && uv run wingrp fetch-contracts --config ../config/pilot/ma-01-2026.yaml  # download + parse + store orders
 cd workers && uv run wingrp contract PDF... [--json] [--store [--file-id UUID]]   # parse local PDFs
 cd workers && uv run wingrp seed-race --config ../config/pilot/ma-01-2026.yaml  # race aliases + stations into the DB
+cd workers && uv run wingrp reparse-contracts  # re-parse stored orders after a parser version bump, no FCC calls
 ```
+
+Order parsers (`workers/src/wingrp_workers/extract/`, picked by content in
+`orders.py`): `wideorbit` (Nexstar "Contract Agreement": WWLP/EWLP, WNYT) and
+`wideorbit_order` (WideOrbit "ORDER" form: Gray WGGB/EGGB/WSHM, WTEN, WXXA).
+Orders that don't reconcile to their own totals get `needs_review` and stay off
+the dashboard; revised Gray orders with preemption/makegood detail land there.
+A station's lines can print under another name (WGGB-TV as WGGB); list those
+as `channels` in the race config.
 
 Contract extraction needs poppler (`pdftotext`). Downloaded PDFs are cached in
 `workers/.cache/opif-pdf/` (gitignored). Parsed contracts are in

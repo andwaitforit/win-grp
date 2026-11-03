@@ -47,5 +47,7 @@ jobs:
         run: uv run wingrp sync --config "$CONFIG" ${SINCE:+--since "$SINCE"}
         env:
           SINCE: ${{ inputs.since }}
+      - name: Re-parse stored orders after parser changes
+        run: uv run wingrp reparse-contracts
       - name: Fetch and parse new orders
         run: uv run wingrp fetch-contracts --config "$CONFIG"

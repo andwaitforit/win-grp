@@ -1,0 +1,102 @@
+                                                                                                                    Print Date 10/29/26 09:37:37       Page 1 of 2
+
+                                                                          ORDER
+
+Orders           Order / Rev:              4611507
+                 Alt Order #:
+                 Ext. Opp. ID:
+                 Product Desc:             Nadia Milleron 10.30-11.3                                                       EGGB
+
+                 Estimate:                                                                Primary AE:                      Springfield MA National House
+                 Flight Dates:             10/30/26 - 11/03/26                            Sales Office:                    !NATL
+                 Original Date / Rev:      10/29/26 / 10/29/26                            Sales Region:                    National
+                 Order Type:               NORMAL
+
+Agency           Name:                     North Woods Advertising
+                 Buying Contact:                                                          Billing Type:                    Cash
+                 Billing Contact:                                                         Billing Calendar:                Broadcast
+                                           402 S. Cedar Lake Rd, Suite 1                  Billing Cycle:                   EOM/EOC
+                                           Minneapolis, MN 55405                          Agency Commission:               15%
+
+
+Advertiser       Name:                     Nadia for Congress (Nadia Milleron)
+                 Demographic:              HH                                             New Business End:
+                 Product Codes:            Candidate - National - House,Candidate         Advertiser External ID:          632923
+                 Revenue Code 1:           AGY                                            Agency External ID:              124930
+                 Revenue Code 2:           POL                                            Unit Code:                       General
+                 Revenue Code 3:           POL-CAND                                       Order Separation:                00:05:00
+                 Priority:                 P- 3
+
+Bill Plan                                                                       Totals
+Start Date    End Date           # Spots Gross Amount        Net Amount         Month                           # Spots     Gross Amount        Net Amount      Rating
+10/26/26      11/03/26                15           $885.00          $752.25     November 2026                         15           $885.00           $752.25      0.00
+                                                                                Totals                               15               $885.00        $752.25       0.00
+
+Account Executives
+Account Executive               Sales Office      Sales Region    Start Date / End Date                         Order %
+Springfield MA National House                                     Start Of Order - End Of Order                    100%
+
+
+
+
+ Ln Ch        Start      End        Inventory Code           Break Start/End Time         Days       Len Spots             Rate Pri Rtg Type Spots             Amount
+N 1 EGGB 10/30/26 11/03/26 M-F 5a-6a News                    CM    5a-6a             MT--F--              :30       1      $25.00 P- 3    0.00 NM      1         $25.00
+                           M-F 5a-6a News
+        Start Date End Date  Weekdays      Spots/Week                   Rate     Rating
+  Week: 10/26/26   11/01/26  -------                0                  $0.00       0.00
+  Week: 11/02/26   11/08/26  MT-----                1                 $25.00       0.00
+N 2 EGGB 10/30/26 11/03/26 M-F 6a-7a News       CM                 6a-7a             MT--F--              :30       1      $40.00 P- 3    0.00 NM      2         $80.00
+                            M-F 6a-7a News
+        Start Date End Date  Weekdays      Spots/Week                   Rate     Rating
+  Week: 10/26/26   11/01/26  ----F--                1                 $40.00       0.00
+  Week: 11/02/26   11/08/26  MT-----                1                 $40.00       0.00
+N 3 EGGB 10/30/26 11/03/26 M-F 7a-8a News       CM                 7a-8a             MT--F--              :30       1      $65.00 P- 3    0.00 NM      2        $130.00
+                            M-F 7a-8a News
+        Start Date End Date  Weekdays      Spots/Week                   Rate     Rating
+  Week: 10/26/26   11/01/26  ----F--                1                 $65.00       0.00
+  Week: 11/02/26   11/08/26  MT-----                1                 $65.00       0.00
+N 4 EGGB 10/30/26 11/03/26 M-F 8a-9a News       CM                 8a-9a             MT--F--              :30       1      $55.00 P- 3    0.00 NM      2        $110.00
+                            M-F 8a-9a News
+        Start Date End Date  Weekdays      Spots/Week                   Rate     Rating
+  Week: 10/26/26   11/01/26  ----F--                1                 $55.00       0.00
+  Week: 11/02/26   11/08/26  MT-----                1                 $55.00       0.00
+N 5 EGGB 10/30/26 11/03/26 Sa 7a-8a News        CM                 7a-8a             -----S-              :30       1      $30.00 P- 3    0.00 NM      1         $30.00
+                            Sa 7a-8a News
+                                                                                                           Print Date: 10/29/26 09:37:38   Page   2 of 2
+Order / Rev:       4611507                                       Advertiser:       Nadia for Congress (Nadia Milleron)
+Alt Order #:                                                     Product Desc:     Nadia Milleron 10.30-11.3                      EGGB
+Flight Dates:      10/30/26 - 11/03/26                           Estimate:
+
+
+
+ Ln Ch          Start    End       Inventory Code       Break Start/End Time          Days      Len Spots        Rate Pri Rtg Type Spots          Amount
+        Start Date End Date  Weekdays     Spots/Week      Rate                   Rating
+  Week: 10/26/26   11/01/26  -----S-               1    $30.00                     0.00
+  Week: 11/02/26   11/08/26  -------               0     $0.00                     0.00
+N 6 EGGB 10/30/26 11/03/26 Sa 9a-10a News      CM    9a-10a                          -----S-      :30      1     $40.00 P- 3    0.00 NM     1       $40.00
+                            Sa 9-10a News
+        Start Date End Date  Weekdays     Spots/Week      Rate                   Rating
+  Week: 10/26/26   11/01/26  -----S-               1    $40.00                     0.00
+  Week: 11/02/26   11/08/26  -------               0     $0.00                     0.00
+N 7 EGGB 10/30/26 11/03/26 Su 7a-8a News       CM    7a-8a                           ------S      :30      1     $30.00 P- 3    0.00 NM     1       $30.00
+                            Su 7a-8a News
+        Start Date End Date  Weekdays     Spots/Week      Rate                   Rating
+  Week: 10/26/26   11/01/26  ------S               1    $30.00                     0.00
+  Week: 11/02/26   11/08/26  -------               0     $0.00                     0.00
+N 8 EGGB 10/30/26 11/03/26 M-F 6-630p News        CM    6-630p                       MT--F--      :30      1     $65.00 P- 3    0.00 NM     2      $130.00
+                             M-F 6-630p News
+         Start Date End Date  Weekdays       Spots/Week      Rate                Rating
+   Week: 10/26/26   11/01/26  ----F--                 1    $65.00                  0.00
+   Week: 11/02/26   11/08/26  M------                 1    $65.00                  0.00
+N 9 EGGB 10/30/26 11/03/26 M-F Late News          CM    10p-1035p                    M---F--      :30      1    $115.00 P- 3    0.00 NM     2      $230.00
+                             M-F Late News
+         Start Date End Date  Weekdays       Spots/Week      Rate                Rating
+   Week: 10/26/26   11/01/26  ----F--                 1   $115.00                  0.00
+   Week: 11/02/26   11/08/26  M------                 1   $115.00                  0.00
+N 10 EGGB 10/30/26 11/03/26 Su Late News          CM    10p-1035p                    ------S      :30      1     $80.00 P- 3    0.00 NM     1       $80.00
+                             Su Late News
+         Start Date     End Date    Weekdays        Spots/Week       Rate        Rating
+   Week: 10/26/26       11/01/26    ------S                  1     $80.00          0.00
+   Week: 11/02/26       11/08/26    -------                  0      $0.00          0.00
+                                                                                                                               Totals      15      $885.00
+

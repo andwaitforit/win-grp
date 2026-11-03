@@ -67,6 +67,7 @@ outside_groups: []
 # discovered from OPIF "Non-Candidate Issue Ads" and Federal/US House folders
 # on the stations below, plus FEC Schedule E filings that name these candidates.
 
+# `channels`: other names a station's lines print under on orders (default: call_sign).
 markets:
   - key: spr
     dma: Springfield-Holyoke
@@ -74,8 +75,9 @@ markets:
     stations:
       - { call_sign: WWLP, opif_entity_id: "6868",    network: NBC, service: tv, notes: "22; subchannels carry other nets. Confirmed 2026 buys by Neal and Whalen" }
       - { call_sign: EWLP, opif_entity_id: null, network: NBC, service: tv, notes: "Channel printed on lines of WWLP contracts; filed in WWLP's political file" }
-      - { call_sign: WGGB-TV, opif_entity_id: "25682", network: ABC/CBS, service: tv, notes: "40; Fox on a subchannel. Confirmed 2026 buys" }
-      - { call_sign: WSHM-LD, network: CBS, service: tv, opif_entity_id: null, notes: "Low-power CBS 3. No OPIF facility of its own (checked 2026-10-05); WSHM buys are filed in WGGB-TV political folders, often named WSHM in the file name" }
+      - { call_sign: WGGB-TV, channels: [WGGB], opif_entity_id: "25682", network: ABC/CBS, service: tv, notes: "40; Fox on a subchannel. Confirmed 2026 buys" }
+      - { call_sign: EGGB, opif_entity_id: null, network: ABC, service: tv, notes: "Channel printed on orders in WGGB-TV's political file" }
+      - { call_sign: WSHM-LD, channels: [WSHM], network: CBS, service: tv, opif_entity_id: null, notes: "Low-power CBS 3. No OPIF facility of its own (checked 2026-10-05); WSHM buys are filed in WGGB-TV political folders, often named WSHM in the file name" }
   - key: alb
     dma: Albany-Schenectady-Troy
     short_name: Albany
@@ -85,7 +87,7 @@ markets:
       - { call_sign: WNYT, opif_entity_id: "73363", network: NBC, service: tv, notes: "Confirmed 2026 Neal primary buy (~$25K)" }
       - { call_sign: WRGB, opif_entity_id: "73942", network: CBS, service: tv }
       - { call_sign: WTEN, opif_entity_id: "74422", network: ABC, service: tv }
-      - { call_sign: WXXA-TV, opif_entity_id: "11970", network: FOX, service: tv }
+      - { call_sign: WXXA-TV, channels: [WXXA], opif_entity_id: "11970", network: FOX, service: tv }
       - { call_sign: WCWN, opif_entity_id: "73264", network: CW, service: tv }
   - key: hfd
     dma: Hartford-New Haven

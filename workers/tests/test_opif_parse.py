@@ -68,6 +68,8 @@ def test_parse_folder_path(path, expected):
         ("Texas PAC FPM NAB 9.10_1_EWLP", "nab", False, None, None, None),
         ("Richard Neal WTEN Order & NAB #5421304 Revised", "order", True, "5421304", None, None),
         ("Neal WTEN Invoice 5345738-1", "invoice", False, None, None, None),
+        ("Richard Neal Invoice 7189756-1 for Contract 7189756", "invoice", False, None, None, None),
+        ("Richard Neal for US Congress Revised WGGB 8.22-9.1", "other", True, None, None, None),
     ],
 )  # fmt: skip
 def test_parse_file_name(name, kind, rev, contract, start, end):

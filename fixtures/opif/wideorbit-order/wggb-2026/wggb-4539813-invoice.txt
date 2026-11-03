@@ -1,0 +1,936 @@
+                                                                                                                                                                                                      Page 1 of 13
+                                                                                                        INVOICE
+                                                                                                                Property                  WGGB                 Order #      4539813
+                                     WGGB                                    Invoice #                                                    4539813-1            Alt Order #
+                                     1300 Liberty Street                     Invoice Date                                                 09/27/26             Ext. Opp. ID
+                                     Springfield, MA 01104                   Invoice Month                                                September 2026       Deal #
+                                     Sales T & C: http://advertising.graymedia.com/
+                                                                             Invoice Period                                               08/31/26 - 09/27/26 Flight Dates 09/08/26 - 09/30/26
+                                     Main: (413) 733-4040                    Advertiser                                                   Richard Neal for US Congress
+                                     Billing: (413) 733-4040                 Product                                                      9/8-9/30
+                                                                                                                Estimate #
+                                                                                                                                          Account Executive             Mary Marcil-Labbe
+Billing Address:
+                                                                                                                                          Sales Office                  Springfield MA Local
+                                                                                                                                          Sales Region                  Local
+                          Horgan Associates
+                                                                                                                                          Agency Code
+                          Attention: Accounts Payable
+                                                                                                                                          Advertiser Code
+                          23 Randolph Place, Unit 111
+                          Northampton, MA 01060                                                                                           Billing Calendar              Broadcast
+                                                                                                                                          Billing Type                  Cash
+                                                                                                                                          Special Handling
+                                                                                                                                          Agency Ref                    177378
+Send Payment To:                                                                                                                          Advertiser Ref                596982
+ WGGB                                                                                                                                     Product 1
+ PO Box 14200                                                                                                                             Product 2
+ Tallahassee, FL 32317-4200
+
+
+
+                                                                                                                                                      Spots/
+Line   Start Date        End Date           Description                        Start/End Time                MTWTFSS                    Length        Week                Rate          Type
+
+    1 09/08/26           09/30/26           M-F 5a-530a News                   5a-530a                       MTWTF--                         :30             5             $55.00         NM
+
+       Weeks:Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/07/26    09/13/26    --WTF--                  5                                                 $55.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        1 WGGB W 09/09/26        5:12 AM M-F 5a-530a News                                                       5a-530a                        :30 NEAL002HR                                             $55.00 NM
+        2 WGGB W 09/09/26        5:25 AM M-F 5a-530a News                                                       5a-530a                        :30 NEAL002HR                                             $55.00 NM
+        3 WGGB Th 09/10/26       5:12 AM M-F 5a-530a News                                                       5a-530a                        :30 NEAL002HR                                             $55.00 NM
+        5 WGGB F 09/11/26        5:21 AM M-F 5a-530a News                                                       5a-530a                        :30 NEAL002HR                                             $55.00 NM
+        4 WGGB F 09/11/26        5:29 AM M-F 5a-530a News                                                       5a-530a                        :30 NEAL0005H                                             $55.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/14/26    09/20/26    MTWTF--                  5                                                 $55.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        6 WGGB M 09/14/26        5:20 AM M-F 5a-530a News                                                       5a-530a                        :30 NEAL0005H                                             $55.00 NM
+       10 WGGB Tu 09/15/26       5:30 AM M-F 5a-530a News                                                       5a-530a                        :30 NEAL0005H                                             $55.00 NM
+        9 WGGB Th 09/17/26       5:21 AM M-F 5a-530a News                                                       5a-530a                        :30 NEAL002HR                                             $55.00 NM
+        7 WGGB Th 09/17/26       5:25 AM M-F 5a-530a News                                                       5a-530a                        :30 NEAL0005H                                             $55.00 NM
+        8 WGGB F 09/18/26        5:20 AM M-F 5a-530a News                                                       5a-530a                        :30 NEAL002HR                                             $55.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/21/26    09/27/26    MTWTF--                  5                                                 $55.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+       11 WGGB M 09/21/26        5:19 AM M-F 5a-530a News                                                       5a-530a                        :30 NEAL0005H                                             $55.00 NM
+       15 WGGB Tu 09/22/26       5:26 AM M-F 5a-530a News                                                       5a-530a                        :30 NEAL0005H                                             $55.00 NM
+       14 WGGB W 09/23/26        5:28 AM M-F 5a-530a News                                                       5a-530a                        :30 NEAL002HR                                             $55.00 NM
+       12 WGGB Th 09/24/26       5:10 AM M-F 5a-530a News                                                       5a-530a                        :30 NEAL002HR                                             $55.00 NM
+       13 WGGB Th 09/24/26       5:19 AM M-F 5a-530a News                                                       5a-530a                        :30 NEAL0005H                                             $55.00 NM
+
+    2 09/08/26           09/30/26           M-F 530a-6a News                   530a-6a                       MTWTF--                         :30             5             $55.00         NM
+
+       Weeks:       Start Date End Date     MTWTFSS         Spots/Week                                            Rate
+                    09/07/26    09/13/26    --WTF--                  5                                          $55.00
+ Spots: #        Ch    Day Air Date    Air Time Description                                                     Start/End Time              Length Ad-ID                                                  Rate Type
+ We warrant that the actual broadcast information shown on this invoice was taken from the program log. The station does not discriminate in its advertising contracts, and it will not accept advertising intended to
+ discriminate on the basis of race or ethnicity. Advertiser hereto affirms that nothing in this Agreement is intended to discriminate on the basis of race or ethnicity. This Agreement is subject to the Standard Terms
+                                                                             and Conditions available at the link located above on this invoice.
+
+
+             To pay online, please visit us at payments.graymedia.com. A 2.75% surcharge fee will be applied to credit card transactions where applicable. ACH transactions are available with no fee.
+
+
+
+                                                                                                                                                                                                   powered by WideOrbit
+                                                                                                                                                                                                      Page 2 of 13
+                                                                                                INVOICE
+                                     Send Payment To:
+                                     WGGB                                                                       Invoice #            4539813-1              Invoice Month September 2026
+                                     PO Box 14200                                                               Invoice Date         09/27/26               Invoice Period 08/31/26 - 09/27/26
+                                     Tallahassee, FL 32317-4200                                                 Advertiser           Richard Neal for US Congress
+                                                                                                                Product              9/8-9/30
+                                                                                                                Estimate #
+
+
+
+                                                                                                                                                      Spots/
+Line   Start Date        End Date           Description                        Start/End Time                MTWTFSS                    Length        Week                Rate          Type
+
+    2 09/08/26           09/30/26           M-F 530a-6a News                   530a-6a                       MTWTF--                         :30             5             $55.00         NM
+
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        2 WGGB W 09/09/26        5:51 AM M-F 530a-6a News                                                       530a-6a                        :30 NEAL002HR                                             $55.00 NM
+        1 WGGB Th 09/10/26       5:52 AM M-F 530a-6a News                                                       530a-6a                        :30 NEAL0005H                                             $55.00 NM
+        3 WGGB Th 09/10/26       5:59 AM M-F 530a-6a News                                                       530a-6a                        :30 NEAL002HR                                             $55.00 NM
+        5 WGGB F 09/11/26        5:41 AM M-F 530a-6a News                                                       530a-6a                        :30 NEAL002HR                                             $55.00 NM
+        4 WGGB F 09/11/26        5:58 AM M-F 530a-6a News                                                       530a-6a                        :30 NEAL0005H                                             $55.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/14/26    09/20/26    MTWTF--                  5                                                 $55.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        6 WGGB M 09/14/26        5:41 AM M-F 530a-6a News                                                       530a-6a                        :30 NEAL002HR                                             $55.00 NM
+       10 WGGB Tu 09/15/26       5:41 AM M-F 530a-6a News                                                       530a-6a                        :30 NEAL0005H                                             $55.00 NM
+        7 WGGB W 09/16/26        5:55 AM M-F 530a-6a News                                                       530a-6a                        :30 NEAL0005H                                             $55.00 NM
+        8 WGGB Th 09/17/26       5:56 AM M-F 530a-6a News                                                       530a-6a                        :30 NEAL002HR                                             $55.00 NM
+        9 WGGB F 09/18/26        5:55 AM M-F 530a-6a News                                                       530a-6a                        :30 NEAL0005H                                             $55.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/21/26    09/27/26    MTWTF--                  5                                                 $55.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+       11 WGGB M 09/21/26        5:41 AM M-F 530a-6a News                                                       530a-6a                        :30 NEAL002HR                                             $55.00 NM
+       15 WGGB Tu 09/22/26       5:40 AM M-F 530a-6a News                                                       530a-6a                        :30 NEAL002HR                                             $55.00 NM
+       14 WGGB W 09/23/26        5:40 AM M-F 530a-6a News                                                       530a-6a                        :30 NEAL0005H                                             $55.00 NM
+       12 WGGB Th 09/24/26       5:53 AM M-F 530a-6a News                                                       530a-6a                        :30 NEAL002HR                                             $55.00 NM
+       13 WGGB F 09/25/26        5:54 AM M-F 530a-6a News                                                       530a-6a                        :30 NEAL0005H                                             $55.00 NM
+
+    3 09/08/26           09/30/26           M-F 6a-7a News                     6a-7a                         MTWTF--                         :30             7           $120.00          NM
+
+       Weeks:Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/07/26    09/13/26    --WTF--                  7                                               $120.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        6 WGGB W 09/09/26        6:22 AM M-F 6a-7a News                                                        6a-7a                           :30 NEAL002HR                                           $120.00 NM
+        2 WGGB W 09/09/26        6:29 AM M-F 6a-7a News                                                        6a-7a                           :30 NEAL002HR                                           $120.00 NM
+        3 WGGB Th 09/10/26       6:12 AM M-F 6a-7a News                                                        6a-7a                           :30 NEAL0005H                                           $120.00 NM
+        5 WGGB Th 09/10/26       6:59 AM M-F 6a-7a News                                                        6a-7a                           :30 NEAL002HR                                           $120.00 NM
+        1 WGGB F 09/11/26        6:10 AM M-F 6a-7a News                                                        6a-7a                           :30 NEAL002HR                                           $120.00 NM
+        4 WGGB F 09/11/26        6:25 AM M-F 6a-7a News                                                        6a-7a                           :30 NEAL0005H                                           $120.00 NM
+        7 WGGB F 09/11/26        6:55 AM M-F 6a-7a News                                                        6a-7a                           :30 NEAL002HR                                           $120.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/14/26    09/20/26    MTWTF--                  7                                               $120.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+       13 WGGB M 09/14/26        6:21 AM M-F 6a-7a News                                                        6a-7a                           :30 NEAL0005H                                           $120.00 NM
+        8 WGGB M 09/14/26        6:56 AM M-F 6a-7a News                                                        6a-7a                           :30 NEAL002HR                                           $120.00 NM
+        9 WGGB Tu 09/15/26       6:28 AM M-F 6a-7a News                                                        6a-7a                           :30 NEAL002HR                                           $120.00 NM
+       14 WGGB Tu 09/15/26       6:50 AM M-F 6a-7a News                                                        6a-7a                           :30 NEAL0005H                                           $120.00 NM
+       10 WGGB W 09/16/26        6:12 AM M-F 6a-7a News                                                        6a-7a                           :30 NEAL002HR                                           $120.00 NM
+       11 WGGB Th 09/17/26       6:59 AM M-F 6a-7a News                                                        6a-7a                           :30 NEAL0005H                                           $120.00 NM
+       12 WGGB F 09/18/26        6:25 AM M-F 6a-7a News                                                        6a-7a                           :30 NEAL002HR                                           $120.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/21/26    09/27/26    MTWTF--                  7                                               $120.00
+
+ We warrant that the actual broadcast information shown on this invoice was taken from the program log. The station does not discriminate in its advertising contracts, and it will not accept advertising intended to
+ discriminate on the basis of race or ethnicity. Advertiser hereto affirms that nothing in this Agreement is intended to discriminate on the basis of race or ethnicity. This Agreement is subject to the Standard Terms
+                                                                             and Conditions available at the link located above on this invoice.
+
+
+             To pay online, please visit us at payments.graymedia.com. A 2.75% surcharge fee will be applied to credit card transactions where applicable. ACH transactions are available with no fee.
+
+
+
+                                                                                                                                                                                                   powered by WideOrbit
+                                                                                                                                                                                                      Page 3 of 13
+                                                                                                INVOICE
+                                     Send Payment To:
+                                     WGGB                                                                       Invoice #            4539813-1              Invoice Month September 2026
+                                     PO Box 14200                                                               Invoice Date         09/27/26               Invoice Period 08/31/26 - 09/27/26
+                                     Tallahassee, FL 32317-4200                                                 Advertiser           Richard Neal for US Congress
+                                                                                                                Product              9/8-9/30
+                                                                                                                Estimate #
+
+
+
+                                                                                                                                                      Spots/
+Line   Start Date        End Date           Description                        Start/End Time                MTWTFSS                    Length        Week                Rate          Type
+
+    3 09/08/26           09/30/26           M-F 6a-7a News                     6a-7a                         MTWTF--                         :30             7           $120.00          NM
+
+ Spots: #        Ch  Day            Air Date         Air Time Description                                       Start/End Time              Length Ad-ID                                                 Rate Type
+       20        WGGB M             09/21/26         6:20 AM M-F 6a-7a News                                     6a-7a                          :30 NEAL0005H                                           $120.00 NM
+       15        WGGB M             09/21/26         6:39 AM M-F 6a-7a News                                     6a-7a                          :30 NEAL002HR                                           $120.00 NM
+       16        WGGB Tu            09/22/26         6:12 AM M-F 6a-7a News                                     6a-7a                          :30 NEAL0005H                                           $120.00 NM
+       21        WGGB Tu            09/22/26         6:54 AM M-F 6a-7a News                                     6a-7a                          :30 NEAL002HR                                           $120.00 NM
+       17        WGGB W             09/23/26         6:11 AM M-F 6a-7a News                                     6a-7a                          :30 NEAL002HR                                           $120.00 NM
+       18        WGGB Th            09/24/26         6:58 AM M-F 6a-7a News                                     6a-7a                          :30 NEAL0005H                                           $120.00 NM
+       19        WGGB F             09/25/26         6:24 AM M-F 6a-7a News                                     6a-7a                          :30 NEAL002HR                                           $120.00 NM
+
+    4 09/08/26           09/30/26
+                           ABC Good Morning Amer 7a-9a                                                       MTWTF--                         :30           10            $125.00          NM
+                           ica
+    Weeks:   Start Date End Date      MTWTFSS         Spots/Week                                                 Rate
+             09/07/26     09/13/26    --WTF--                 10                                              $125.00
+ Spots: # Ch    Day Air Date     Air Time Description                                                          Start/End Time               Length Ad-ID                                                 Rate Type
+       10 WGGB W 09/09/26         7:58 AM ABC Good Morning America                                             7a-9a                           :30 NEAL002HR                                           $125.00 NM
+        3 WGGB W 09/09/26         8:29 AM ABC Good Morning America                                             7a-9a                           :30 NEAL002HR                                           $125.00 NM
+        4 WGGB W 09/09/26         8:47 AM ABC Good Morning America                                             7a-9a                           :30 NEAL002HR                                           $125.00 NM
+        5 WGGB Th 09/10/26        7:41 AM ABC Good Morning America                                             7a-9a                           :30 NEAL0005H                                           $125.00 NM
+        6 WGGB Th 09/10/26        7:59 AM ABC Good Morning America                                             7a-9a                           :30 NEAL002HR                                           $125.00 NM
+        9 WGGB Th 09/10/26        8:11 AM ABC Good Morning America                                             7a-9a                           :30 NEAL0005H                                           $125.00 NM
+        1 WGGB Th 09/10/26        8:45 AM ABC Good Morning America                                             7a-9a                           :30 NEAL002HR                                           $125.00 NM
+        2 WGGB F 09/11/26                 ABC Good Morning America                                             7a-9a                           :00                                                     $125.00 NM
+                See MG 4.37
+        8 WGGB F 09/11/26         7:23 AM ABC Good Morning America                                              7a-9a                              :30 NEAL0005H                                       $125.00 NM
+        7 WGGB F 09/11/26         8:12 AM ABC Good Morning America                                              7a-9a                              :30 NEAL002HR                                       $125.00 NM
+       37 WGGB F 09/18/26         8:59 AM ABC Good Morning America                                              7a-9a                              :30 NEAL0005H                                       $125.00 NM
+                MG for 4.2 09/11
+    Weeks:   Start Date End Date      MTWTFSS         Spots/Week                                                 Rate
+             09/14/26     09/20/26    MTWTF--                 10                                              $125.00
+ Spots: # Ch    Day Air Date     Air Time Description                                                          Start/End Time               Length Ad-ID                                                 Rate Type
+       16 WGGB M 09/14/26         7:23 AM ABC Good Morning America                                             7a-9a                           :30 NEAL0005H                                           $125.00 NM
+       11 WGGB M 09/14/26         8:59 AM ABC Good Morning America                                             7a-9a                           :30 NEAL002HR                                           $125.00 NM
+       12 WGGB Tu 09/15/26        8:35 AM ABC Good Morning America                                             7a-9a                           :30 NEAL002HR                                           $125.00 NM
+       17 WGGB W 09/16/26         7:47 AM ABC Good Morning America                                             7a-9a                           :30 NEAL0005H                                           $125.00 NM
+       19 WGGB W 09/16/26         7:55 AM ABC Good Morning America                                             7a-9a                           :30 NEAL002HR                                           $125.00 NM
+       13 WGGB W 09/16/26         8:29 AM ABC Good Morning America                                             7a-9a                           :30 NEAL0005H                                           $125.00 NM
+       20 WGGB Th 09/17/26        7:24 AM ABC Good Morning America                                             7a-9a                           :30 NEAL002HR                                           $125.00 NM
+       14 WGGB Th 09/17/26        7:48 AM ABC Good Morning America                                             7a-9a                           :30 NEAL0005H                                           $125.00 NM
+       15 WGGB F 09/18/26         8:41 AM ABC Good Morning America                                             7a-9a                           :30 NEAL0005H                                           $125.00 NM
+       18 WGGB F 09/18/26         8:55 AM ABC Good Morning America                                             7a-9a                           :30 NEAL002HR                                           $125.00 NM
+    Weeks:   Start Date End Date      MTWTFSS         Spots/Week                                                 Rate
+             09/21/26     09/27/26    MTWTF--                 10                                              $125.00
+ Spots: # Ch    Day Air Date     Air Time Description                                                          Start/End Time               Length Ad-ID                                                 Rate Type
+       26 WGGB M 09/21/26         7:24 AM ABC Good Morning America                                             7a-9a                           :30 NEAL0005H                                           $125.00 NM
+       21 WGGB M 09/21/26         7:41 AM ABC Good Morning America                                             7a-9a                           :30 NEAL002HR                                           $125.00 NM
+       22 WGGB Tu 09/22/26        7:55 AM ABC Good Morning America                                             7a-9a                           :30 NEAL0005H                                           $125.00 NM
+       27 WGGB Tu 09/22/26        8:29 AM ABC Good Morning America                                             7a-9a                           :30 NEAL002HR                                           $125.00 NM
+ We warrant that the actual broadcast information shown on this invoice was taken from the program log. The station does not discriminate in its advertising contracts, and it will not accept advertising intended to
+ discriminate on the basis of race or ethnicity. Advertiser hereto affirms that nothing in this Agreement is intended to discriminate on the basis of race or ethnicity. This Agreement is subject to the Standard Terms
+                                                                             and Conditions available at the link located above on this invoice.
+
+
+             To pay online, please visit us at payments.graymedia.com. A 2.75% surcharge fee will be applied to credit card transactions where applicable. ACH transactions are available with no fee.
+
+
+
+                                                                                                                                                                                                   powered by WideOrbit
+                                                                                                                                                                                                      Page 4 of 13
+                                                                                                INVOICE
+                                     Send Payment To:
+                                     WGGB                                                                       Invoice #            4539813-1              Invoice Month September 2026
+                                     PO Box 14200                                                               Invoice Date         09/27/26               Invoice Period 08/31/26 - 09/27/26
+                                     Tallahassee, FL 32317-4200                                                 Advertiser           Richard Neal for US Congress
+                                                                                                                Product              9/8-9/30
+                                                                                                                Estimate #
+
+
+
+                                                                                                                                                      Spots/
+Line   Start Date        End Date           Description                        Start/End Time                MTWTFSS                    Length        Week                Rate          Type
+
+    4 09/08/26           09/30/26         ABC Good Morning Amer 7a-9a                                        MTWTF--                         :30           10            $125.00          NM
+                                          ica
+ Spots: #        Ch  Day            Air Date   Air Time Description                                             Start/End Time              Length Ad-ID                                                 Rate Type
+       23        WGGB W             09/23/26   7:24 AM ABC Good Morning America                                 7a-9a                          :30 NEAL0005H                                           $125.00 NM
+       29        WGGB W             09/23/26   7:59 AM ABC Good Morning America                                 7a-9a                          :30 NEAL002HR                                           $125.00 NM
+       30        WGGB Th            09/24/26   8:11 AM ABC Good Morning America                                 7a-9a                          :30 NEAL002HR                                           $125.00 NM
+       24        WGGB Th            09/24/26   8:36 AM ABC Good Morning America                                 7a-9a                          :30 NEAL0005H                                           $125.00 NM
+       28        WGGB F             09/25/26   8:37 AM ABC Good Morning America                                 7a-9a                          :30 NEAL0005H                                           $125.00 NM
+       25        WGGB F             09/25/26   8:41 AM ABC Good Morning America                                 7a-9a                          :30 NEAL002HR                                           $125.00 NM
+
+    5 09/08/26           09/30/26           Sa-Su 7a-8a News                   7a-8a                         -----S-                         :30             1             $75.00         NM
+
+       Weeks:Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/07/26    09/13/26    -----S-                  1                                                 $75.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        1 WGGB Sa 09/12/26       7:20 AM Sa-Su 7a-8a News                                                       7a-8a                          :30 NEAL0005H                                             $75.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/14/26    09/20/26    -----S-                  1                                                 $75.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        2 WGGB Sa 09/19/26       7:39 AM Sa-Su 7a-8a News                                                       7a-8a                          :30 NEAL0005H                                             $75.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/21/26    09/27/26    -----S-                  1                                                 $75.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        3 WGGB Sa 09/26/26       7:15 AM Sa-Su 7a-8a News                                                       7a-8a                          :30 NEAL002HR                                             $75.00 NM
+
+    6 09/08/26           09/30/26           ABC GMA Sat                        8a-9a                         -----S-                         :30             1             $85.00         NM
+
+       Weeks:Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/07/26    09/13/26    -----S-                  1                                                 $85.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        1 WGGB Sa 09/12/26       8:54 AM ABC GMA Sat                                                            8a-9a                          :30 NEAL0005H                                             $85.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/14/26    09/20/26    -----S-                  1                                                 $85.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        2 WGGB Sa 09/19/26       8:46 AM ABC GMA Sat                                                            8a-9a                          :30 NEAL002HR                                             $85.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/21/26    09/27/26    -----S-                  1                                                 $85.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        3 WGGB Sa 09/26/26       8:49 AM ABC GMA Sat                                                            8a-9a                          :30 NEAL0005H                                             $85.00 NM
+
+    7 09/08/26           09/30/26           Sa-Su 9a-10a News                  9a-10a                        -----S-                         :30             1             $65.00         NM
+
+       Weeks:Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/07/26    09/13/26    -----S-                  1                                                 $65.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        1 WGGB Sa 09/12/26       9:39 AM Sa-Su 9a-10a News                                                      9a-10a                         :30 NEAL002HR                                             $65.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/14/26    09/20/26    -----S-                  1                                                 $65.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        2 WGGB Sa 09/19/26       9:25 AM Sa-Su 9a-10a News                                                      9a-10a                         :30 NEAL0005H                                             $65.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/21/26    09/27/26    -----S-                  1                                                 $65.00
+
+ We warrant that the actual broadcast information shown on this invoice was taken from the program log. The station does not discriminate in its advertising contracts, and it will not accept advertising intended to
+ discriminate on the basis of race or ethnicity. Advertiser hereto affirms that nothing in this Agreement is intended to discriminate on the basis of race or ethnicity. This Agreement is subject to the Standard Terms
+                                                                             and Conditions available at the link located above on this invoice.
+
+
+             To pay online, please visit us at payments.graymedia.com. A 2.75% surcharge fee will be applied to credit card transactions where applicable. ACH transactions are available with no fee.
+
+
+
+                                                                                                                                                                                                   powered by WideOrbit
+                                                                                                                                                                                                      Page 5 of 13
+                                                                                                INVOICE
+                                     Send Payment To:
+                                     WGGB                                                                       Invoice #            4539813-1              Invoice Month September 2026
+                                     PO Box 14200                                                               Invoice Date         09/27/26               Invoice Period 08/31/26 - 09/27/26
+                                     Tallahassee, FL 32317-4200                                                 Advertiser           Richard Neal for US Congress
+                                                                                                                Product              9/8-9/30
+                                                                                                                Estimate #
+
+
+
+                                                                                                                                                      Spots/
+Line   Start Date        End Date           Description                        Start/End Time                MTWTFSS                    Length        Week                Rate          Type
+
+    7 09/08/26           09/30/26           Sa-Su 9a-10a News                  9a-10a                        -----S-                         :30             1             $65.00         NM
+
+ Spots: #        Ch  Day Air Date                    Air Time Description                                       Start/End Time              Length Ad-ID                                                  Rate Type
+        3        WGGB Sa 09/26/26                    9:25 AM Sa-Su 9a-10a News                                  9a-10a                         :30 NEAL002HR                                             $65.00 NM
+
+    8 09/08/26           09/30/26           ABC GMA 2 Sat                      10a-11a                       -----S-                         :30             1             $85.00         NM
+
+       Weeks:Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/07/26    09/13/26    -----S-                  1                                                 $85.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        1 WGGB Sa 09/12/26 10:40 AM ABC GMA 2 Sat                                                               10a-11a                        :30 NEAL0005H                                             $85.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/14/26    09/20/26    -----S-                  1                                                 $85.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        2 WGGB Sa 09/19/26 10:10 AM ABC GMA 2 Sat                                                               10a-11a                        :30 NEAL002HR                                             $85.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/21/26    09/27/26    -----S-                  1                                                 $85.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        3 WGGB Sa 09/26/26 10:59 AM ABC GMA 2 Sat                                                               10a-11a                        :30 NEAL0005H                                             $85.00 NM
+
+    9 09/08/26           09/30/26           Sa-Su 7a-8a News                   7a-8a                         ------S                         :30             1             $65.00         NM
+
+       Weeks:Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/07/26    09/13/26    ------S                  1                                                 $65.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        1 WGGB Su 09/13/26       7:41 AM Sa-Su 7a-8a News                                                       7a-8a                          :30 NEAL002HR                                             $65.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/14/26    09/20/26    ------S                  1                                                 $65.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        2 WGGB Su 09/20/26       7:19 AM Sa-Su 7a-8a News                                                       7a-8a                          :30 NEAL0005H                                             $65.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/21/26    09/27/26    ------S                  1                                                 $65.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        3 WGGB Su 09/27/26       7:24 AM Sa-Su 7a-8a News                                                       7a-8a                          :30 NEAL002HR                                             $65.00 NM
+
+  10 09/08/26            09/30/26           ABC GMA Sun                        8a-9a                         ------S                         :30             2           $105.00          NM
+
+       Weeks:Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/07/26    09/13/26    ------S                  2                                               $105.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        1 WGGB Su 09/13/26       8:29 AM ABC GMA Sun                                                           8a-9a                           :30 NEAL0005H                                           $105.00 NM
+        2 WGGB Su 09/13/26       8:39 AM ABC GMA Sun                                                           8a-9a                           :30 NEAL002HR                                           $105.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/14/26    09/20/26    ------S                  2                                               $105.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        3 WGGB Su 09/20/26       8:29 AM ABC GMA Sun                                                           8a-9a                           :30 NEAL002HR                                           $105.00 NM
+        4 WGGB Su 09/20/26       8:48 AM ABC GMA Sun                                                           8a-9a                           :30 NEAL0005H                                           $105.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/21/26    09/27/26    ------S                  2                                               $105.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        5 WGGB Su 09/27/26       8:29 AM ABC GMA Sun                                                           8a-9a                           :30 NEAL0005H                                           $105.00 NM
+        6 WGGB Su 09/27/26       8:54 AM ABC GMA Sun                                                           8a-9a                           :30 NEAL002HR                                           $105.00 NM
+
+ We warrant that the actual broadcast information shown on this invoice was taken from the program log. The station does not discriminate in its advertising contracts, and it will not accept advertising intended to
+ discriminate on the basis of race or ethnicity. Advertiser hereto affirms that nothing in this Agreement is intended to discriminate on the basis of race or ethnicity. This Agreement is subject to the Standard Terms
+                                                                             and Conditions available at the link located above on this invoice.
+
+
+             To pay online, please visit us at payments.graymedia.com. A 2.75% surcharge fee will be applied to credit card transactions where applicable. ACH transactions are available with no fee.
+
+
+
+                                                                                                                                                                                                   powered by WideOrbit
+                                                                                                                                                                                                      Page 6 of 13
+                                                                                                INVOICE
+                                     Send Payment To:
+                                     WGGB                                                                       Invoice #            4539813-1              Invoice Month September 2026
+                                     PO Box 14200                                                               Invoice Date         09/27/26               Invoice Period 08/31/26 - 09/27/26
+                                     Tallahassee, FL 32317-4200                                                 Advertiser           Richard Neal for US Congress
+                                                                                                                Product              9/8-9/30
+                                                                                                                Estimate #
+
+
+
+                                                                                                                                                         Spots/
+Line   Start Date        End Date           Description                        Start/End Time                MTWTFSS                    Length           Week             Rate          Type
+  11 09/08/26            09/30/26           Sa-Su 9a-10a News                  9a-10a/10a-11a                ------S                         :30             1             $65.00         NM
+
+       Weeks:Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/07/26    09/13/26    ------S                  1                                                 $65.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        1 WGGB Su 09/13/26       9:52 AM Sa-Su 9a-10a News                                                      9a-10a/10a-11a                 :30 NEAL0005H                                             $65.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/14/26    09/20/26    ------S                  1                                                 $65.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        2 WGGB Su 09/20/26       9:40 AM Sa-Su 9a-10a News                                                      9a-10a/10a-11a                 :30 NEAL002HR                                             $65.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/21/26    09/27/26    ------S                  1                                                 $65.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        3 WGGB Su 09/27/26       9:41 AM Sa-Su 9a-10a News                                                      9a-10a/10a-11a                 :30 NEAL0005H                                             $65.00 NM
+
+  12 09/08/26            09/30/26           ABC This Week                      10a-11a                       ------S                         :30             2             $75.00         NM
+
+       Weeks:Start Date End Date      MTWTFSS         Spots/Week                                                  Rate
+             09/07/26    09/13/26     ------S                  2                                                $75.00
+ Spots: # Ch    Day Air Date     Air Time Description                                                           Start/End Time              Length Ad-ID                                                  Rate Type
+        9 WGGB Sa 09/12/26       7:39 AM Sa-Su 7a-8a News                                                       7a-8a                          :30 NEAL002HR                                             $75.00 NM
+                MG for 12.7,12.8
+        1 WGGB Su 09/13/26                ABC This Week                                                         10a-11a                            :00                                                   $75.00 NM
+                See MG 12.7,12.8
+        2 WGGB Su 09/13/26                ABC This Week                                                         10a-11a                            :00                                                   $75.00 NM
+                See MG 12.7,12.8
+        7 WGGB Su 09/13/26                Local Special                                                         Various                            :00                                                   $75.00 NM
+                See MG 12.9,12.10
+       10 WGGB Sa 09/19/26       7:10 AM Sa-Su 7a-8a News                                                       7a-8a                              :30 NEAL002HR                                         $75.00 NM
+                MG for 12.7,12.8
+        8 WGGB Su 09/20/26                Local Special                                                         Various                            :00                                                   $75.00 NM
+                See MG 12.9,12.10
+    Weeks:   Start Date End Date      MTWTFSS         Spots/Week                                                  Rate
+             09/14/26    09/20/26     ------S                  2                                                $75.00
+ Spots: # Ch    Day Air Date     Air Time Description                                                           Start/End Time              Length Ad-ID                                                  Rate Type
+        4 WGGB Su 09/20/26                ABC This Week                                                         10a-11a                        :00                                                       $75.00 NM
+                Unresolved
+        3 WGGB Su 09/20/26 10:59 AM ABC This Week                                                               10a-11a                            :30 NEAL0005H                                         $75.00 NM
+    Weeks:   Start Date End Date      MTWTFSS         Spots/Week                                                  Rate
+             09/21/26    09/27/26     ------S                  2                                                $75.00
+ Spots: # Ch    Day Air Date     Air Time Description                                                           Start/End Time              Length Ad-ID                                                  Rate Type
+        6 WGGB Su 09/27/26                ABC This Week                                                         10a-11a                        :00                                                       $75.00 NM
+                See MG 12.11
+        5 WGGB Su 09/27/26 10:38 AM ABC This Week                                                               10a-11a                            :30 NEAL002HR                                         $75.00 NM
+
+  13 09/08/26            09/30/26           M-F 12p-1230p News                 12p-1230p                     MTWTF--                         :30             5             $75.00         NM
+
+       Weeks:       Start Date End Date     MTWTFSS         Spots/Week                                            Rate
+                    09/07/26    09/13/26    --WTF--                  5                                          $75.00
+ Spots: #        Ch    Day Air Date    Air Time Description                                                     Start/End Time              Length Ad-ID                                                  Rate Type
+        2        WGGB W 09/09/26 12:10 PM M-F 12p-1230p News                                                    12p-1230p                      :30 NEAL002HR                                             $75.00 NM
+        1        WGGB W 09/09/26 12:20 PM M-F 12p-1230p News                                                    12p-1230p                      :30 NEAL002HR                                             $75.00 NM
+
+ We warrant that the actual broadcast information shown on this invoice was taken from the program log. The station does not discriminate in its advertising contracts, and it will not accept advertising intended to
+ discriminate on the basis of race or ethnicity. Advertiser hereto affirms that nothing in this Agreement is intended to discriminate on the basis of race or ethnicity. This Agreement is subject to the Standard Terms
+                                                                             and Conditions available at the link located above on this invoice.
+
+
+             To pay online, please visit us at payments.graymedia.com. A 2.75% surcharge fee will be applied to credit card transactions where applicable. ACH transactions are available with no fee.
+
+
+
+                                                                                                                                                                                                   powered by WideOrbit
+                                                                                                                                                                                                      Page 7 of 13
+                                                                                                INVOICE
+                                     Send Payment To:
+                                     WGGB                                                                       Invoice #            4539813-1              Invoice Month September 2026
+                                     PO Box 14200                                                               Invoice Date         09/27/26               Invoice Period 08/31/26 - 09/27/26
+                                     Tallahassee, FL 32317-4200                                                 Advertiser           Richard Neal for US Congress
+                                                                                                                Product              9/8-9/30
+                                                                                                                Estimate #
+
+
+
+                                                                                                                                                      Spots/
+Line   Start Date        End Date           Description                        Start/End Time                MTWTFSS                    Length        Week                Rate          Type
+
+  13 09/08/26            09/30/26           M-F 12p-1230p News                 12p-1230p                     MTWTF--                         :30             5             $75.00         NM
+
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        5 WGGB Th 09/10/26 12:25 PM M-F 12p-1230p News                                                          12p-1230p                      :30 NEAL0005H                                             $75.00 NM
+        3 WGGB F 09/11/26 12:12 PM M-F 12p-1230p News                                                           12p-1230p                      :30 NEAL002HR                                             $75.00 NM
+        4 WGGB F 09/11/26 12:26 PM M-F 12p-1230p News                                                           12p-1230p                      :30 NEAL0005H                                             $75.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/14/26    09/20/26    MTWTF--                  5                                                 $75.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+        6 WGGB M 09/14/26 12:16 PM M-F 12p-1230p News                                                           12p-1230p                      :30 NEAL0005H                                             $75.00 NM
+       10 WGGB Tu 09/15/26 12:10 PM M-F 12p-1230p News                                                          12p-1230p                      :30 NEAL0005H                                             $75.00 NM
+        9 WGGB W 09/16/26 12:11 PM M-F 12p-1230p News                                                           12p-1230p                      :30 NEAL002HR                                             $75.00 NM
+        7 WGGB Th 09/17/26 12:24 PM M-F 12p-1230p News                                                          12p-1230p                      :30 NEAL002HR                                             $75.00 NM
+        8 WGGB F 09/18/26 12:28 PM M-F 12p-1230p News                                                           12p-1230p                      :30 NEAL002HR                                             $75.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                   Rate
+             09/21/26    09/27/26    MTWTF--                  5                                                 $75.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                            Start/End Time              Length Ad-ID                                                  Rate Type
+       11 WGGB M 09/21/26 12:12 PM M-F 12p-1230p News                                                           12p-1230p                      :30 NEAL0005H                                             $75.00 NM
+       15 WGGB Tu 09/22/26 12:17 PM M-F 12p-1230p News                                                          12p-1230p                      :30 NEAL0005H                                             $75.00 NM
+       12 WGGB W 09/23/26 12:19 PM M-F 12p-1230p News                                                           12p-1230p                      :30 NEAL0005H                                             $75.00 NM
+       14 WGGB Th 09/24/26 12:12 PM M-F 12p-1230p News                                                          12p-1230p                      :30 NEAL002HR                                             $75.00 NM
+       13 WGGB F 09/25/26 12:24 PM M-F 12p-1230p News                                                           12p-1230p                      :30 NEAL0005H                                             $75.00 NM
+
+  14 09/08/26            09/13/26           M-F 1230p-1p News                  1230p-1p                      MTWTF--                         :30             7             $75.00         NM
+
+       Weeks:       Start Date End Date     MTWTFSS         Spots/Week                                            Rate
+                    09/07/26    09/13/26    --WTF--                  7                                          $75.00
+ Spots: #        Ch    Day Air Date    Air Time Description                                                     Start/End Time              Length Ad-ID                                                  Rate Type
+        2        WGGB W 09/09/26 12:38 PM M-F 1230p-1p News                                                     1230p-1p                       :30 NEAL002HR                                             $75.00 NM
+        7        WGGB W 09/09/26 12:48 PM M-F 1230p-1p News                                                     1230p-1p                       :30 NEAL002HR                                             $75.00 NM
+        6        WGGB W 09/09/26 12:54 PM M-F 1230p-1p News                                                     1230p-1p                       :30 NEAL002HR                                             $75.00 NM
+        3        WGGB Th 09/10/26 12:58 PM M-F 1230p-1p News                                                    1230p-1p                       :30 NEAL002HR                                             $75.00 NM
+        4        WGGB F 09/11/26 12:42 PM M-F 1230p-1p News                                                     1230p-1p                       :30 NEAL002HR                                             $75.00 NM
+        5        WGGB F 09/11/26 12:52 PM M-F 1230p-1p News                                                     1230p-1p                       :30 NEAL0005H                                             $75.00 NM
+        1        WGGB F 09/11/26 12:56 PM M-F 1230p-1p News                                                     1230p-1p                       :30 NEAL002HR                                             $75.00 NM
+
+  15 09/08/26            09/30/26           M-F 5p-530p News                   5p-530p                       MTWTF--                         :30             7           $130.00          NM
+
+       Weeks:Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/07/26    09/13/26    --WTF--                  7                                               $130.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        1 WGGB W 09/09/26        5:11 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL002HR                                           $130.00 NM
+        5 WGGB W 09/09/26        5:18 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL002HR                                           $130.00 NM
+        2 WGGB W 09/09/26        5:24 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL002HR                                           $130.00 NM
+        7 WGGB Th 09/10/26       5:09 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL0005H                                           $130.00 NM
+        3 WGGB Th 09/10/26       5:29 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL002HR                                           $130.00 NM
+        6 WGGB F 09/11/26        5:20 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL0005H                                           $130.00 NM
+        4 WGGB F 09/11/26        5:28 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL002HR                                           $130.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/14/26    09/20/26    MTWTF--                  7                                               $130.00
+ We warrant that the actual broadcast information shown on this invoice was taken from the program log. The station does not discriminate in its advertising contracts, and it will not accept advertising intended to
+ discriminate on the basis of race or ethnicity. Advertiser hereto affirms that nothing in this Agreement is intended to discriminate on the basis of race or ethnicity. This Agreement is subject to the Standard Terms
+                                                                             and Conditions available at the link located above on this invoice.
+
+
+             To pay online, please visit us at payments.graymedia.com. A 2.75% surcharge fee will be applied to credit card transactions where applicable. ACH transactions are available with no fee.
+
+
+
+                                                                                                                                                                                                   powered by WideOrbit
+                                                                                                                                                                                                      Page 8 of 13
+                                                                                                INVOICE
+                                     Send Payment To:
+                                     WGGB                                                                       Invoice #            4539813-1              Invoice Month September 2026
+                                     PO Box 14200                                                               Invoice Date         09/27/26               Invoice Period 08/31/26 - 09/27/26
+                                     Tallahassee, FL 32317-4200                                                 Advertiser           Richard Neal for US Congress
+                                                                                                                Product              9/8-9/30
+                                                                                                                Estimate #
+
+
+
+                                                                                                                                                      Spots/
+Line   Start Date        End Date           Description                        Start/End Time                MTWTFSS                    Length        Week                Rate          Type
+
+  15 09/08/26            09/30/26           M-F 5p-530p News                   5p-530p                       MTWTF--                         :30             7           $130.00          NM
+
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        8 WGGB M 09/14/26        5:18 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL0005H                                           $130.00 NM
+       13 WGGB M 09/14/26        5:29 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL002HR                                           $130.00 NM
+        9 WGGB Tu 09/15/26       5:23 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL002HR                                           $130.00 NM
+       10 WGGB W 09/16/26        5:22 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL0005H                                           $130.00 NM
+       11 WGGB Th 09/17/26       5:27 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL0005H                                           $130.00 NM
+       14 WGGB F 09/18/26        5:10 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL0005H                                           $130.00 NM
+       12 WGGB F 09/18/26        5:29 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL002HR                                           $130.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/21/26    09/27/26    MTWTF--                  7                                               $130.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+       15 WGGB M 09/21/26        5:22 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL0005H                                           $130.00 NM
+       20 WGGB Tu 09/22/26       5:09 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL0005H                                           $130.00 NM
+       16 WGGB Tu 09/22/26       5:22 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL002HR                                           $130.00 NM
+       17 WGGB W 09/23/26        5:08 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL002HR                                           $130.00 NM
+       21 WGGB W 09/23/26        5:22 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL0005H                                           $130.00 NM
+       18 WGGB Th 09/24/26       5:24 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL0005H                                           $130.00 NM
+       19 WGGB F 09/25/26        5:28 PM M-F 5p-530p News                                                      5p-530p                         :30 NEAL0005H                                           $130.00 NM
+
+  16 09/08/26            09/30/26           M-F 530p-6p News                   530p-6p                       MTWTF--                         :30             7           $180.00          NM
+
+       Weeks:Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/07/26    09/13/26    --WTF--                  7                                               $180.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        5 WGGB W 09/09/26        5:41 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL002HR                                           $180.00 NM
+        6 WGGB W 09/09/26        5:50 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL002HR                                           $180.00 NM
+        2 WGGB W 09/09/26        5:59 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL002HR                                           $180.00 NM
+        1 WGGB Th 09/10/26       5:44 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL0005H                                           $180.00 NM
+        3 WGGB Th 09/10/26       5:50 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL002HR                                           $180.00 NM
+        7 WGGB Th 09/10/26       5:54 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL0005H                                           $180.00 NM
+        4 WGGB F 09/11/26        5:54 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL0005H                                           $180.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/14/26    09/20/26    MTWTF--                  7                                               $180.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        8 WGGB M 09/14/26        5:51 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL0005H                                           $180.00 NM
+       13 WGGB M 09/14/26        5:56 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL002HR                                           $180.00 NM
+        9 WGGB Tu 09/15/26       5:48 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL0005H                                           $180.00 NM
+       10 WGGB W 09/16/26        5:42 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL002HR                                           $180.00 NM
+       11 WGGB Th 09/17/26       5:54 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL002HR                                           $180.00 NM
+       12 WGGB F 09/18/26        5:48 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL0005H                                           $180.00 NM
+       14 WGGB F 09/18/26        5:54 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL002HR                                           $180.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/21/26    09/27/26    MTWTF--                  7                                               $180.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+       20 WGGB M 09/21/26        5:48 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL002HR                                           $180.00 NM
+       21 WGGB Tu 09/22/26       5:40 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL0005H                                           $180.00 NM
+       16 WGGB Tu 09/22/26       5:48 PM M-F 530p-6p News                                                      530p-6p                         :30 NEAL002HR                                           $180.00 NM
+ We warrant that the actual broadcast information shown on this invoice was taken from the program log. The station does not discriminate in its advertising contracts, and it will not accept advertising intended to
+ discriminate on the basis of race or ethnicity. Advertiser hereto affirms that nothing in this Agreement is intended to discriminate on the basis of race or ethnicity. This Agreement is subject to the Standard Terms
+                                                                             and Conditions available at the link located above on this invoice.
+
+
+             To pay online, please visit us at payments.graymedia.com. A 2.75% surcharge fee will be applied to credit card transactions where applicable. ACH transactions are available with no fee.
+
+
+
+                                                                                                                                                                                                   powered by WideOrbit
+                                                                                                                                                                                                      Page 9 of 13
+                                                                                                INVOICE
+                                     Send Payment To:
+                                     WGGB                                                                       Invoice #            4539813-1              Invoice Month September 2026
+                                     PO Box 14200                                                               Invoice Date         09/27/26               Invoice Period 08/31/26 - 09/27/26
+                                     Tallahassee, FL 32317-4200                                                 Advertiser           Richard Neal for US Congress
+                                                                                                                Product              9/8-9/30
+                                                                                                                Estimate #
+
+
+
+                                                                                                                                                      Spots/
+Line   Start Date        End Date           Description                        Start/End Time                MTWTFSS                    Length        Week                Rate          Type
+
+  16 09/08/26            09/30/26           M-F 530p-6p News                   530p-6p                       MTWTF--                         :30             7           $180.00          NM
+
+ Spots: #        Ch  Day            Air Date         Air Time Description                                       Start/End Time              Length Ad-ID                                                 Rate Type
+       15        WGGB Tu            09/22/26         5:53 PM M-F 530p-6p News                                   530p-6p                        :30 NEAL0005H                                           $180.00 NM
+       17        WGGB W             09/23/26         5:52 PM M-F 530p-6p News                                   530p-6p                        :30 NEAL002HR                                           $180.00 NM
+       18        WGGB Th            09/24/26         5:42 PM M-F 530p-6p News                                   530p-6p                        :30 NEAL002HR                                           $180.00 NM
+       19        WGGB F             09/25/26         5:52 PM M-F 530p-6p News                                   530p-6p                        :30 NEAL002HR                                           $180.00 NM
+
+  17 09/08/26            09/30/26           M-F 6p-630p News                   6p-630p                       MTWTF--                         :30             7           $225.00          NM
+
+       Weeks:Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/07/26    09/13/26    --WTF--                  7                                               $225.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        2 WGGB W 09/09/26        6:21 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL002HR                                           $225.00 NM
+        6 WGGB W 09/09/26        6:26 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL002HR                                           $225.00 NM
+        3 WGGB Th 09/10/26       6:12 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL002HR                                           $225.00 NM
+        5 WGGB F 09/11/26        6:13 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL002HR                                           $225.00 NM
+        4 WGGB F 09/11/26        6:23 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL0005H                                           $225.00 NM
+        1 WGGB F 09/11/26        6:26 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL002HR                                           $225.00 NM
+        7 WGGB F 09/11/26        6:30 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL0005H                                           $225.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/14/26    09/20/26    MTWTF--                  7                                               $225.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+       13 WGGB M 09/14/26        6:19 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL0005H                                           $225.00 NM
+        8 WGGB M 09/14/26        6:24 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL002HR                                           $225.00 NM
+        9 WGGB Tu 09/15/26       6:28 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL002HR                                           $225.00 NM
+       10 WGGB W 09/16/26        6:21 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL0005H                                           $225.00 NM
+       14 WGGB Th 09/17/26       6:19 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL0005H                                           $225.00 NM
+       11 WGGB Th 09/17/26       6:24 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL002HR                                           $225.00 NM
+       12 WGGB F 09/18/26        6:20 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL0005H                                           $225.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/21/26    09/27/26    MTWTF--                  7                                               $225.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+       20 WGGB M 09/21/26        6:25 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL0005H                                           $225.00 NM
+       15 WGGB M 09/21/26        6:29 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL002HR                                           $225.00 NM
+       16 WGGB Tu 09/22/26       6:10 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL002HR                                           $225.00 NM
+       17 WGGB W 09/23/26        6:11 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL0005H                                           $225.00 NM
+       21 WGGB W 09/23/26        6:23 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL002HR                                           $225.00 NM
+       18 WGGB Th 09/24/26       6:19 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL0005H                                           $225.00 NM
+       19 WGGB F 09/25/26        6:09 PM M-F 6p-630p News                                                      6p-630p                         :30 NEAL0005H                                           $225.00 NM
+
+  18 09/08/26            09/30/26
+                          ABC Tuesday Prime 2 H 8p-10p                                                       -T-----                         :30             2           $300.00          NM
+                          our
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/14/26    09/20/26    -T-----                  2                                               $300.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        1 WGGB Tu 09/15/26       8:55 PM ABC Tuesday Prime 2 Hour                                              8p-10p                          :30 NEAL0005H                                           $300.00 NM
+        2 WGGB Tu 09/15/26       9:47 PM ABC Tuesday Prime 2 Hour                                              8p-10p                          :30 NEAL002HR                                           $300.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/21/26    09/27/26    -T-----                  2                                               $300.00
+ We warrant that the actual broadcast information shown on this invoice was taken from the program log. The station does not discriminate in its advertising contracts, and it will not accept advertising intended to
+ discriminate on the basis of race or ethnicity. Advertiser hereto affirms that nothing in this Agreement is intended to discriminate on the basis of race or ethnicity. This Agreement is subject to the Standard Terms
+                                                                             and Conditions available at the link located above on this invoice.
+
+
+             To pay online, please visit us at payments.graymedia.com. A 2.75% surcharge fee will be applied to credit card transactions where applicable. ACH transactions are available with no fee.
+
+
+
+                                                                                                                                                                                                   powered by WideOrbit
+                                                                                                                                                                                                      Page 10 of 13
+                                                                                                INVOICE
+                                     Send Payment To:
+                                     WGGB                                                                       Invoice #            4539813-1              Invoice Month September 2026
+                                     PO Box 14200                                                               Invoice Date         09/27/26               Invoice Period 08/31/26 - 09/27/26
+                                     Tallahassee, FL 32317-4200                                                 Advertiser           Richard Neal for US Congress
+                                                                                                                Product              9/8-9/30
+                                                                                                                Estimate #
+
+
+
+                                                                                                                                                         Spots/
+Line   Start Date        End Date           Description                        Start/End Time                MTWTFSS                    Length           Week             Rate          Type
+
+  18 09/08/26            09/30/26
+                               ABC Tuesday Prime 2 H 8p-10p                                                  -T-----                         :30             2           $300.00          NM
+                               our
+ Spots: #        Ch  Day Air Date   Air Time Description                                                        Start/End Time              Length Ad-ID                                                 Rate Type
+        4        WGGB Tu 09/22/26   8:25 PM ABC Tuesday Prime 2 Hour                                            8p-10p                         :30 NEAL0005H                                           $300.00 NM
+        3        WGGB Tu 09/22/26   8:57 PM ABC Tuesday Prime 2 Hour                                            8p-10p                         :30 NEAL002HR                                           $300.00 NM
+
+  19 09/08/26            09/30/26
+                          ABC Thursday Prime Hr 8p-9p                                                        ---T---                         :30             1           $245.00          NM
+                          1
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/21/26    09/27/26    ---T---                  1                                               $245.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        1 WGGB Th 09/24/26       8:22 PM ABC Thursday Prime Hr 1                                               8p-9p                           :30 NEAL002HR                                           $245.00 NM
+
+  20 09/08/26            09/30/26
+                          ABC Thursday Prime Hr 10p-11p                                                      ---T---                         :30             1           $320.00          NM
+                          3
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/21/26    09/27/26    ---T---                  1                                               $320.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        1 WGGB Th 09/24/26 10:46 PM ABC Thursday Prime Hr 3                                                    10p-11p                         :30 NEAL0005H                                           $320.00 NM
+
+  21 09/08/26            09/30/26           ABC Friday Prime 2 Hour 9p-11p                                   ----F--                         :30             2           $175.00          NM
+
+       Weeks:Start Date End Date      MTWTFSS         Spots/Week                                                 Rate
+             09/07/26    09/13/26     ----F--                  2                                              $175.00
+ Spots: # Ch    Day Air Date     Air Time Description                                                          Start/End Time               Length Ad-ID                                                 Rate Type
+        1 WGGB F 09/11/26                 ABC Friday Prime 2 Hour                                              9p-11p                          :00                                                     $175.00 NM
+                See MG 21.5,21.6
+        2 WGGB F 09/11/26                 ABC Friday Prime 2 Hour                                               9p-11p                             :00                                                 $175.00 NM
+                See MG 21.5,21.6
+        5 WGGB F 09/18/26        9:22 PM ABC Friday Prime 2 Hour                                                9p-11p                             :30 NEAL002HR                                       $175.00 NM
+                MG for 21.2,21.1
+        6 WGGB F 09/25/26        9:23 PM ABC Friday Prime 2 Hour                                                9p-11p                             :30 NEAL002HR                                       $175.00 NM
+                MG for 21.2,21.1
+    Weeks:   Start Date End Date      MTWTFSS         Spots/Week                                                 Rate
+             09/14/26    09/20/26     ----F--                  1                                              $175.00
+ Spots: # Ch    Day Air Date     Air Time Description                                                          Start/End Time               Length Ad-ID                                                 Rate Type
+        3 WGGB F 09/18/26 10:35 PM ABC Friday Prime 2 Hour                                                     9p-11p                          :30 NEAL0005H                                           $175.00 NM
+    Weeks:   Start Date End Date      MTWTFSS         Spots/Week                                                 Rate
+             09/21/26    09/27/26     ----F--                  1                                              $175.00
+ Spots: # Ch    Day Air Date     Air Time Description                                                          Start/End Time               Length Ad-ID                                                 Rate Type
+        4 WGGB F 09/25/26 10:22 PM ABC Friday Prime 2 Hour                                                     9p-11p                          :30 NEAL0005H                                           $175.00 NM
+
+  22 09/08/26            09/30/26           ABC Sunday Prime Hr 1 7p-8p                                      ------S                         :30             2           $225.00          NM
+
+       Weeks:Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/07/26    09/13/26    ------S                  1                                               $225.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        1 WGGB Su 09/13/26       7:22 PM ABC Sunday Prime Hr 1                                                 7p-8p                           :30 NEAL002HR                                           $225.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/14/26    09/20/26    ------S                  1                                               $225.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        2 WGGB Su 09/20/26       7:21 PM ABC Sunday Prime Hr 1                                                 7p-8p                           :30 NEAL002HR                                           $225.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+ We warrant that the actual broadcast information shown on this invoice was taken from the program log. The station does not discriminate in its advertising contracts, and it will not accept advertising intended to
+ discriminate on the basis of race or ethnicity. Advertiser hereto affirms that nothing in this Agreement is intended to discriminate on the basis of race or ethnicity. This Agreement is subject to the Standard Terms
+                                                                             and Conditions available at the link located above on this invoice.
+
+
+             To pay online, please visit us at payments.graymedia.com. A 2.75% surcharge fee will be applied to credit card transactions where applicable. ACH transactions are available with no fee.
+
+
+
+                                                                                                                                                                                                   powered by WideOrbit
+                                                                                                                                                                                                      Page 11 of 13
+                                                                                                INVOICE
+                                      Send Payment To:
+                                      WGGB                                                                      Invoice #            4539813-1              Invoice Month September 2026
+                                      PO Box 14200                                                              Invoice Date         09/27/26               Invoice Period 08/31/26 - 09/27/26
+                                      Tallahassee, FL 32317-4200                                                Advertiser           Richard Neal for US Congress
+                                                                                                                Product              9/8-9/30
+                                                                                                                Estimate #
+
+
+
+                                                                                                                                                         Spots/
+Line   Start Date          End Date          Description                       Start/End Time                MTWTFSS                    Length           Week             Rate          Type
+
+  22 09/08/26              09/30/26          ABC Sunday Prime Hr 1 7p-8p                                     ------S                         :30             2           $225.00          NM
+
+
+                      09/21/26    09/27/26    ------S                 1                                       $225.00
+ Spots: #          Ch    Day Air Date    Air Time Description                                                  Start/End Time               Length Ad-ID                                                 Rate Type
+        3          WGGB Su 09/27/26       7:21 PM ABC Sunday Prime Hr 1                                        7p-8p                           :30 NEAL0005H                                           $225.00 NM
+
+  23 09/08/26              09/30/26          M-F Late News                     11p-1135p                     MTWTF--                         :30             5           $110.00          NM
+
+       Weeks:Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/07/26    09/13/26    --WTF--                  5                                               $110.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        2 WGGB W 09/09/26 11:33 PM M-F Late News                                                               11p-1135p                       :30 NEAL002HR                                           $110.00 NM
+        3 WGGB Th 09/10/26 11:14 PM M-F Late News                                                              11p-1135p                       :30 NEAL0005H                                           $110.00 NM
+        1 WGGB Th 09/10/26 11:29 PM M-F Late News                                                              11p-1135p                       :30 NEAL002HR                                           $110.00 NM
+        5 WGGB Th 09/10/26 11:34 PM M-F Late News                                                              11p-1135p                       :30 NEAL0005H                                           $110.00 NM
+        4 WGGB F 09/11/26 11:15 PM M-F Late News                                                               11p-1135p                       :30 NEAL002HR                                           $110.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/14/26    09/20/26    MTWTF--                  5                                               $110.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+        7 WGGB Tu 09/15/26 11:24 PM M-F Late News                                                              11p-1135p                       :30 NEAL0005H                                           $110.00 NM
+        8 WGGB Tu 09/15/26 11:33 PM M-F Late News                                                              11p-1135p                       :30 NEAL002HR                                           $110.00 NM
+       10 WGGB Th 09/17/26 11:29 PM M-F Late News                                                              11p-1135p                       :30 NEAL0005H                                           $110.00 NM
+        6 WGGB F 09/18/26 11:08 PM M-F Late News                                                               11p-1135p                       :30 NEAL002HR                                           $110.00 NM
+        9 WGGB F 09/18/26 11:33 PM M-F Late News                                                               11p-1135p                       :30 NEAL0005H                                           $110.00 NM
+    Weeks:   Start Date End Date     MTWTFSS         Spots/Week                                                  Rate
+             09/21/26    09/27/26    MTWTF--                  5                                               $110.00
+ Spots: # Ch    Day Air Date    Air Time Description                                                           Start/End Time               Length Ad-ID                                                 Rate Type
+       12 WGGB Tu 09/22/26 11:29 PM M-F Late News                                                              11p-1135p                       :30 NEAL0005H                                           $110.00 NM
+       14 WGGB W 09/23/26 11:12 PM M-F Late News                                                               11p-1135p                       :30 NEAL0005H                                           $110.00 NM
+       15 WGGB Th 09/24/26 11:33 PM M-F Late News                                                              11p-1135p                       :30 NEAL002HR                                           $110.00 NM
+       13 WGGB F 09/25/26 11:14 PM M-F Late News                                                               11p-1135p                       :30 NEAL002HR                                           $110.00 NM
+       11 WGGB F 09/25/26 11:33 PM M-F Late News                                                               11p-1135p                       :30 NEAL0005H                                           $110.00 NM
+
+  24 09/14/26              09/30/26          M-F 4p-5p                         4p-5p                         MTWTF--                         :30             7             $75.00         NM
+
+       Weeks:         Start Date End Date       MTWTFSS         Spots/Week                                        Rate
+                      09/14/26    09/20/26      MTWTF--                  7                                      $75.00
+ Spots: #          Ch    Day Air Date      Air Time Description                                                 Start/End Time              Length Ad-ID                                                  Rate Type
+        1          WGGB M 09/14/26         4:11 PM M-F 4p-5p                                                    4p-5p                          :30 NEAL002HR                                             $75.00 NM
+        2          WGGB Tu 09/15/26                 M-F 4p-5p                                                   4p-5p                          :00                                                       $75.00 NM
+                         See MG 24.20,24.21,24.22,24.23,24.24,24.25
+           3       WGGB W 09/16/26                  M-F 4p-5p                                                   4p-5p                              :00                                                   $75.00 NM
+                         See MG 24.20,24.21,24.22,24.23,24.24,24.25
+         24        WGGB W 09/16/26         4:10 PM M-F 4p-5p                                                    4p-5p                              :30 NEAL0005H                                         $75.00 NM
+                         MG for 24.5,24.6,24.4,24.7,24.3,24.2
+         22        WGGB W 09/16/26         4:17 PM M-F 4p-5p                                                    4p-5p                              :30 NEAL002HR                                         $75.00 NM
+                         MG for 24.5,24.6,24.4,24.7,24.3,24.2
+           4       WGGB Th 09/17/26                 M-F 4p-5p                                                   4p-5p                              :00                                                   $75.00 NM
+                         See MG 24.20,24.21,24.22,24.23,24.24,24.25
+
+
+ We warrant that the actual broadcast information shown on this invoice was taken from the program log. The station does not discriminate in its advertising contracts, and it will not accept advertising intended to
+ discriminate on the basis of race or ethnicity. Advertiser hereto affirms that nothing in this Agreement is intended to discriminate on the basis of race or ethnicity. This Agreement is subject to the Standard Terms
+                                                                             and Conditions available at the link located above on this invoice.
+
+
+               To pay online, please visit us at payments.graymedia.com. A 2.75% surcharge fee will be applied to credit card transactions where applicable. ACH transactions are available with no fee.
+
+
+
+                                                                                                                                                                                                   powered by WideOrbit
+                                                                                                                                                                                                      Page 12 of 13
+                                                                                                INVOICE
+                                     Send Payment To:
+                                     WGGB                                                                       Invoice #            4539813-1              Invoice Month September 2026
+                                     PO Box 14200                                                               Invoice Date         09/27/26               Invoice Period 08/31/26 - 09/27/26
+                                     Tallahassee, FL 32317-4200                                                 Advertiser           Richard Neal for US Congress
+                                                                                                                Product              9/8-9/30
+                                                                                                                Estimate #
+
+
+
+                                                                                                                                                         Spots/
+Line   Start Date        End Date           Description                        Start/End Time                MTWTFSS                    Length           Week             Rate          Type
+
+  24 09/14/26            09/30/26           M-F 4p-5p                          4p-5p                         MTWTF--                         :30             7             $75.00         NM
+
+ Spots: #  Ch    Day Air Date      Air Time Description                                                         Start/End Time              Length Ad-ID                                                  Rate Type
+        7  WGGB Th 09/17/26                 M-F 4p-5p                                                           4p-5p                          :00                                                       $75.00 NM
+                 See MG 24.20,24.21,24.22,24.23,24.24,24.25
+       21 WGGB Th 09/17/26         4:18 PM M-F 4p-5p                                                            4p-5p                              :30 NEAL0005H                                         $75.00 NM
+                 MG for 24.5,24.6,24.4,24.7,24.3,24.2
+       20 WGGB Th 09/17/26         4:49 PM M-F 4p-5p                                                            4p-5p                              :30 NEAL002HR                                         $75.00 NM
+                 MG for 24.5,24.6,24.4,24.7,24.3,24.2
+        5 WGGB F 09/18/26                   M-F 4p-5p                                                           4p-5p                              :00                                                   $75.00 NM
+                 See MG 24.20,24.21,24.22,24.23,24.24,24.25
+        6 WGGB F 09/18/26                   M-F 4p-5p                                                           4p-5p                              :00                                                   $75.00 NM
+                 See MG 24.20,24.21,24.22,24.23,24.24,24.25
+       23 WGGB F 09/18/26          4:12 PM M-F 4p-5p                                                            4p-5p                              :30 NEAL0005H                                         $75.00 NM
+                 MG for 24.5,24.6,24.4,24.7,24.3,24.2
+       25 WGGB F 09/18/26          4:51 PM M-F 4p-5p                                                            4p-5p                              :30 NEAL002HR                                         $75.00 NM
+                 MG for 24.5,24.6,24.4,24.7,24.3,24.2
+    Weeks:    Start Date End Date       MTWTFSS         Spots/Week                                                Rate
+              09/21/26    09/27/26      MTWTF--                  7                                              $75.00
+ Spots: # Ch     Day Air Date      Air Time Description                                                         Start/End Time              Length Ad-ID                                                  Rate Type
+        8 WGGB M 09/21/26                   M-F 4p-5p                                                           4p-5p                          :00                                                       $75.00 NM
+                 See MG 24.26,24.27,24.28,24.29,24.30
+       13 WGGB M 09/21/26                   M-F 4p-5p                                                           4p-5p                              :00                                                   $75.00 NM
+                 See MG 24.26,24.27,24.28,24.29,24.30
+       27 WGGB M 09/21/26          4:29 PM M-F 4p-5p                                                            4p-5p                              :30 NEAL002HR                                         $75.00 NM
+                 MG for 24.14,24.10,24.9,24.8,24.13
+        9 WGGB Tu 09/22/26                  M-F 4p-5p                                                           4p-5p                              :00                                                   $75.00 NM
+                 See MG 24.26,24.27,24.28,24.29,24.30
+       30 WGGB Tu 09/22/26         4:41 PM M-F 4p-5p                                                            4p-5p                              :30 NEAL002HR                                         $75.00 NM
+                 MG for 24.14,24.10,24.9,24.8,24.13
+       10 WGGB W 09/23/26                   M-F 4p-5p                                                           4p-5p                              :00                                                   $75.00 NM
+                 See MG 24.26,24.27,24.28,24.29,24.30
+       14 WGGB W 09/23/26                   M-F 4p-5p                                                           4p-5p                              :00                                                   $75.00 NM
+                 See MG 24.26,24.27,24.28,24.29,24.30
+       28 WGGB W 09/23/26          4:28 PM M-F 4p-5p                                                            4p-5p                              :30 NEAL002HR                                         $75.00 NM
+                 MG for 24.14,24.10,24.9,24.8,24.13
+       26 WGGB W 09/23/26          4:49 PM M-F 4p-5p                                                            4p-5p                              :30 NEAL0005H                                         $75.00 NM
+                 MG for 24.14,24.10,24.9,24.8,24.13
+       11 WGGB Th 09/24/26         4:50 PM M-F 4p-5p                                                            4p-5p                              :30 NEAL0005H                                         $75.00 NM
+       29 WGGB Th 09/24/26         4:58 PM M-F 4p-5p                                                            4p-5p                              :30 NEAL002HR                                         $75.00 NM
+                 MG for 24.14,24.10,24.9,24.8,24.13
+       12 WGGB F 09/25/26          4:58 PM M-F 4p-5p                                                            4p-5p                              :30 NEAL002HR                                         $75.00 NM
+
+                                                                                                                 Total Spots                       236
+
+
+
+Payment Terms 30 Days                                                                                                                                                 Gross Total                    $28,895.00
+
+                                                                                                                                                           Agency Commission                           $4,334.25
+
+                                                                                                                                                                  Net Amount Due                     $24,560.75
+
+ We warrant that the actual broadcast information shown on this invoice was taken from the program log. The station does not discriminate in its advertising contracts, and it will not accept advertising intended to
+ discriminate on the basis of race or ethnicity. Advertiser hereto affirms that nothing in this Agreement is intended to discriminate on the basis of race or ethnicity. This Agreement is subject to the Standard Terms
+                                                                             and Conditions available at the link located above on this invoice.
+
+
+             To pay online, please visit us at payments.graymedia.com. A 2.75% surcharge fee will be applied to credit card transactions where applicable. ACH transactions are available with no fee.
+
+
+
+                                                                                                                                                                                                   powered by WideOrbit
+                                                                                                                                                                                                     Page 13 of 13
+                                                                                               INVOICE
+                                    Send Payment To:
+                                    WGGB                                                                       Invoice #            4539813-1              Invoice Month September 2026
+                                    PO Box 14200                                                               Invoice Date         09/27/26               Invoice Period 08/31/26 - 09/27/26
+                                    Tallahassee, FL 32317-4200                                                 Advertiser           Richard Neal for US Congress
+                                                                                                               Product              9/8-9/30
+                                                                                                               Estimate #
+
+
+
+                                                                                                                      Invoice Balance as of 10/02/26 3:38:36 PM ET                                          $0.00
+
+
+
+
+We warrant that the actual broadcast information shown on this invoice was taken from the program log. The station does not discriminate in its advertising contracts, and it will not accept advertising intended to
+discriminate on the basis of race or ethnicity. Advertiser hereto affirms that nothing in this Agreement is intended to discriminate on the basis of race or ethnicity. This Agreement is subject to the Standard Terms
+                                                                            and Conditions available at the link located above on this invoice.
+
+
+            To pay online, please visit us at payments.graymedia.com. A 2.75% surcharge fee will be applied to credit card transactions where applicable. ACH transactions are available with no fee.
+
+
+
+                                                                                                                                                                                                  powered by WideOrbit
+

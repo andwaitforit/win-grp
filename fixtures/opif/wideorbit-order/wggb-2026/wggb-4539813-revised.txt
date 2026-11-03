@@ -1,0 +1,261 @@
+                                                                                                                       Print Date 09/11/26 14:37:23        Page 1 of 4
+
+                                                                             ORDER
+
+Orders              Order / Rev:              4539813
+                    Alt Order #:
+                    Ext. Opp. ID:
+                    Product Desc:             9/8-9/30                                                                         WGGB
+
+                    Estimate:                                                                Primary AE:                       Mary Marcil-Labbe
+                    Flight Dates:             09/08/26 - 09/30/26                            Sales Office:                     SPMAL
+                    Original Date / Rev:      09/04/26 / 09/11/26                            Sales Region:                     Local
+                    Order Type:               NORMAL
+
+Agency              Name:                     Horgan Associates
+                    Buying Contact:           David Horgan                                   Billing Type:                     Cash
+                    Billing Contact:                                                         Billing Calendar:                 Broadcast
+                                              23 Randolph Place, Unit 111                    Billing Cycle:                    EOM/EOC
+                                              Northampton, MA 01060                          Agency Commission:                15%
+
+
+Advertiser          Name:                     Richard Neal for US Congress
+                    Demographic:              HH                                             New Business End:
+                    Product Codes:            Candidate - National - House                   Advertiser External ID:           596982
+                    Revenue Code 1:           AGY                                            Agency External ID:               177378
+                    Revenue Code 2:           POL                                            Unit Code:                        General
+                    Revenue Code 3:           POL-CAND                                       Order Separation:                 00:05:00
+                    Priority:                 P- 3
+
+Bill Plan                                                                          Totals
+Start Date    End Date              # Spots Gross Amount        Net Amount         Month                           # Spots      Gross Amount       Net Amount         Rating
+08/31/26      09/27/26                 238         $29,045.00        $24,688.25    September 2026                      238         $29,045.00         $24,688.25        0.00
+09/28/26      09/30/26                  46          $5,995.00         $5,095.75    October 2026                          46          $5,995.00         $5,095.75        0.00
+                                                                                   Totals                              284           $35,040.00        $29,784.00        0.00
+
+Account Executives
+Account Executive                  Sales Office      Sales Region    Start Date / End Date                         Order %
+Mary Marcil-Labbe                                                    Start Of Order - End Of Order                    100%
+
+
+
+
+ Ln Ch       Start         End         Inventory Code           Break Start/End Time         Days       Len Spots              Rate Pri Rtg Type Spots              Amount
+N 1 WGGB 09/08/26 09/30/26 M-F 5a-530a News                     CM     5a-530a          MTWTF--              :30       5       $55.00 P- 3   0.00 NM       18        $990.00
+                           M-F 5a-530a News
+        Start Date End Date  Weekdays      Spots/Week     Rate                      Rating
+  Week: 09/07/26   09/13/26  --WTF--                5   $55.00                        0.00
+  Week: 09/14/26   09/20/26  MTWTF--                5   $55.00                        0.00
+  Week: 09/21/26   09/27/26  MTWTF--                5   $55.00                        0.00
+  Week: 09/28/26   10/04/26  MTW----                3   $55.00                        0.00
+N 2 WGGB 09/08/26 09/30/26 M-F 530a-6a News     CM    530a-6a                           MTWTF--              :30       5       $55.00 P- 3   0.00 NM       18        $990.00
+                            M-F 530a-6a News
+        Start Date End Date  Weekdays      Spots/Week     Rate                      Rating
+  Week: 09/07/26   09/13/26  --WTF--                5   $55.00                        0.00
+  Week: 09/14/26   09/20/26  MTWTF--                5   $55.00                        0.00
+  Week: 09/21/26   09/27/26  MTWTF--                5   $55.00                        0.00
+  Week: 09/28/26   10/04/26  MTW----                3   $55.00                        0.00
+N 3 WGGB 09/08/26 09/30/26 M-F 6a-7a News       CM    6a-7a                             MTWTF--              :30       7      $120.00 P- 3   0.00 NM       26       $3,120.00
+                            M-F 6a-7a News
+        Start Date End Date  Weekdays      Spots/Week     Rate                      Rating
+  Week: 09/07/26   09/13/26  --WTF--                7  $120.00                        0.00
+  Week: 09/14/26   09/20/26  MTWTF--                7  $120.00                        0.00
+  Week: 09/21/26   09/27/26  MTWTF--                7  $120.00                        0.00
+  Week: 09/28/26   10/04/26  MTW----                5  $120.00                        0.00
+                                                                                                         Print Date: 09/11/26 14:37:23    Page   2 of 4
+Order / Rev:       4539813                                       Advertiser:       Richard Neal for US Congress
+Alt Order #:                                                     Product Desc:     9/8-9/30                                      WGGB
+Flight Dates:      09/08/26 - 09/30/26                           Estimate:
+
+
+
+ Ln Ch          Start    End       Inventory Code       Break Start/End Time          Days     Len Spots          Rate Pri Rtg Type Spots        Amount
+N 4 WGGB 09/08/26 09/30/26 ABC Good Morning America
+                                                CM     7a-9a                        MTWTF--      :30     10   $125.00 P- 3      0.00 NM   36     $4,500.00
+                            ABC Good Morning America
+        Start Date End Date  Weekdays      Spots/Week       Rate                 Rating
+  Week: 09/07/26   09/13/26  --WTF--                10  $125.00                    0.00
+  Week: 09/14/26   09/20/26  MTWTF--                10  $125.00                    0.00
+  Week: 09/21/26   09/27/26  MTWTF--                10  $125.00                    0.00
+  Week: 09/28/26   10/04/26  MTW----                 6  $125.00                    0.00
+N 5 WGGB 09/08/26 09/30/26 Sa-Su 7a-8a News     CM     7a-8a                         -----S-     :30      1       $75.00 P- 3   0.00 NM   3       $225.00
+                            Sa-Su 7a-8a News
+        Start Date End Date  Weekdays      Spots/Week       Rate                 Rating
+  Week: 09/07/26   09/13/26  -----S-                 1    $75.00                   0.00
+  Week: 09/14/26   09/20/26  -----S-                 1    $75.00                   0.00
+  Week: 09/21/26   09/27/26  -----S-                 1    $75.00                   0.00
+  Week: 09/28/26   10/04/26  -------                 0     $0.00                   0.00
+N 6 WGGB 09/08/26 09/30/26 ABC GMA Sat          CM     8a-9a                         -----S-     :30      1       $85.00 P- 3   0.00 NM   3       $255.00
+                            ABC GMA Sat
+         Start Date     End Date    Weekdays        Spots/Week       Rate        Rating
+   Week: 09/07/26       09/13/26    -----S-                  1     $85.00          0.00
+   Week: 09/14/26       09/20/26    -----S-                  1     $85.00          0.00
+   Week: 09/21/26       09/27/26    -----S-                  1     $85.00          0.00
+   Week: 09/28/26       10/04/26    -------                  0      $0.00          0.00
+N 7 WGGB 09/08/26 09/30/26 Sa-Su 9a-10a News            CM       9a-10a              -----S-     :30      1       $65.00 P- 3   0.00 NM   3       $195.00
+                           Sa-Su 9a-10a News
+         Start Date End Date  Weekdays      Spots/Week      Rate                 Rating
+   Week: 09/07/26   09/13/26  -----S-                1    $65.00                   0.00
+   Week: 09/14/26   09/20/26  -----S-                1    $65.00                   0.00
+   Week: 09/21/26   09/27/26  -----S-                1    $65.00                   0.00
+   Week: 09/28/26   10/04/26  -------                0     $0.00                   0.00
+N 8 WGGB 09/08/26 09/30/26 ABC GMA 2 Sat         CM    10a-11a                       -----S-     :30      1       $85.00 P- 3   0.00 NM   3       $255.00
+                             ABC GMA 2 Sat
+         Start Date End Date  Weekdays      Spots/Week      Rate                 Rating
+   Week: 09/07/26   09/13/26  -----S-                1    $85.00                   0.00
+   Week: 09/14/26   09/20/26  -----S-                1    $85.00                   0.00
+   Week: 09/21/26   09/27/26  -----S-                1    $85.00                   0.00
+   Week: 09/28/26   10/04/26  -------                0     $0.00                   0.00
+N 9 WGGB 09/08/26 09/30/26 Sa-Su 7a-8a News      CM    7a-8a                         ------S     :30      1       $65.00 P- 3   0.00 NM   3       $195.00
+                             Sa-Su 7a-8a News
+         Start Date End Date  Weekdays      Spots/Week      Rate                 Rating
+   Week: 09/07/26   09/13/26  ------S                1    $65.00                   0.00
+   Week: 09/14/26   09/20/26  ------S                1    $65.00                   0.00
+   Week: 09/21/26   09/27/26  ------S                1    $65.00                   0.00
+   Week: 09/28/26   10/04/26  -------                0     $0.00                   0.00
+N 10 WGGB 09/08/26 09/30/26 ABC GMA Sun          CM    8a-9a                         ------S     :30      2   $105.00 P- 3      0.00 NM   6       $630.00
+                             ABC GMA Sun
+         Start Date End Date  Weekdays      Spots/Week      Rate    Rating
+   Week: 09/07/26   09/13/26  ------S                2  $105.00       0.00
+   Week: 09/14/26   09/20/26  ------S                2  $105.00       0.00
+   Week: 09/21/26   09/27/26  ------S                2  $105.00       0.00
+   Week: 09/28/26   10/04/26  -------                0     $0.00      0.00
+N 11 WGGB 09/08/26 09/30/26 Sa-Su 9a-10a News    CM    9a-10a/10a-11a ------S                    :30      1       $65.00 P- 3   0.00 NM   3       $195.00
+                             Sa-Su 9a-10a News
+         Start Date End Date  Weekdays      Spots/Week      Rate    Rating
+   Week: 09/07/26   09/13/26  ------S                1    $65.00      0.00
+   Week: 09/14/26   09/20/26  ------S                1    $65.00      0.00
+   Week: 09/21/26   09/27/26  ------S                1    $65.00      0.00
+   Week: 09/28/26   10/04/26  -------                0     $0.00      0.00
+N 12 WGGB 09/08/26 09/30/26 ABC This Week        CM    10a-11a          ------S                  :30      2       $75.00 P- 3   0.00 NM   6       $450.00
+                             ABC This Week
+         Start Date End Date  Weekdays      Spots/Week      Rate    Rating
+   Week: 09/07/26   09/13/26  ------S                2    $75.00      0.00
+                                                                                                         Print Date: 09/11/26 14:37:23   Page   3 of 4
+Order / Rev:       4539813                                       Advertiser:       Richard Neal for US Congress
+Alt Order #:                                                     Product Desc:     9/8-9/30                                   WGGB
+Flight Dates:      09/08/26 - 09/30/26                           Estimate:
+
+
+
+ Ln Ch          Start    End       Inventory Code       Break Start/End Time          Days     Len Spots          Rate Pri Rtg Type Spots       Amount
+         Start Date End Date       Weekdays      Spots/Week        Rate    Rating
+   Week: 09/07/26     09/13/26     ------S                2      $75.00      0.00
+ Spot    Ch Date Range         Description              Start/End Time                 Weekdays   Length      Rate Rtg Type
+    1WGGB 09/07/26-09/13/26 ABC This Week               10a-11a                        --------Su    :30 ($75.00) 0.00 NM
+         See MG 12.7,12.8
+         [No Avail pcode/rate cannot clear -HE]
+    2WGGB 09/07/26-09/13/26 ABC This Week               10a-11a                        --------Su    :30 ($75.00) 0.00 NM
+         See MG 12.7,12.8
+         [No Avail pcode/rate cannot clear -HE]
+    7WGGB 09/07/26-09/13/26 Local Special               Various                        --------Su
+                                                                        (11:30 AM-12:00 PM)          :30 ($75.00) 0.00 NM
+         See MG 12.9,12.10
+         [MG 9/8]
+    8WGGB 09/20/26-09/20/26 Local Special               Various                        --------Su
+                                                                        (11:30 AM-12:00 PM)          :30 ($75.00) 0.00 NM
+         See MG 12.9,12.10
+         [MG 9/8]
+    9WGGB 09/12/26-09/12/26 Sa-Su 7a-8a News            7a-8a                          ------Sa--    :30     $75.00 0.00 NM
+         MG for 12.7,12.8
+         [MG 9/9]
+   10WGGB 09/19/26-09/19/26 Sa-Su 7a-8a News            7a-8a                          ------Sa--    :30     $75.00 0.00 NM
+         MG for 12.7,12.8
+         [MG 9/9]
+   Week: 09/14/26     09/20/26     ------S                2      $75.00      0.00
+   Week: 09/21/26     09/27/26     ------S                2      $75.00      0.00
+   Week: 09/28/26     10/04/26     -------                0       $0.00      0.00
+N 13 WGGB 09/08/26 09/30/26 M-F 12p-1230p News CM             12p-1230p        MTWTF--      :30    5     $75.00 P- 3 0.00 NM             18     $1,350.00
+                                  M-F 12p-1230p News
+         Start Date End Date       Weekdays      Spots/Week        Rate    Rating
+   Week: 09/07/26     09/13/26     --WTF--                5      $75.00      0.00
+   Week: 09/14/26     09/20/26     MTWTF--                5      $75.00      0.00
+   Week: 09/21/26     09/27/26     MTWTF--                5      $75.00      0.00
+   Week: 09/28/26     10/04/26     MTW----                3      $75.00      0.00
+N 14 WGGB 09/08/26 09/13/26 M-F 1230p-1p News         CM      1230p-1p         MTWTF--      :30    7     $75.00 P- 3 0.00 NM             7       $525.00
+                                  M-F 1230p-1p News
+         Start Date End Date       Weekdays      Spots/Week        Rate    Rating
+   Week: 09/07/26     09/13/26     --WTF--                7      $75.00      0.00
+N 15 WGGB 09/08/26 09/30/26 M-F 5p-530p News          CM      5p-530p          MTWTF--      :30    7   $130.00 P- 3 0.00 NM              26     $3,380.00
+                                  M-F 5p-530p News
+         Start Date End Date  Weekdays      Spots/Week      Rate                 Rating
+   Week: 09/07/26   09/13/26  --WTF--                 7  $130.00                   0.00
+   Week: 09/14/26   09/20/26  MTWTF--                 7  $130.00                   0.00
+   Week: 09/21/26   09/27/26  MTWTF--                 7  $130.00                   0.00
+   Week: 09/28/26   10/04/26  MTW----                 5  $130.00                   0.00
+N 16 WGGB 09/08/26 09/30/26 M-F 530p-6p News      CM    530p-6p                      MTWTF--     :30      7   $180.00 P- 3   0.00 NM     26     $4,680.00
+                             M-F 530p-6p News
+         Start Date End Date  Weekdays      Spots/Week      Rate                 Rating
+   Week: 09/07/26   09/13/26  --WTF--                 7  $180.00                   0.00
+   Week: 09/14/26   09/20/26  MTWTF--                 7  $180.00                   0.00
+   Week: 09/21/26   09/27/26  MTWTF--                 7  $180.00                   0.00
+   Week: 09/28/26   10/04/26  MTW----                 5  $180.00                   0.00
+N 17 WGGB 09/08/26 09/30/26 M-F 6p-630p News      CM    6p-630p                      MTWTF--     :30      7   $225.00 P- 3   0.00 NM     26     $5,850.00
+                             M-F 6p-630p News
+         Start Date End Date  Weekdays      Spots/Week      Rate                 Rating
+   Week: 09/07/26   09/13/26  --WTF--                 7  $225.00                   0.00
+   Week: 09/14/26   09/20/26  MTWTF--                 7  $225.00                   0.00
+   Week: 09/21/26   09/27/26  MTWTF--                 7  $225.00                   0.00
+   Week: 09/28/26   10/04/26  MTW----                 5  $225.00                   0.00
+N 18 WGGB 09/08/26 09/30/26 ABC Tuesday Prime 2 Hour
+                                                  CM    8p-10p                       -T-----     :30      2   $300.00 P- 3   0.00 NM     6      $1,800.00
+                             ABC Tuesday Prime 2 Hour
+         Start Date     End Date    Weekdays        Spots/Week       Rate        Rating
+   Week: 09/07/26       09/13/26    -------                  0      $0.00          0.00
+   Week: 09/14/26       09/20/26    -T-----                  2    $300.00          0.00
+   Week: 09/21/26       09/27/26    -T-----                  2    $300.00          0.00
+                                                                                                         Print Date: 09/11/26 14:37:24      Page    4 of 4
+Order / Rev:       4539813                                       Advertiser:       Richard Neal for US Congress
+Alt Order #:                                                     Product Desc:     9/8-9/30                                        WGGB
+Flight Dates:      09/08/26 - 09/30/26                           Estimate:
+
+
+
+ Ln Ch          Start    End       Inventory Code       Break Start/End Time          Days     Len Spots          Rate Pri Rtg Type Spots           Amount
+         Start Date End Date  Weekdays       Spots/Week      Rate                Rating
+   Week: 09/28/26   10/04/26  -T-----                 2  $300.00                   0.00
+N 19 WGGB 09/08/26 09/30/26 ABC Thursday Prime Hr 1
+                                                  CM    8p-9p                        ---T---     :30      1   $245.00 P- 3       0.00 NM     1       $245.00
+                             ABC Thursday Prime Hr 1
+         Start Date End Date  Weekdays       Spots/Week      Rate                Rating
+   Week: 09/07/26   09/13/26  -------                 0     $0.00                  0.00
+   Week: 09/14/26   09/20/26  -------                 0     $0.00                  0.00
+   Week: 09/21/26   09/27/26  ---T---                 1  $245.00                   0.00
+   Week: 09/28/26   10/04/26  -------                 0     $0.00                  0.00
+N 20 WGGB 09/08/26 09/30/26 ABC Thursday Prime Hr 3
+                                                  CM    10p-11p                      ---T---     :30      1   $320.00 P- 3       0.00 NM     1       $320.00
+                             ABC Thursday Prime Hr 3
+         Start Date     End Date    Weekdays        Spots/Week       Rate        Rating
+   Week: 09/07/26       09/13/26    -------                  0      $0.00          0.00
+   Week: 09/14/26       09/20/26    -------                  0      $0.00          0.00
+   Week: 09/21/26       09/27/26    ---T---                  1    $320.00          0.00
+   Week: 09/28/26       10/04/26    -------                  0      $0.00          0.00
+N 21 WGGB 09/08/26 09/30/26 ABC Friday Prime 2 HourCM   9p-11p                       ----F--     :30      2   $175.00 P- 3       0.00 NM     4       $700.00
+                             ABC Friday Prime 2 Hour
+         Start Date End Date  Weekdays       Spots/Week      Rate                Rating
+   Week: 09/07/26   09/13/26  ----F--                 2  $175.00                   0.00
+   Week: 09/14/26   09/20/26  ----F--                 1  $175.00                   0.00
+   Week: 09/21/26   09/27/26  ----F--                 1  $175.00                   0.00
+   Week: 09/28/26   10/04/26  -------                 0     $0.00                  0.00
+N 22 WGGB 09/08/26 09/30/26 ABC Sunday Prime Hr 1CM    7p-8p                         ------S     :30      2   $225.00 P- 3       0.00 NM     3       $675.00
+                             ABC Sunday Prime Hr 1
+         Start Date End Date  Weekdays      Spots/Week      Rate                 Rating
+   Week: 09/07/26   09/13/26  ------S                1  $225.00                    0.00
+   Week: 09/14/26   09/20/26  ------S                1  $225.00                    0.00
+   Week: 09/21/26   09/27/26  ------S                1  $225.00                    0.00
+   Week: 09/28/26   10/04/26  -------                0     $0.00                   0.00
+N 23 WGGB 09/08/26 09/30/26 M-F Late News         CM   11p-1135p                     MTWTF--     :30      5   $110.00 P- 3       0.00 NM    19      $2,090.00
+                             M-F Late News
+         Start Date End Date  Weekdays      Spots/Week      Rate                 Rating
+   Week: 09/07/26   09/13/26  --WTF--                5  $110.00                    0.00
+   Week: 09/14/26   09/20/26  MTWTF--                5  $110.00                    0.00
+   Week: 09/21/26   09/27/26  MTWTF--                5  $110.00                    0.00
+   Week: 09/28/26   10/04/26  MTW----                4  $110.00                    0.00
+N 24 WGGB 09/14/26 09/30/26 M-F 4p-5p             CM   4p-5p                         MTWTF--     :30      7       $75.00 P- 3    0.00 NM    19      $1,425.00
+                             M-F 4p-5p
+         Start Date End Date  Weekdays      Spots/Week      Rate                 Rating
+   Week: 09/14/26   09/20/26  MTWTF--                7    $75.00                   0.00
+   Week: 09/21/26   09/27/26  MTWTF--                7    $75.00                   0.00
+   Week: 09/28/26   10/04/26  MTW----                5    $75.00                   0.00
+                                                                                                                                Totals     284     $35,040.00
+

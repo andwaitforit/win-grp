@@ -3,14 +3,14 @@ window.WIN_GRP_DATA = {
  "meta": {
   "race_id": "us-house-ma-01-2026",
   "title": "MA-01: Neal vs. Milleron",
-  "as_of": "2026-11-02",
+  "as_of": "2026-11-03",
   "primary_day": "2026-09-01",
   "election_day": "2026-11-03",
   "is_sample": false,
   "note": "Buys are station orders parsed by win-grp. So far that covers WWLP and EWLP only; other stations file in formats we don't parse yet. Orders show what was booked, not confirmed airings.",
   "demo": "A35+",
   "our_side": "neal",
-  "generated_at": "2026-11-03T02:13Z"
+  "generated_at": "2026-11-03T13:29Z"
  },
  "buyers": [
   {
@@ -75,7 +75,19 @@ window.WIN_GRP_DATA = {
    "market": "spr",
    "network": "ABC/CBS"
   },
+  "WGGB": {
+   "market": "spr",
+   "network": "ABC/CBS"
+  },
+  "EGGB": {
+   "market": "spr",
+   "network": "ABC"
+  },
   "WSHM-LD": {
+   "market": "spr",
+   "network": "CBS"
+  },
+  "WSHM": {
    "market": "spr",
    "network": "CBS"
   },
@@ -92,6 +104,10 @@ window.WIN_GRP_DATA = {
    "network": "ABC"
   },
   "WXXA-TV": {
+   "market": "alb",
+   "network": "FOX"
+  },
+  "WXXA": {
    "market": "alb",
    "network": "FOX"
   },

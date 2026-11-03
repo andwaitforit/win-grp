@@ -368,6 +368,10 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
     D.alerts.sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
     D.meta.as_of = asOf;
     D.meta.parsed_source = true;
+    if (fresh.orders_in_review) {
+      D.meta.note = (D.meta.note ? D.meta.note + " " : "") + fresh.orders_in_review +
+        (fresh.orders_in_review === 1 ? " order is" : " orders are") + " held back for review because they don't add up to their own totals.";
+    }
     D.meta.synced_at = fresh.synced_at ? fresh.synced_at.slice(0, 16).replace("T", " ") + " UTC" : null;
     startDashboard();
   }).catch(function (e) {

@@ -41,12 +41,14 @@ def store_contract(
     raw_text: str,
     source: str,
     source_file_id: str | None = None,
+    parser: str = FORMAT,
+    parser_version: str = PARSER_VERSION,
 ) -> int:
     """Upsert one parsed contract and its lines/weeks. Returns opif_contract.id."""
     periods = [dataclasses.asdict(p) for p in k.periods]
     cols = ["source_pdf_sha256", "source_file_id", "source", "parser", "parser_version",
             "raw_text", "periods", *_HEADER_COLS]  # fmt: skip
-    vals = [pdf_sha256, source_file_id, source, FORMAT, PARSER_VERSION, raw_text,
+    vals = [pdf_sha256, source_file_id, source, parser, parser_version, raw_text,
             Jsonb(periods, dumps=_dumps), *(getattr(k, c) for c in _HEADER_COLS)]  # fmt: skip
     updates = ", ".join(f"{c} = excluded.{c}" for c in cols if c != "source_pdf_sha256")
     with conn.cursor() as cur:

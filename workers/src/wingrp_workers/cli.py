@@ -7,6 +7,7 @@
   wingrp contract PDF... [--json] [--store [--file-id UUID]]
   wingrp fetch-contracts --config ../config/pilot/ma-01-2026.yaml [--limit N]
   wingrp seed-race --config ../config/pilot/ma-01-2026.yaml
+  wingrp reparse-contracts
 """
 
 from __future__ import annotations
@@ -24,7 +25,8 @@ import yaml
 
 from .extract.pdftext import pdf_to_text
 from .extract.store import sha256, store_contract
-from .extract.wideorbit import FORMAT, PARSER_VERSION, is_wideorbit_contract, latest_versions, parse_contract
+from .extract.orders import EXTRACTOR, EXTRACTOR_VERSION, PARSERS, detect
+from .extract.wideorbit import latest_versions
 from .opif.client import OpifBlocked, OpifClient
 from .opif.store import (
     get_sync_cursor,
@@ -70,7 +72,12 @@ def cmd_seed_race(args: argparse.Namespace) -> None:
     cfg = yaml.safe_load(args.config.read_text())
     race_id = cfg["race"]["id"]
     aliases = _race_aliases(cfg)
-    stations = [(s["call_sign"], m["key"]) for m in cfg.get("markets", []) for s in m.get("stations") or []]
+    stations = [
+        (name, m["key"])
+        for m in cfg.get("markets", [])
+        for s in m.get("stations") or []
+        for name in [s["call_sign"], *(s.get("channels") or [])]
+    ]
     with _connect() as conn:
         conn.execute("delete from public.race_buyer_alias where race_id = %s", (race_id,))
         conn.execute("delete from public.race_station where race_id = %s", (race_id,))
@@ -97,7 +104,7 @@ def _record_attempt(conn, file_id: str, sha: str | None, outcome: str) -> None:
           set pdf_sha256 = excluded.pdf_sha256, outcome = excluded.outcome, parser = excluded.parser,
               parser_version = excluded.parser_version, attempted_at = now()
         """,
-        (file_id, sha, outcome, FORMAT, PARSER_VERSION),
+        (file_id, sha, outcome, EXTRACTOR, EXTRACTOR_VERSION),
     )
 
 
@@ -191,22 +198,24 @@ def cmd_filings(args: argparse.Namespace) -> None:
 
 
 def cmd_contract(args: argparse.Namespace) -> None:
-    """Parse WideOrbit contract PDFs; with --store, save them as user uploads."""
+    """Parse order PDFs (any supported format); with --store, save them as user uploads."""
     if args.file_id and len(args.pdfs) != 1:
         sys.exit("--file-id links exactly one PDF to its OPIF file")
     conn = _connect() if args.store else None
     parsed = []
     for path in args.pdfs:
         text = pdf_to_text(path)
-        if not is_wideorbit_contract(text):
-            print(f"  {path.name}: not a WideOrbit contract, skipped", file=sys.stderr)
+        parser = detect(text)
+        if parser is None:
+            print(f"  {path.name}: no parser for this format, skipped", file=sys.stderr)
             continue
-        k = parse_contract(text)
+        k = parser.parse(text)
         parsed.append(k)
         if conn:
             store_contract(
                 conn, k, pdf_sha256=sha256(path.read_bytes()), raw_text=text,
                 source="user_upload", source_file_id=args.file_id,
+                parser=parser.format, parser_version=parser.version,
             )  # fmt: skip
             conn.commit()
         if args.json:
@@ -230,8 +239,35 @@ def cmd_contract(args: argparse.Namespace) -> None:
         conn.close()
 
 
+def cmd_reparse_contracts(args: argparse.Namespace) -> None:
+    """Re-parse stored contracts whose parser version is out of date, from their saved text."""
+    current = {p.format: p for p in PARSERS}
+    with _connect() as conn:
+        rows = conn.execute(
+            "select source_pdf_sha256, source_file_id::text, source, parser, parser_version, raw_text"
+            " from public.opif_contract"
+        ).fetchall()
+        n = review = 0
+        for sha, file_id, source, parser, version, text in rows:
+            p = detect(text)
+            if p is None or (p.format == parser and p.version == version and not args.all):
+                continue
+            k = p.parse(text)
+            store_contract(
+                conn, k, pdf_sha256=sha, raw_text=text, source=source, source_file_id=file_id,
+                parser=p.format, parser_version=p.version,
+            )  # fmt: skip
+            n += 1
+            review += not k.reconciled
+        conn.commit()
+    print(f"Re-parsed {n} contracts ({review} need review); parsers: {', '.join(f'{f} v{p.version}' for f, p in current.items())}")
+
+
 def cmd_fetch_contracts(args: argparse.Namespace) -> None:
-    """Download, parse, and store race order PDFs that have no parsed contract yet."""
+    """Download, parse, and store race order PDFs that have no parsed contract yet.
+
+    Only files no current parser has tried are fetched (see opif_file_extract).
+    """
     cfg = yaml.safe_load(args.config.read_text())
     race = cfg["race"]
     call_signs = _race_call_signs(args.config)
@@ -242,7 +278,9 @@ def cmd_fetch_contracts(args: argparse.Namespace) -> None:
             select f.file_id::text, f.folder_id::text, f.file_manager_id::text, f.call_sign, f.file_name
             from public.opif_file f
             where f.call_sign = any(%s) and f.pol_year = %s and not f.is_deleted
-              and f.doc_kind = 'order'
+              -- File names are free text; "other" files are often orders (WGGB names
+              -- them "<buyer> <station> <flight>"). The parser decides by content.
+              and f.doc_kind in ('order', 'other')
               and ((f.pol_category = 'Federal' and f.pol_office = %s)
                    or f.pol_category = 'Non-Candidate Issue Ads')
               and not exists (select 1 from public.opif_contract c where c.source_file_id = f.file_id)
@@ -255,10 +293,10 @@ def cmd_fetch_contracts(args: argparse.Namespace) -> None:
             order by f.fcc_created_at
             limit %s
             """,
-            (call_signs, race["cycle"], race["office"], FORMAT, PARSER_VERSION,
+            (call_signs, race["cycle"], race["office"], EXTRACTOR, EXTRACTOR_VERSION,
              [a for _, a in _race_aliases(cfg)], args.limit),
         ).fetchall()
-        print(f"{len(files)} race order files not yet tried by {FORMAT} v{PARSER_VERSION}")
+        print(f"{len(files)} race files not yet tried by {EXTRACTOR_VERSION}")
         stored = review = unsupported = 0
         with OpifClient() as fcc:
             for file_id, folder_id, fm_id, cs, name in files:
@@ -276,24 +314,26 @@ def cmd_fetch_contracts(args: argparse.Namespace) -> None:
                     cached.write_bytes(data)
                 data = cached.read_bytes()
                 text = pdf_to_text(cached)
-                if not is_wideorbit_contract(text):
+                parser = detect(text)
+                if parser is None:
                     unsupported += 1
-                    print(f"  {cs:<8} {name[:70]}: not WideOrbit, needs another parser")
+                    print(f"  {cs:<8} {name[:70]}: no parser for this format")
                     _record_attempt(conn, file_id, sha256(data), "unsupported")
                     conn.commit()
                     continue
-                k = parse_contract(text)
+                k = parser.parse(text)
                 store_contract(
                     conn, k, pdf_sha256=sha256(data), raw_text=text,
                     source="fcc", source_file_id=file_id,
+                    parser=parser.format, parser_version=parser.version,
                 )  # fmt: skip
                 _record_attempt(conn, file_id, sha256(data), "stored")
                 conn.commit()
                 stored += 1
                 review += not k.reconciled
                 flag = "ok" if k.reconciled else "REVIEW"
-                print(f"  {k.station:<5} #{k.contract_number} {k.total_spots:>4} spots "
-                      f"${k.gross_cents / 100:>10,.2f} gross  {flag}")  # fmt: skip
+                print(f"  {k.station or '?':<5} #{k.contract_number} {k.total_spots or 0:>4} spots "
+                      f"${(k.gross_cents or 0) / 100:>10,.2f} gross  {flag}")  # fmt: skip
         print(f"\nStored {stored} contracts ({review} need review); {unsupported} unsupported formats")
 
 
@@ -317,7 +357,7 @@ def main() -> None:
     p.add_argument("--config", type=Path, required=True)
     p.set_defaults(fn=cmd_filings)
 
-    p = sub.add_parser("contract", help="Parse WideOrbit contract PDFs (no DB, no FCC calls)")
+    p = sub.add_parser("contract", help="Parse order PDFs (no DB, no FCC calls)")
     p.add_argument("pdfs", type=Path, nargs="+")
     p.add_argument("--json", action="store_true", help="One JSON object per contract")
     p.add_argument("--store", action="store_true", help="Save to the DB as a user upload")
@@ -328,6 +368,10 @@ def main() -> None:
     p.add_argument("--config", type=Path, required=True)
     p.add_argument("--limit", type=int, default=200)
     p.set_defaults(fn=cmd_fetch_contracts)
+
+    p = sub.add_parser("reparse-contracts", help="Re-parse stored contracts after a parser change (no FCC calls)")
+    p.add_argument("--all", action="store_true", help="Re-parse every contract, not just out-of-date ones")
+    p.set_defaults(fn=cmd_reparse_contracts)
 
     p = sub.add_parser("seed-race", help="Load race buyer aliases and station markets into the DB")
     p.add_argument("--config", type=Path, required=True)

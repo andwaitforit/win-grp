@@ -1,0 +1,431 @@
+                                                                                                                      Print Date 10/19/26 09:25:20      Page 1 of 7
+
+                                                                              ORDER
+
+Orders              Order / Rev:              4599875
+                    Alt Order #:              WOC15936661
+                    Ext. Opp. ID:
+                    Product Desc:             Richard E Neal For Congress Committee                                          WSHM-CBS 3
+
+                    Estimate:                 10416                                           Primary AE:                    Mary Marcil-Labbe
+                    Flight Dates:             10/19/26 - 11/01/26                             Sales Office:                  SPMAL
+                    Original Date / Rev:      10/19/26 / 10/19/26                             Sales Region:                  Local
+                    Order Type:               NORMAL
+
+Agency              Name:                     Admire Media, LLC
+                    Buying Contact:                                                           Billing Type:                  Cash
+                    Billing Contact:                                                          Billing Calendar:              Broadcast
+                                              222 W Ontario St, Suite 600                     Billing Cycle:                 EOM/EOC
+                                              Chicago, IL 60654                               Agency Commission:             15%
+
+
+Advertiser          Name:                     Richard E Neal for Congress Committee
+                    Demographic:              HH                                              New Business End:
+                    Product Codes:            Candidate - National - House                    Advertiser External ID:        664319
+                    Revenue Code 1:           AGY                                             Agency External ID:            227187
+                    Revenue Code 2:           POL                                             Unit Code:                     General
+                    Revenue Code 3:           POL-CAND                                        Order Separation:              00:05:00
+                    Priority:                 P- 3
+
+Bill Plan                                                                           Totals
+Start Date    End Date              # Spots Gross Amount         Net Amount         Month                         # Spots    Gross Amount        Net Amount       Rating
+09/28/26      10/25/26                 104           $7,785.00        $6,617.25     October 2026                      104         $7,785.00          $6,617.25      0.00
+10/26/26      10/26/26                  20           $1,410.00        $1,198.50     November 2026                       20        $1,410.00          $1,198.50      0.00
+                                                                                    Totals                            124            $9,195.00       $7,815.75       0.00
+
+Account Executives
+Account Executive                  Sales Office      Sales Region     Start Date / End Date                       Order %
+Mary Marcil-Labbe                                                     Start Of Order - End Of Order                  100%
+
+
+
+
+ Ln Ch       Start         End         Inventory Code            Break Start/End Time         Days       Len Spots           Rate Pri Rtg Type Spots             Amount
+N 1 WSHM 10/19/26 10/24/26 Early Morning Rot Sa-SuCM        7:00 AM-8:00 AM -----S-   :30    1   $30.00 P- 3                               0.00 NM       1         $30.00
+                               Early Morning Rot Sa-Su     (7:00 AM-8:00 AM)
+    (Program: WESTERN MASS NEWS SAT-SIM)
+    CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Sat 7:00a-8:00a TIME PERIOD ON WSHM
+        Start Date End Date     Weekdays        Spots/Week       Rate    Rating
+  Week: 10/19/26     10/25/26   -----S-                  1     $30.00      0.00
+N 2 WSHM 10/19/26 10/24/26 CBS Saturday Morning CM          9:00 AM-11:00 AM-----S-   :30    1   $50.00 P- 3                               0.00 NM       1         $50.00
+                               CBS Saturday Morning
+    (Program: CBS MORNING SATURDAY)
+    CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Sat 9:00a-11:00a TIME PERIOD ON WSHM
+        Start Date End Date     Weekdays        Spots/Week       Rate    Rating
+  Week: 10/19/26     10/25/26   -----S-                  1     $50.00      0.00
+N 3 WSHM 10/19/26 10/25/26 Early Morning Rot Sa-SuCM        7:00 AM-8:00 AM ------S   :30    1   $30.00 P- 3                               0.00 NM       1         $30.00
+                               Early Morning Rot Sa-Su     (7:00 AM-8:00 AM)
+    (Program: WESTERN MASS NEWS SUN)
+    CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Sun 7:00a-8:00a TIME PERIOD ON WSHM
+        Start Date End Date     Weekdays        Spots/Week       Rate    Rating
+  Week: 10/19/26     10/25/26   ------S                  1     $30.00      0.00
+N 4 WSHM 10/19/26 10/25/26 CBS Sunday Morning CM            9:00 AM-10:30 AM------S   :30    1  $165.00 P- 3                               0.00 NM       1        $165.00
+                               CBS Sunday Morning
+    (Program: SUNDAY MORNING-CBS)
+    CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Sun 9:00a-10:30a TIME PERIOD ON WSHM
+                                                                                                Print Date: 10/19/26 09:25:20   Page   2 of 7
+Order / Rev:       4599875                                Advertiser:     Richard E Neal for Congress Committee
+Alt Order #:       WOC15936661                            Product Desc:   Richard E Neal For Congress Committee      WSHM-CBS 3
+Flight Dates:      10/19/26 - 11/01/26                    Estimate:       10416
+
+
+
+ Ln Ch          Start   End       Inventory Code   Break Start/End Time     Days      Len Spots       Rate Pri Rtg Type Spots          Amount
+          Start Date End Date      Weekdays       Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26     ------S                 1   $165.00      0.00
+N 5 WSHM 10/26/26 10/26/26 CBS Monday Prime Hr 1CM           8:00 PM-9:00 PM M------   :30    1    $180.00 P- 3 0.00 NM         1       $180.00
+                                  CBS Monday Prime Hr 1
+     (Program: FBI (MON P1))
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of FBI on WSHM airing 2 times on 7/14/2025 and
+     7/21/2025
+          Start Date End Date      Weekdays       Spots/Week      Rate    Rating
+   Week: 10/26/26     11/01/26     M------                 1   $180.00      0.00
+N 6 WSHM 10/26/26 10/26/26 CBS Monday Prime Hr 2CM           9:00 PM-10:00 PMM------   :30    1    $180.00 P- 3 0.00 NM         1       $180.00
+                                  CBS Monday Prime Hr 2
+     (Program: CIA)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mon 9:00p-10:00p TIME PERIOD ON WSHM
+          Start Date End Date      Weekdays       Spots/Week      Rate    Rating
+   Week: 10/26/26     11/01/26     M------                 1   $180.00      0.00
+N 7 WSHM 10/26/26 10/26/26 CBS Monday Prime Hr 3CM           10:00 PM-11:00 PMM------  :30    1    $180.00 P- 3 0.00 NM         1       $180.00
+                                  CBS Monday Prime Hr 3
+     (Program: HARLAN COBENS FINAL TWIST)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mon 10:00p-11:00p TIME PERIOD ON WSHM
+          Start Date End Date      Weekdays       Spots/Week      Rate    Rating
+   Week: 10/26/26     11/01/26     M------                 1   $180.00      0.00
+N 8 WSHM 10/19/26 10/20/26 CBS Tuesday Prime Hr 1CM          8:00 PM-9:00 PM -T-----   :30    1    $205.00 P- 3 0.00 NM         1       $205.00
+                                  CBS Tuesday Prime Hr 1
+     (Program: NCIS)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of NCIS on WSHM airing 4 times on 7/1/2025,
+     7/8/2025, 7/15/2025 and 7/22/2025
+          Start Date End Date      Weekdays       Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26     -T-----                 1   $205.00      0.00
+N 9 WSHM 10/19/26 10/20/26 CBS Tuesday Prime Hr 2CM          9:00 PM-10:00 PM-T-----   :30    1    $180.00 P- 3 0.00 NM         1       $180.00
+                                  CBS Tuesday Prime Hr 2
+     (Program: NCIS: ORIGINS)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Tue 9:00p-10:00p TIME PERIOD ON WSHM
+          Start Date End Date      Weekdays       Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26     -T-----                 1   $180.00      0.00
+N 10 WSHM 10/19/26 10/20/26 CBS Tuesday Prime Hr 3CM         10:00 PM-11:00 PM-T-----  :30    1    $145.00 P- 3 0.00 NM         1       $145.00
+                                  CBS Tuesday Prime Hr 3
+     (Program: NCIS: ORIGINS (TUE P3))
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Tue 10:00p-11:00p TIME PERIOD ON WSHM
+          Start Date End Date      Weekdays       Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26     -T-----                 1   $145.00      0.00
+N 11 WSHM 10/19/26 10/21/26 CBS Wednesday Prime Sp     CMA 8p-11p             --W----  :30    1    $225.00 P- 3 0.00 NM         1       $225.00
+                                  CBS Wednesday Prime Spec (8:00 PM-9:30 PM)
+     (Program: SURVIVOR)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Survivor on WSHM airing 1 time on 9/24/2025
+          Start Date End Date      Weekdays       Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26     --W----                 1   $225.00      0.00
+N 12 WSHM 10/19/26 10/21/26 CBS Wednesday Prime Sp     CMB 9:30 PM-11:00 PM--W----     :30    1    $205.00 P- 3 0.00 NM         1       $205.00
+                                  CBS Wednesday Prime Sp B (9:30 PM-11:00 PM)
+     (Program: AMAZING RACE)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of The Amazing Race on WSHM airing 1 time on
+     9/21/2022
+          Start Date End Date      Weekdays       Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26     --W----                 1   $205.00      0.00
+N 13 WSHM 10/19/26 10/22/26 CBS Thursday Prime Hr 1    CM    8:00 PM-9:00 PM ---T---   :30    1    $180.00 P- 3 0.00 NM         1       $180.00
+                                  CBS Thursday Prime Hr 1
+     (Program: GEORGIE-MANDY/ETERNALLY YOURS)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Thu 8:00p-9:00p TIME PERIOD ON WSHM
+          Start Date End Date      Weekdays       Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26     ---T---                 1   $180.00      0.00
+N 14 WSHM 10/19/26 10/22/26 CBS Thursday Prime Hr 2    CM    9:00 PM-10:00 PM---T---   :30    1    $190.00 P- 3 0.00 NM         1       $190.00
+                                  CBS Thursday Prime Hr 2
+     (Program: ELSBETH (THU P2))
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Thu 9:00p-10:00p TIME PERIOD ON WSHM
+                                                                                                Print Date: 10/19/26 09:25:20   Page   3 of 7
+Order / Rev:       4599875                                Advertiser:     Richard E Neal for Congress Committee
+Alt Order #:       WOC15936661                            Product Desc:   Richard E Neal For Congress Committee      WSHM-CBS 3
+Flight Dates:      10/19/26 - 11/01/26                    Estimate:       10416
+
+
+
+ Ln Ch          Start   End       Inventory Code   Break Start/End Time     Days      Len Spots       Rate Pri Rtg Type Spots          Amount
+          Start Date End Date       Weekdays        Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26      ---T---                  1   $190.00      0.00
+N 15 WSHM 10/19/26 10/22/26 CBS Thursday Prime Hr 3      CM    10:00 PM-11:00 PM---T--- :30    1   $175.00 P- 3 0.00 NM         1       $175.00
+                                   CBS Thursday Prime Hr 3
+     (Program: CUPERTINO)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Thu 10:00p-11:00p TIME PERIOD ON WSHM
+          Start Date End Date       Weekdays        Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26      ---T---                  1   $175.00      0.00
+N 16 WSHM 10/19/26 10/23/26 CBS Friday Prime Hr 1 CM           8:00 PM-9:00 PM ----F--  :30    1   $145.00 P- 3 0.00 NM         1       $145.00
+                                   CBS Friday Prime Hr 1
+     (Program: SHERIFF COUNTRY)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Fri 8:00p-9:00p TIME PERIOD ON WSHM
+          Start Date End Date       Weekdays        Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26      ----F--                  1   $145.00      0.00
+N 17 WSHM 10/19/26 10/23/26 CBS Friday Prime Hr 2 CM           9:00 PM-10:00 PM----F--  :30    1   $195.00 P- 3 0.00 NM         1       $195.00
+                                   CBS Friday Prime Hr 2
+     (Program: FIRE COUNTRY)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Fire Country on WSHM airing 2 times on
+     3/3/2023 and 3/10/2023
+          Start Date End Date       Weekdays        Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26      ----F--                  1   $195.00      0.00
+N 18 WSHM 10/19/26 10/23/26 CBS Friday Prime Hr 3 CM           10:00 PM-11:00 PM----F-- :30    1   $195.00 P- 3 0.00 NM         1       $195.00
+                                   CBS Friday Prime Hr 3
+     (Program: BOSTON BLUE)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Fri 10:00p-11:00p TIME PERIOD ON WSHM
+          Start Date End Date       Weekdays        Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26      ----F--                  1   $195.00      0.00
+N 19 WSHM 10/19/26 10/24/26 CBS Saturday Prime Hr 1      CM    8:00 PM-9:00 PM -----S-  :30    1   $100.00 P- 3 0.00 NM         1       $100.00
+                                   CBS Saturday Prime Hr 1
+     (Program: CBS SATURDAY ENCORE)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of CBS SATURDAY ENCORE 1 on WSHM airing 4
+     times on 7/8/2023, 7/15/2023, 7/22/2023 and 7/29/2023
+          Start Date End Date       Weekdays        Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26      -----S-                  1   $100.00      0.00
+N 20 WSHM 10/19/26 10/24/26 CBS Saturday Prime Hr 3      CM    10:00 PM-11:00 PM-----S- :30    1   $145.00 P- 3 0.00 NM         1       $145.00
+                                   CBS Saturday Prime Hr 3
+     (Program: 48 HOURS)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of 48 Hours on WSHM airing 4 times on 7/8/2023,
+     7/15/2023, 7/22/2023 and 7/29/2023
+          Start Date End Date       Weekdays        Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26      -----S-                  1   $145.00      0.00
+N 21 WSHM 10/19/26 10/25/26 CBS Sunday Prime Hr 1CM            7:00 PM-8:00 PM ------S  :30    1   $370.00 P- 3 0.00 NM         1       $370.00
+                                   CBS Sunday Prime Hr 1
+     (Program: 60 MINUTES)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of 60 Minutes on WSHM airing 5 times on
+     7/2/2023, 7/9/2023, 7/16/2023, 7/23/2023 and 7/30/2023
+          Start Date End Date       Weekdays        Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26      ------S                  1   $370.00      0.00
+N 22 WSHM 10/19/26 10/25/26 CBS Sunday Prime Hr 2CM            8:00 PM-9:00 PM ------S  :30    1   $205.00 P- 3 0.00 NM         1       $205.00
+                                   CBS Sunday Prime Hr 2
+     (Program: MARSHALS)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE
+          Start Date End Date       Weekdays        Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26      ------S                  1   $205.00      0.00
+N 23 WSHM 10/19/26 10/25/26 CBS Sunday Prime Hr 3CM            9:00 PM-10:00 PM------S  :30    1   $170.00 P- 3 0.00 NM         1       $170.00
+                                   CBS Sunday Prime Hr 3
+     (Program: TRACKER (SUN P3))
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE
+          Start Date End Date       Weekdays        Spots/Week      Rate    Rating
+   Week: 10/19/26     10/25/26      ------S                  1   $170.00      0.00
+N 24 WSHM 10/19/26 10/25/26 CBS Sunday Prime Hr 4CM            10:00 PM-11:00 PM------S :30    1   $125.00 P- 3 0.00 NM         1       $125.00
+                                   CBS Sunday Prime Hr 4
+     (Program: CBS SUNDAY ENCORE)
+                                                                                                         Print Date: 10/19/26 09:25:20   Page   4 of 7
+Order / Rev:       4599875                                       Advertiser:     Richard E Neal for Congress Committee
+Alt Order #:       WOC15936661                                   Product Desc:   Richard E Neal For Congress Committee         WSHM-CBS 3
+Flight Dates:      10/19/26 - 11/01/26                           Estimate:       10416
+
+
+
+ Ln Ch          Start   End       Inventory Code         Break Start/End Time       Days       Len Spots        Rate Pri Rtg Type Spots         Amount
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Sun 10:00p-11:00p TIME PERIOD ON WSHM
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26     ------S                     1    $125.00        0.00
+N 25 WSHM 10/19/26 10/24/26 Sa 11p-12x                    CM       11:00 PM-12:00 XM  -----S-      :30      2       $5.00 P- 3 0.00 NM   2        $10.00
+                                   Sa 11p-12x
+     (Program: NCIS: HAWAII)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Sat 11:00p-12:00a TIME PERIOD ON WSHM
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26     -----S-                     2      $5.00        0.00
+N 26 WSHM 10/19/26 10/25/26 M-Su Late News                CM       11:00 PM-11:35 PM  ------S      :30      3     $70.00 P- 3 0.00 NM    3       $210.00
+                                   M-Su Late News
+     (Program: WESTERN MASS NEWS CBS3 @11 SUN)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of WSHM airing Getting Answers: Weekend on
+     7/6/2025, Western Mass News on 7/13/2025, Western Mass News on 7/20/2025 and Western Mass News on 7/27/2025
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26     ------S                     3     $70.00        0.00
+N 27 WSHM 10/19/26 10/25/26 Su 1130p-1230a                CM       11:30 PM-12:30 XM  ------S      :30      1       $5.00 P- 3 0.00 NM   1         $5.00
+                                   Su 1130p-1230a
+     (Program: CONNERS)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Sun 11:30p-12:30a TIME PERIOD ON WSHM
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26     ------S                     1      $5.00        0.00
+N 28 WSHM 10/19/26 10/25/26 CBS NFL Today                 CM       12:00 PM-1:00 PM------S         :30      1    $220.00 P- 3 0.00 NM    1       $220.00
+                                   CBS NFL Today
+     (Program: NFL TODAY 2026)
+     CS SPORTS EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of The NFL Today on WSHM airing 18 times
+     on 9/7/2025, 9/14/2025, 9/21/2025, 9/28/2025, 10/5/2025, 10/12/2025, 10/19/2025, 10/26/2025, 11/2/2025, 11/9/2025, 11/16/2025,
+     11/23/2025, 11/30
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26     ------S                     1    $220.00        0.00
+N 29 WSHM 10/26/26 10/26/26 M-F 5a-7a News                CM       6:00 AM-7:00 AM M------         :30      2     $30.00 P- 3 0.00 NM    2        $60.00
+                                   M-F 5a-7a News                 (6:00 AM-7:00 AM)
+     (Program: WESTERN MASS NEWS 6AM)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on WSHM airing 40 times
+     on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/17/
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/26/26      11/01/26     M------                     2     $30.00        0.00
+N 30 WSHM 10/19/26 10/23/26 M-F 5a-7a News                CM       6:00 AM-7:00 AM -TWTF--         :30     10     $30.00 P- 3 0.00 NM    10      $300.00
+                                   M-F 5a-7a News                 (6:00 AM-7:00 AM)
+     (Program: WESTERN MASS NEWS 6AM)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on WSHM airing 40 times
+     on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/17/
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26     -TWTF--                    10     $30.00        0.00
+N 31 WSHM 10/26/26 10/26/26 CBS Mornings                  CM       7:00 AM-9:00 AM M------         :30      2     $40.00 P- 3 0.00 NM    2        $80.00
+                                   CBS Mornings
+     (Program: CBS MORNINGS)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 7:00a-9:00a TIME PERIOD ON WSHM
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/26/26      11/01/26     M------                     2     $40.00        0.00
+N 32 WSHM 10/19/26 10/23/26 CBS Mornings                  CM       7:00 AM-9:00 AM -TWTF--         :30     10     $40.00 P- 3 0.00 NM    10      $400.00
+                                   CBS Mornings
+     (Program: CBS MORNINGS)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 7:00a-9:00a TIME PERIOD ON WSHM
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26     -TWTF--                    10     $40.00        0.00
+N 33 WSHM 10/26/26 10/26/26 CBS Let's Make A Deal CM               10:00 AM-11:00 AM  M------      :30      1     $40.00 P- 3 0.00 NM    1        $40.00
+                                   CBS Let's Make A Deal
+     (Program: LETS MAKE A DEAL)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Let's Make a Deal 1 on WSHM airing 20 times
+     on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/1
+                                                                                                              Print Date: 10/19/26 09:25:20    Page   5 of 7
+Order / Rev:       4599875                                          Advertiser:      Richard E Neal for Congress Committee
+Alt Order #:       WOC15936661                                      Product Desc:    Richard E Neal For Congress Committee          WSHM-CBS 3
+Flight Dates:      10/19/26 - 11/01/26                              Estimate:        10416
+
+
+
+ Ln Ch          Start    End       Inventory Code          Break Start/End Time         Days       Len Spots         Rate Pri Rtg Type Spots          Amount
+         Start Date End Date         Weekdays          Spots/Week          Rate     Rating
+   Week: 10/26/26       11/01/26     M------                      1      $40.00        0.00
+N 34 WSHM 10/19/26 10/23/26 CBS Let's Make A Deal CM                 10:00 AM-11:00 AM   -TWTF--        :30       3     $40.00 P- 3 0.00 NM    3       $120.00
+                                    CBS Let's Make A Deal
+     (Program: LETS MAKE A DEAL)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Let's Make a Deal 1 on WSHM airing 20 times
+     on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/1
+         Start Date End Date         Weekdays          Spots/Week          Rate     Rating
+   Week: 10/19/26       10/25/26     -TWTF--                      3      $40.00        0.00
+N 35 WSHM 10/26/26 10/26/26 CBS Price Is Right               CM      11:00 AM-12:00 PM   M------        :30       1     $50.00 P- 3 0.00 NM    1        $50.00
+                                    CBS Price Is Right
+     (Program: PRICE IS RIGHT)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of WSHM airing Price is Right 1 on 6/30/2025,
+     Price is Right 2 on 6/30/2025, Price is Right 1 on 7/1/2025, Price is Right 2 on 7/1/2025, Price is Right 1 on 7/2/2025, Price is Right
+     2 on 7/
+         Start Date End Date         Weekdays          Spots/Week          Rate     Rating
+   Week: 10/26/26       11/01/26     M------                      1      $50.00        0.00
+N 36 WSHM 10/19/26 10/23/26 CBS Price Is Right               CM      11:00 AM-12:00 PM   -TWTF--        :30       3     $50.00 P- 3 0.00 NM    3       $150.00
+                                    CBS Price Is Right
+     (Program: PRICE IS RIGHT)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of WSHM airing Price is Right 1 on 6/30/2025,
+     Price is Right 2 on 6/30/2025, Price is Right 1 on 7/1/2025, Price is Right 2 on 7/1/2025, Price is Right 1 on 7/2/2025, Price is Right
+     2 on 7/
+         Start Date End Date         Weekdays          Spots/Week          Rate     Rating
+   Week: 10/19/26       10/25/26     -TWTF--                      3      $50.00        0.00
+N 37 WSHM 10/26/26 10/26/26 M-F 4p-5p                        CM      4:00 PM-5:00 PM M------            :30       2     $30.00 P- 3 0.00 NM    2        $60.00
+                                    M-F 4p-5p
+     (Program: PERFECT LINE/FLIPSIDE)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 4:00p-5:00p TIME PERIOD ON WSHM
+         Start Date End Date         Weekdays          Spots/Week          Rate     Rating
+   Week: 10/26/26       11/01/26     M------                      2      $30.00        0.00
+N 38 WSHM 10/19/26 10/23/26 M-F 4p-5p                        CM      4:00 PM-5:00 PM -TWTF--            :30       8     $30.00 P- 3 0.00 NM    8       $240.00
+                                    M-F 4p-5p
+     (Program: PERFECT LINE/FLIPSIDE)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 4:00p-5:00p TIME PERIOD ON WSHM
+         Start Date End Date         Weekdays          Spots/Week          Rate     Rating
+   Week: 10/19/26       10/25/26     -TWTF--                      8      $30.00        0.00
+N 39 WSHM 10/26/26 10/26/26 M-F 5p-530p News                 CM      5:00 PM-5:30 PM M------            :30       1     $50.00 P- 3 0.00 NM    1        $50.00
+                                    M-F 5p-530p News
+     (Program: WESTERN MASS NEWS ON CBS 3 @5P)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 5:00p-5:30p TIME PERIOD ON WSHM
+         Start Date End Date         Weekdays          Spots/Week          Rate     Rating
+   Week: 10/26/26       11/01/26     M------                      1      $50.00        0.00
+N 40 WSHM 10/19/26 10/23/26 M-F 5p-530p News                 CM      5:00 PM-5:30 PM -TWTF--            :30       5     $50.00 P- 3 0.00 NM    5       $250.00
+                                    M-F 5p-530p News
+     (Program: WESTERN MASS NEWS ON CBS 3 @5P)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 5:00p-5:30p TIME PERIOD ON WSHM
+         Start Date End Date         Weekdays          Spots/Week          Rate     Rating
+   Week: 10/19/26       10/25/26     -TWTF--                      5      $50.00        0.00
+N 41 WSHM 10/26/26 10/26/26 M-F 530p-6p News                 CM      5:30 PM-6:00 PM M------            :30       1     $50.00 P- 3 0.00 NM    1        $50.00
+                                    M-F 530p-6p News
+     (Program: WESTERN MASS NEWS CBS 3@530P)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 5:30p-6:00p TIME PERIOD ON WSHM
+         Start Date End Date         Weekdays          Spots/Week          Rate     Rating
+   Week: 10/26/26       11/01/26     M------                      1      $50.00        0.00
+N 42 WSHM 10/19/26 10/23/26 M-F 530p-6p News                 CM      5:30 PM-6:00 PM -TWTF--            :30       5     $50.00 P- 3 0.00 NM    5       $250.00
+                                    M-F 530p-6p News
+     (Program: WESTERN MASS NEWS CBS 3@530P)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 5:30p-6:00p TIME PERIOD ON WSHM
+         Start Date End Date         Weekdays          Spots/Week          Rate     Rating
+   Week: 10/19/26       10/25/26     -TWTF--                      5      $50.00        0.00
+N 43 WSHM 10/26/26 10/26/26 M-F 6p-630p News                 CM      6:00 PM-6:30 PM M------            :30       1     $55.00 P- 3 0.00 NM    1        $55.00
+                                                                                                         Print Date: 10/19/26 09:25:20   Page   6 of 7
+Order / Rev:       4599875                                       Advertiser:     Richard E Neal for Congress Committee
+Alt Order #:       WOC15936661                                   Product Desc:   Richard E Neal For Congress Committee        WSHM-CBS 3
+Flight Dates:      10/19/26 - 11/01/26                           Estimate:       10416
+
+
+
+ Ln Ch          Start   End       Inventory Code        Break Start/End Time        Days      Len Spots        Rate Pri Rtg Type Spots          Amount
+                                  M-F 6p-630p News
+     (Program: WESTERN MASS NEWS ON CBS 3 @6P)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News at 6:00pm on WSHM airing
+     20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025,
+     7/15/2025, 7/16/2
+          Start Date End Date      Weekdays          Spots/Week         Rate     Rating
+   Week: 10/26/26      11/01/26    M------                      1     $55.00       0.00
+N 44 WSHM 10/19/26 10/23/26 M-F 6p-630p News              CM      6:00 PM-6:30 PM -TWTF--           :30     5     $55.00 P- 3 0.00 NM    5       $275.00
+                                  M-F 6p-630p News
+     (Program: WESTERN MASS NEWS ON CBS 3 @6P)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News at 6:00pm on WSHM airing
+     20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025,
+     7/15/2025, 7/16/2
+          Start Date End Date      Weekdays          Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26    -TWTF--                      5     $55.00       0.00
+N 45 WSHM 10/26/26 10/26/26 M-F 7p-730p                   CM      7:00 PM-7:30 PM M------           :30     1     $75.00 P- 3 0.00 NM    1        $75.00
+                                  M-F 7p-730p
+     (Program: INSIDE EDITION)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 7:00p-7:30p TIME PERIOD ON WSHM
+          Start Date End Date      Weekdays          Spots/Week         Rate     Rating
+   Week: 10/26/26      11/01/26    M------                      1     $75.00       0.00
+N 46 WSHM 10/19/26 10/23/26 M-F 7p-730p                   CM      7:00 PM-7:30 PM -TWTF--           :30     5     $75.00 P- 3 0.00 NM    5       $375.00
+                                  M-F 7p-730p
+     (Program: INSIDE EDITION)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 7:00p-7:30p TIME PERIOD ON WSHM
+          Start Date End Date      Weekdays          Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26    -TWTF--                      5     $75.00       0.00
+N 47 WSHM 10/26/26 10/26/26 M-F 730p-8p                   CM      7:30 PM-8:00 PM M------           :30     1     $75.00 P- 3 0.00 NM    1        $75.00
+                                  M-F 730p-8p
+     (Program: ENTERTAINMENT TONIGHT)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 7:30p-8:00p TIME PERIOD ON WSHM
+          Start Date End Date      Weekdays          Spots/Week         Rate     Rating
+   Week: 10/26/26      11/01/26    M------                      1     $75.00       0.00
+N 48 WSHM 10/19/26 10/23/26 M-F 730p-8p                   CM      7:30 PM-8:00 PM -TWTF--           :30     5     $75.00 P- 3 0.00 NM    5       $375.00
+                                  M-F 730p-8p
+     (Program: ENTERTAINMENT TONIGHT)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 7:30p-8:00p TIME PERIOD ON WSHM
+          Start Date End Date      Weekdays          Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26    -TWTF--                      5     $75.00       0.00
+N 49 WSHM 10/26/26 10/26/26 M-Su Late News                CM      11:00 PM-11:35 PM  M------        :30     3     $70.00 P- 3 0.00 NM    3       $210.00
+                                  M-Su Late News
+     (Program: WESTERN MASS NEWS CBS3 @11 M-F)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 11:00p-11:35p TIME PERIOD ON WSHM
+          Start Date End Date      Weekdays          Spots/Week         Rate     Rating
+   Week: 10/26/26      11/01/26    M------                      3     $70.00       0.00
+N 50 WSHM 10/19/26 10/23/26 M-Su Late News                CM      11:00 PM-11:35 PM  -TWTF--        :30    14     $70.00 P- 3 0.00 NM    14      $980.00
+                                  M-Su Late News
+     (Program: WESTERN MASS NEWS CBS3 @11 M-F)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 11:00p-11:35p TIME PERIOD ON WSHM
+          Start Date End Date      Weekdays          Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26    -TWTF--                     14     $70.00       0.00
+N 51 WSHM 10/26/26 10/26/26 CBS Comics Unleashed CM               11:35 PM-12:37 XM  M------        :30     1     $65.00 P- 3 0.00 NM    1        $65.00
+                                  CBS Late Show
+     (Program: COMICS UNLEASHED)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 11:35p-12:37a TIME PERIOD ON WSHM
+          Start Date End Date      Weekdays          Spots/Week         Rate     Rating
+   Week: 10/26/26      11/01/26    M------                      1     $65.00       0.00
+N 52 WSHM 10/19/26 10/23/26 CBS Comics Unleashed CM               11:35 PM-12:37 XM  -TWTF--        :30     3     $65.00 P- 3 0.00 NM    3       $195.00
+                                  CBS Late Show
+     (Program: COMICS UNLEASHED)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ACTUAL Jul/2025 Mo-Fr 11:35p-12:37a TIME PERIOD ON WSHM
+          Start Date End Date      Weekdays          Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26    -TWTF--                      3     $65.00       0.00
+                                                                                                Print Date: 10/19/26 09:25:20    Page   7 of 7
+Order / Rev:       4599875                               Advertiser:      Richard E Neal for Congress Committee
+Alt Order #:       WOC15936661                           Product Desc:    Richard E Neal For Congress Committee      WSHM-CBS 3
+Flight Dates:      10/19/26 - 11/01/26                   Estimate:        10416
+
+
+
+ Ln Ch          Start   End       Inventory Code   Break Start/End Time     Days      Len Spots       Rate Pri Rtg Type Spots           Amount
+                                                                                                                  Totals        124     $9,195.00
+

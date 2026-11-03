@@ -1,0 +1,562 @@
+                                                                                                                     Print Date 10/19/26 09:25:23       Page 1 of 8
+
+                                                                             ORDER
+
+Orders              Order / Rev:              4599865
+                    Alt Order #:              WOC15936662
+                    Ext. Opp. ID:
+                    Product Desc:             Richard E Neal For Congress Committee                                         WGGB
+
+                    Estimate:                 10416                                          Primary AE:                    Mary Marcil-Labbe
+                    Flight Dates:             10/19/26 - 11/01/26                            Sales Office:                  SPMAL
+                    Original Date / Rev:      10/19/26 / 10/19/26                            Sales Region:                  Local
+                    Order Type:               NORMAL
+
+Agency              Name:                     Admire Media, LLC
+                    Buying Contact:                                                          Billing Type:                  Cash
+                    Billing Contact:                                                         Billing Calendar:              Broadcast
+                                              222 W Ontario St, Suite 600                    Billing Cycle:                 EOM/EOC
+                                              Chicago, IL 60654                              Agency Commission:             15%
+
+
+Advertiser          Name:                     Richard E Neal for Congress Committee
+                    Demographic:              HH                                             New Business End:
+                    Product Codes:            Candidate - National - House                   Advertiser External ID:        664319
+                    Revenue Code 1:           AGY                                            Agency External ID:            227187
+                    Revenue Code 2:           POL                                            Unit Code:                     General
+                    Revenue Code 3:           POL-CAND                                       Order Separation:              00:05:00
+                    Priority:                 P- 3
+
+Bill Plan                                                                          Totals
+Start Date    End Date              # Spots Gross Amount        Net Amount         Month                         # Spots    Gross Amount        Net Amount        Rating
+09/28/26      10/25/26                 159         $20,395.00       $17,335.75     October 2026                      159       $20,395.00          $17,335.75       0.00
+10/26/26      10/26/26                  24          $3,585.00        $3,047.25     November 2026                       24        $3,585.00          $3,047.25       0.00
+                                                                                   Totals                            183          $23,980.00        $20,383.00       0.00
+
+Account Executives
+Account Executive                  Sales Office      Sales Region    Start Date / End Date                       Order %
+Mary Marcil-Labbe                                                    Start Of Order - End Of Order                  100%
+
+
+
+
+ Ln Ch       Start         End         Inventory Code           Break Start/End Time         Days       Len Spots           Rate Pri Rtg Type Spots              Amount
+N 1 WGGB 10/19/26 10/24/26 Sa-Su 7a-8a News               CM      7:00 AM-8:00 AM -----S-  :30 2  $95.00 P- 3 0.00 NM                                    2        $190.00
+                                   Sa-Su 7a-8a News
+    (Program: WEST MASS NEWS ABC40-MRNG-WKN)
+    CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 on WGGB airing
+    4 times on 7/5/2025, 7/12/2025, 7/19/2025 and 7/26/2025
+         Start Date End Date        Weekdays        Spots/Week         Rate    Rating
+  Week: 10/19/26       10/25/26     -----S-                    2     $95.00      0.00
+N 2 WGGB 10/19/26 10/24/26 ABC GMA Sat                    CM      8:00 AM-9:00 AM -----S-  :30 2 $130.00 P- 3 0.00 NM                                    2        $260.00
+                                   ABC GMA Sat
+    (Program: GOOD MORN AMERICA-SAT-ABC)
+    CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Good Morning America Saturday on WGGB
+    airing 4 times on 7/5/2025, 7/12/2025, 7/19/2025 and 7/26/2025
+         Start Date End Date        Weekdays        Spots/Week         Rate    Rating
+  Week: 10/19/26       10/25/26     -----S-                    2    $130.00      0.00
+N 3 WGGB 10/19/26 10/24/26 Sa-Su 9a-10a News              CM      9:00 AM-10:00 AM-----S-  :30 2  $80.00 P- 3 0.00 NM                                    2        $160.00
+                                   Sa-Su 9a-10a News             (9:00 AM-10:00 AM)
+    (Program: WEST MASS NEWS ABC40-MRNG-WKN)
+    CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 on WGGB airing
+    4 times on 7/5/2025, 7/12/2025, 7/19/2025 and 7/26/2025
+         Start Date End Date        Weekdays        Spots/Week         Rate    Rating
+  Week: 10/19/26       10/25/26     -----S-                    2     $80.00      0.00
+N 4 WGGB 10/19/26 10/24/26                                CM      10:00 AM-11:00 AM-----S- :30 2 $105.00 P- 3 0.00 NM                                    2        $210.00
+                                                                                                        Print Date: 10/19/26 09:25:23   Page   2 of 8
+Order / Rev:       4599865                                      Advertiser:     Richard E Neal for Congress Committee
+Alt Order #:       WOC15936662                                  Product Desc:   Richard E Neal For Congress Committee        WGGB
+Flight Dates:      10/19/26 - 11/01/26                          Estimate:       10416
+
+
+
+ Ln Ch          Start   End       Inventory Code        Break Start/End Time       Days      Len Spots        Rate Pri Rtg Type Spots          Amount
+                                   ABC GMA 2 Sat
+                                   ABC GMA 2 Sat
+    (Program: GOOD MORN AMERICA-SAT-ABC 2)
+    CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Good Morning America Saturday on WGGB
+    airing 4 times on 7/5/2025, 7/12/2025, 7/19/2025 and 7/26/2025
+         Start Date End Date        Weekdays        Spots/Week        Rate    Rating
+  Week: 10/19/26       10/25/26     -----S-                    2   $105.00      0.00
+N 5 WGGB 10/19/26 10/25/26 Sa-Su 7a-8a News               CM     7:00 AM-8:00 AM ------S :30 2    $80.00 P- 3 0.00 NM                   2       $160.00
+                                   Sa-Su 7a-8a News
+    (Program: WEST MASS NEWS ABC40-MRNG-WKN)
+    CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 on WGGB airing
+    4 times on 7/6/2025, 7/13/2025, 7/20/2025 and 7/27/2025
+         Start Date End Date        Weekdays        Spots/Week        Rate    Rating
+  Week: 10/19/26       10/25/26     ------S                    2    $80.00      0.00
+N 6 WGGB 10/19/26 10/25/26 ABC GMA Sun                    CM     8:00 AM-9:00 AM ------S :30 2  $130.00 P- 3 0.00 NM                    2       $260.00
+                                   ABC GMA Sun
+    (Program: GOOD MORN AMERICA-SUN-ABC)
+    CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Good Morning America Sunday on WGGB airing
+    4 times on 7/6/2025, 7/13/2025, 7/20/2025 and 7/27/2025
+         Start Date End Date        Weekdays        Spots/Week        Rate    Rating
+  Week: 10/19/26       10/25/26     ------S                    2   $130.00      0.00
+N 7 WGGB 10/19/26 10/25/26 Sa-Su 9a-10a News            CM     9:00 AM-10:00 AM------S :30  1   $80.00 P- 3 0.00 NM                     1        $80.00
+                                 Sa-Su 9a-10a News            (9:00 AM-10:00 AM)
+    (Program: WEST MASS NEWS ABC40-MRNWK B)
+    CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 on WGGB airing
+    4 times on 7/6/2025, 7/13/2025, 7/20/2025 and 7/27/2025
+         Start Date End Date       Weekdays        Spots/Week       Rate    Rating
+  Week: 10/19/26      10/25/26     ------S                  1     $80.00      0.00
+N 8 WGGB 10/19/26 10/20/26 ABC Tuesday Prime 2 Hour       CM     8:00 PM-10:00 PM-T-----         :30      1    $375.00 P- 3 0.00 NM     1       $375.00
+                                  ABC Tuesday Prime 2 Hour
+     (Program: DANCING W/ THE STARS (TUE))
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Dancing With the Stars on WGGB airing 12
+     times on 9/16/2025, 9/23/2025, 9/30/2025, 10/7/2025, 10/14/2025, 10/21/2025, 10/28/2025, 11/4/2025, 11/11/2025, 11/18/2025,
+     11/25/2025 and 12/2/2
+         Start Date End Date        Weekdays        Spots/Week        Rate     Rating
+   Week: 10/19/26     10/25/26      -T-----                    1   $375.00        0.00
+N 9 WGGB 10/19/26 10/20/26 ABC Tuesday Prime Hr 3CM              10:00 PM-11:00 PM  -T-----      :30      1    $230.00 P- 3 0.00 NM     1       $230.00
+                                  ABC Tuesday Prime Hr 3
+     (Program: RJ DECKER (TUE P3))
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of R.J. Decker on WGGB airing 3 times on
+     3/17/2026, 3/24/2026 and 3/31/2026
+         Start Date End Date        Weekdays        Spots/Week        Rate     Rating
+   Week: 10/19/26     10/25/26      -T-----                    1   $230.00        0.00
+N 10 WGGB 10/19/26 10/21/26 ABC Wednesday Prime Hr        CM1    8:00 PM-9:00 PM --W----         :30      1    $300.00 P- 3 0.00 NM     1       $300.00
+                                  ABC Wednesday Prime Hr 1
+     (Program: SCRUBS/ABBOTT ELEM)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of WGGB airing Abbott Elementary on 10/29/2025,
+     Abbott Elementary on 11/5/2025, Scrubs on 2/25/2026, Scrubs on 2/25/2026, Scrubs on 2/25/2026, Scrubs on 2/25/2026, Scrubs
+     on 3/4/2026, Abbot
+         Start Date End Date        Weekdays        Spots/Week        Rate     Rating
+   Week: 10/19/26     10/25/26      --W----                    1   $300.00        0.00
+N 11 WGGB 10/19/26 10/21/26 ABC Wednesday Prime Hr        CM2     9:00 PM-10:00 PM--W----         :30       1   $315.00 P- 3 0.00 NM    1       $315.00
+                                  ABC Wednesday Prime Hr 2
+     (Program: CELEBRITY JEOPARDY (WED))
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Who Wants to Be a Millionaire? on WGGB airing
+     14 times on 7/23/2025, 7/30/2025, 8/6/2025, 8/9/2025, 8/13/2025, 8/20/2025, 8/27/2025, 9/1/2025, 9/3/2025 and 9/25/2025
+          Start Date End Date      Weekdays          Spots/Week        Rate     Rating
+   Week: 10/19/26      10/25/26    --W----                     1    $315.00        0.00
+N 12 WGGB 10/19/26 10/21/26 ABC Wednesday Prime Hr        CM3     10:00 PM-11:00 PM  --W----      :30       1   $295.00 P- 3 0.00 NM    1       $295.00
+                                  ABC Wednesday Prime Hr 3
+     (Program: SHARK TANK (WED))
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Shark Tank on WGGB airing 12 times on
+     7/9/2025, 7/23/2025, 7/30/2025, 8/6/2025, 8/13/2025, 8/20/2025, 8/27/2025, 9/3/2025, 9/10/2025, 9/17/2025, 9/24/2025 and
+     10/1/2025
+          Start Date End Date      Weekdays          Spots/Week        Rate     Rating
+                                                                                                   Print Date: 10/19/26 09:25:23   Page   3 of 8
+Order / Rev:       4599865                                   Advertiser:     Richard E Neal for Congress Committee
+Alt Order #:       WOC15936662                               Product Desc:   Richard E Neal For Congress Committee      WGGB
+Flight Dates:      10/19/26 - 11/01/26                       Estimate:       10416
+
+
+
+ Ln Ch          Start   End       Inventory Code     Break Start/End Time      Days      Len Spots       Rate Pri Rtg Type Spots          Amount
+          Start Date End Date        Weekdays        Spots/Week         Rate    Rating
+   Week: 10/19/26       10/25/26     --W----                    1    $295.00       0.00
+N 13 WGGB 10/19/26 10/22/26 ABC Thursday Prime Hr 1        CM      8:00 PM-9:00 PM ---T---        :30   1 $310.00 P- 3 0.00 NM     1       $310.00
+                                    ABC Thursday Prime Hr 1
+     (Program: 9-1-1 (THU))
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of 9-1-1 on WGGB airing 16 times on 4/3/2025,
+     4/10/2025, 4/17/2025, 5/1/2025, 5/8/2025, 5/15/2025, 5/22/2025, 5/29/2025 and 6/12/2025
+          Start Date End Date        Weekdays        Spots/Week         Rate    Rating
+   Week: 10/19/26       10/25/26     ---T---                    1    $310.00       0.00
+N 14 WGGB 10/19/26 10/22/26 ABC Thursday Prime Hr 2        CM      9:00 PM-10:00 PM---T---        :30   1 $250.00 P- 3 0.00 NM     1       $250.00
+                                    ABC Thursday Prime Hr 2
+     (Program: 9-1-1 NASHVILLE)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of 9-1-1: Nashville on WGGB airing 4 times on
+     10/9/2025, 10/16/2025, 10/23/2025 and 10/30/2025
+          Start Date End Date        Weekdays        Spots/Week         Rate    Rating
+   Week: 10/19/26       10/25/26     ---T---                    1    $250.00       0.00
+N 15 WGGB 10/19/26 10/23/26 ABC Friday Prime Hr 1 CM               8:00 PM-9:00 PM ----F--        :30   1 $310.00 P- 3 0.00 NM     1       $310.00
+                                    ABC Friday Prime Hr 1
+     (Program: CELEBRITY WHEEL (FRI))
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Celebrity Wheel of Fortune on WGGB airing 8
+     times on 1/2/2026, 1/9/2026, 1/16/2026, 1/23/2026, 1/30/2026, 2/6/2026, 2/13/2026 and 2/20/2026
+          Start Date End Date        Weekdays        Spots/Week         Rate    Rating
+   Week: 10/19/26       10/25/26     ----F--                    1    $310.00       0.00
+N 16 WGGB 10/19/26 10/23/26 ABC Friday Prime 2 HourCM              9:00 PM-11:00 PM----F--        :30   1 $250.00 P- 3 0.00 NM     1       $250.00
+                                    ABC Friday Prime 2 Hour
+     (Program: 20/20 (2HR))
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of 20/20 on WGGB airing 10 times on 7/4/2025,
+     7/11/2025, 7/18/2025, 7/25/2025, 8/1/2025, 8/15/2025, 8/22/2025, 9/5/2025, 9/12/2025 and 9/26/2025
+          Start Date End Date        Weekdays        Spots/Week         Rate    Rating
+   Week: 10/19/26       10/25/26     ----F--                    1    $250.00       0.00
+N 17 WGGB 10/19/26 10/25/26 ABC Sunday Prime Hr 1CM                7:00 PM-8:00 PM ------S        :30   1 $280.00 P- 3 0.00 NM     1       $280.00
+                                    ABC Sunday Prime Hr 1
+     (Program: AMERICA'S FUNNIEST VIDEOS)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of America's Funniest Home Videos on WGGB
+     airing 8 times on 7/6/2025, 7/13/2025, 7/20/2025 and 7/27/2025
+          Start Date End Date        Weekdays        Spots/Week         Rate    Rating
+   Week: 10/19/26       10/25/26     ------S                    1    $280.00       0.00
+N 18 WGGB 10/19/26 10/25/26 ABC Sunday Prime Special       CM      8:00 PM-11:00 PM------S        :30   1 $225.00 P- 3 0.00 NM     1       $225.00
+                                    ABC Sunday Prime Special
+     (Program: WORLD OF DISNEY (SUN))
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Wonderful World of Disney on WGGB airing 4
+     times on 7/6/2025, 7/13/2025, 7/20/2025 and 7/27/2025
+          Start Date End Date        Weekdays        Spots/Week         Rate    Rating
+   Week: 10/19/26       10/25/26     ------S                    1    $225.00       0.00
+N 19 WGGB 10/19/26 10/25/26 Su Late News                   CM      11:00 PM-11:35 PM ------S      :30   1  $70.00 P- 3 0.00 NM     1        $70.00
+                                    Su Late News
+     (Program: WEST MASS NEWS ABC40 ELEVN@11)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of WGGB airing Western Mass News on ABC40 at
+     11:00p on 6/30/2025, Western Mass News on ABC40 at 11:00p on 7/1/2025, Western Mass News on ABC40 at 11:00p on
+     7/2/2025, Western Mass News on AB
+          Start Date End Date        Weekdays        Spots/Week         Rate    Rating
+   Week: 10/19/26       10/25/26     ------S                    1     $70.00       0.00
+N 20 WGGB 10/19/26 10/24/26 Sa-Su 1130p-1230x              CM      11:30 PM-12:00 XM -----S-      :30   1  $15.00 P- 3 0.00 NM     1        $15.00
+                                    Sa-Su 1130p-1230a             (11:30 PM-12:00 XM)
+     (Program: INVESTIGATE TV)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of InvestigateTV+ Weekend on WGGB airing 3
+     times on 11/1/2025, 11/15/2025 and 11/29/2025
+          Start Date End Date        Weekdays        Spots/Week         Rate    Rating
+   Week: 10/19/26       10/25/26     -----S-                    1     $15.00       0.00
+N 21 WGGB 10/19/26 10/24/26 Sa-Su 1130p-1230x              CM      12:00 XM-12:30 XM -----S-      :30   1  $15.00 P- 3 0.00 NM     1        $15.00
+                                    Sa-Su 1130p-1230a             (12:00 XM-12:30 XM)
+     (Program: THE SONG)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of The Song on WGGB airing 4 times on 9/6/2025,
+     9/13/2025, 9/20/2025 and 9/27/2025
+                                                                                                         Print Date: 10/19/26 09:25:23   Page   4 of 8
+Order / Rev:       4599865                                       Advertiser:     Richard E Neal for Congress Committee
+Alt Order #:       WOC15936662                                   Product Desc:   Richard E Neal For Congress Committee        WGGB
+Flight Dates:      10/19/26 - 11/01/26                           Estimate:       10416
+
+
+
+ Ln Ch          Start   End       Inventory Code        Break Start/End Time        Days      Len Spots        Rate Pri Rtg Type Spots          Amount
+          Start Date End Date        Weekdays          Spots/Week       Rate     Rating
+   Week: 10/19/26      10/25/26      -----S-                    1     $15.00        0.00
+N 22 WGGB 10/26/26 10/26/26 ABC NFL Prime Game CM                  8:00 PM-11:15 PMM------         :30      1    $815.00 P- 3 0.00 NM    1       $815.00
+                                    ABC NFL Prime Game
+     (Program: MNF)
+     CS SPORTS EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Monday Night Football On ABC on WGGB
+     airing 10 times on 9/8/2025, 9/22/2025, 9/29/2025, 10/6/2025, 10/13/2025, 10/27/2025, 11/3/2025, 11/10/2025, 11/17/2025 and
+     12/8/2025
+          Start Date End Date        Weekdays          Spots/Week       Rate     Rating
+   Week: 10/26/26      11/01/26      M------                    1    $815.00        0.00
+N 23 WGGB 10/19/26 10/24/26 ABC College FB Early Game       CM     12:00 PM-3:30 PM-----S-         :30      1    $125.00 P- 3 0.00 NM    1       $125.00
+                                    ABC College FB Early Game (12:00 PM-3:30 PM)
+     (Program: ABC COL. FOOTBALL(EARLY) 2026)
+     CS SPORTS EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of ABC Afternoon College Football on
+     WGGB airing 12 times on 9/13/2025, 9/20/2025, 9/27/2025, 10/4/2025, 10/11/2025, 10/18/2025, 10/25/2025, 11/1/2025, 11/8/2025,
+     11/15/2025, 11/22/2025
+          Start Date End Date        Weekdays          Spots/Week       Rate     Rating
+   Week: 10/19/26      10/25/26      -----S-                    1    $125.00        0.00
+N 24 WGGB 10/19/26 10/24/26 ABC College FB Late Game        CM     3:30 PM-7:30 PM -----S-         :30      2    $155.00 P- 3 0.00 NM    2       $310.00
+                                    ABC College FB Late Game      (3:30 PM-7:30 PM)
+     (Program: ABC COL. FOOTBALL (LATE) 2026)
+     CS SPORTS EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of ABC Afternoon College Football on
+     WGGB airing 13 times on 9/6/2025, 9/13/2025, 9/20/2025, 9/27/2025, 10/4/2025, 10/11/2025, 10/18/2025, 10/25/2025, 11/1/2025,
+     11/8/2025, 11/15/2025,
+          Start Date End Date        Weekdays          Spots/Week       Rate     Rating
+   Week: 10/19/26      10/25/26      -----S-                    2    $155.00        0.00
+N 25 WGGB 10/19/26 10/24/26 Fri/Sat Nite College FB CM             7:30 PM-11:00 PM-----S-         :30      1    $190.00 P- 3 0.00 NM    1       $190.00
+                                    Fri/Sat Nite College FB       (7:30 PM-11:00 PM)
+     (Program: ABC COL. FOOTBALL (PRIME) 2026)
+     CS SPORTS EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Saturday Night Football on WGGB airing
+     13 times on 9/6/2025, 9/13/2025, 9/20/2025, 9/27/2025, 10/4/2025, 10/11/2025, 10/18/2025, 10/25/2025, 11/1/2025, 11/8/2025,
+     11/15/2025, 11/22/2
+          Start Date End Date        Weekdays          Spots/Week       Rate     Rating
+   Week: 10/19/26      10/25/26      -----S-                    1    $190.00        0.00
+N 26 WGGB 10/26/26 10/26/26 M-F 5a-530a News                CM     5:00 AM-5:30 AM M------         :30      2     $70.00 P- 3 0.00 NM    2       $140.00
+                                    M-F 5a-530a News
+     (Program: WEST MASS NEWS ABC40-MORN@5AM)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on WGGB airing 20 times
+     on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/17/
+          Start Date End Date        Weekdays          Spots/Week       Rate     Rating
+   Week: 10/26/26      11/01/26      M------                    2     $70.00        0.00
+N 27 WGGB 10/19/26 10/23/26 M-F 5a-530a News                CM     5:00 AM-5:30 AM -TWTF--         :30     10     $70.00 P- 3 0.00 NM    10      $700.00
+                                    M-F 5a-530a News
+     (Program: WEST MASS NEWS ABC40-MORN@5AM)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on WGGB airing 20 times
+     on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/17/
+          Start Date End Date        Weekdays          Spots/Week       Rate     Rating
+   Week: 10/19/26      10/25/26      -TWTF--                   10     $70.00        0.00
+N 28 WGGB 10/26/26 10/26/26 M-F 530a-6a News                CM     5:30 AM-6:00 AM M------         :30      2     $70.00 P- 3 0.00 NM    2       $140.00
+                                    M-F 530a-6a News
+     (Program: WEST MASS NEWS ABC40-MRN@530A)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on WGGB airing 20 times
+     on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/17/
+          Start Date End Date        Weekdays          Spots/Week       Rate     Rating
+   Week: 10/26/26      11/01/26      M------                    2     $70.00        0.00
+N 29 WGGB 10/19/26 10/23/26 M-F 530a-6a News                CM     5:30 AM-6:00 AM -TWTF--         :30     10     $70.00 P- 3 0.00 NM    10      $700.00
+                                    M-F 530a-6a News
+     (Program: WEST MASS NEWS ABC40-MRN@530A)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on WGGB airing 20 times
+     on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/17/
+          Start Date End Date        Weekdays          Spots/Week       Rate     Rating
+                                                                                                         Print Date: 10/19/26 09:25:23   Page   5 of 8
+Order / Rev:       4599865                                       Advertiser:     Richard E Neal for Congress Committee
+Alt Order #:       WOC15936662                                   Product Desc:   Richard E Neal For Congress Committee        WGGB
+Flight Dates:      10/19/26 - 11/01/26                           Estimate:       10416
+
+
+
+ Ln Ch          Start   End       Inventory Code        Break Start/End Time        Days      Len Spots        Rate Pri Rtg Type Spots          Amount
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26     -TWTF--                    10     $70.00        0.00
+N 30 WGGB 10/26/26 10/26/26 M-F 6a-7a News                 CM      6:00 AM-7:00 AM M------          :30      2   $150.00 P- 3 0.00 NM    2       $300.00
+                                   M-F 6a-7a News
+     (Program: WEST MASS NEWS ABC40-MORN@6-7A)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on WGGB airing 40 times
+     on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/17/
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/26/26      11/01/26     M------                     2    $150.00        0.00
+N 31 WGGB 10/19/26 10/23/26 M-F 6a-7a News                 CM      6:00 AM-7:00 AM -TWTF--          :30    10    $150.00 P- 3 0.00 NM    10     $1,500.00
+                                   M-F 6a-7a News
+     (Program: WEST MASS NEWS ABC40-MORN@6-7A)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on WGGB airing 40 times
+     on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/17/
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26     -TWTF--                    10    $150.00        0.00
+N 32 WGGB 10/26/26 10/26/26 ABC Good Morning America       CM      7:00 AM-9:00 AM M------          :30      2   $155.00 P- 3 0.00 NM    2       $310.00
+                                   ABC Good Morning America
+     (Program: GOOD MORNING AMERICA-ABC)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Good Morning America on WGGB airing 20
+     times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025,
+     7/15/2025, 7/16/2025, 7/
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/26/26      11/01/26     M------                     2    $155.00        0.00
+N 33 WGGB 10/19/26 10/23/26 ABC Good Morning America       CM      7:00 AM-9:00 AM -TWTF--          :30    10    $155.00 P- 3 0.00 NM    10     $1,550.00
+                                   ABC Good Morning America
+     (Program: GOOD MORNING AMERICA-ABC)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Good Morning America on WGGB airing 20
+     times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025,
+     7/15/2025, 7/16/2025, 7/
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26     -TWTF--                    10    $155.00        0.00
+N 34 WGGB 10/26/26 10/26/26 M-F 9am-10am                   CM      9:00 AM-10:00 AMM------          :30      1    $50.00 P- 3 0.00 NM    1        $50.00
+                                   M-F 9am-10am
+     (Program: LIVE WITH KELLY AND MARK)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Aging Untold on WGGB airing 15 times on
+     3/2/2026, 3/3/2026, 3/4/2026, 3/5/2026, 3/6/2026, 3/16/2026, 3/17/2026, 3/18/2026, 3/19/2026, 3/20/2026, 3/23/2026, 3/24/2026,
+     3/25/2026, 3/26/202
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/26/26      11/01/26     M------                     1     $50.00        0.00
+N 35 WGGB 10/19/26 10/23/26 M-F 9am-10am                   CM      9:00 AM-10:00 AM-TWTF--          :30      5    $50.00 P- 3 0.00 NM    5       $250.00
+                                   M-F 9am-10am
+     (Program: LIVE WITH KELLY AND MARK)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Aging Untold on WGGB airing 15 times on
+     3/2/2026, 3/3/2026, 3/4/2026, 3/5/2026, 3/6/2026, 3/16/2026, 3/17/2026, 3/18/2026, 3/19/2026, 3/20/2026, 3/23/2026, 3/24/2026,
+     3/25/2026, 3/26/202
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26     -TWTF--                     5     $50.00        0.00
+N 36 WGGB 10/26/26 10/26/26 M-F 12p-1230p News CM                  12:00 PM-12:30 PM  M------       :30      1    $95.00 P- 3 0.00 NM    1        $95.00
+                                   M-F 12p-1230p News
+     (Program: ABC40 12PM NEWS)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of WGGB airing Western Mass News on ABC40 at
+     12pm on 6/30/2025, Western Mass News on ABC40 at 12:30pm on 6/30/2025, Western Mass News on ABC40 at 12pm on
+     7/1/2025, Western Mass News on ABC4
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+   Week: 10/26/26      11/01/26     M------                     1     $95.00        0.00
+N 37 WGGB 10/19/26 10/23/26 M-F 12p-1230p News CM                  12:00 PM-12:30 PM  -TWTF--       :30      5    $95.00 P- 3 0.00 NM    5       $475.00
+                                   M-F 12p-1230p News
+     (Program: ABC40 12PM NEWS)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of WGGB airing Western Mass News on ABC40 at
+     12pm on 6/30/2025, Western Mass News on ABC40 at 12:30pm on 6/30/2025, Western Mass News on ABC40 at 12pm on
+     7/1/2025, Western Mass News on ABC4
+          Start Date End Date       Weekdays         Spots/Week         Rate     Rating
+                                                                                                         Print Date: 10/19/26 09:25:23   Page   6 of 8
+Order / Rev:       4599865                                       Advertiser:     Richard E Neal for Congress Committee
+Alt Order #:       WOC15936662                                   Product Desc:   Richard E Neal For Congress Committee         WGGB
+Flight Dates:      10/19/26 - 11/01/26                           Estimate:       10416
+
+
+
+ Ln Ch          Start   End       Inventory Code         Break Start/End Time       Days       Len Spots        Rate Pri Rtg Type Spots         Amount
+          Start Date End Date        Weekdays        Spots/Week          Rate     Rating
+   Week: 10/19/26      10/25/26      -TWTF--                    5      $95.00       0.00
+N 38 WGGB 10/26/26 10/26/26 ABC Daytime                     CM      1:00 PM-2:00 PM M------         :30       1    $80.00 P- 3 0.00 NM   1        $80.00
+                                   ABC Daytime
+     (Program: GMA3: WHAT YOU SHOULD KNOW)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of GMA3: What You Need to Know on WGGB
+     airing 20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025,
+     7/14/2025, 7/15/2025, 7/16/2
+          Start Date End Date        Weekdays        Spots/Week          Rate     Rating
+   Week: 10/26/26      11/01/26      M------                    1      $80.00       0.00
+N 39 WGGB 10/19/26 10/23/26 ABC Daytime                     CM      1:00 PM-2:00 PM -TWTF--         :30       5    $80.00 P- 3 0.00 NM   5       $400.00
+                                   ABC Daytime
+     (Program: GMA3: WHAT YOU SHOULD KNOW)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of GMA3: What You Need to Know on WGGB
+     airing 20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025,
+     7/14/2025, 7/15/2025, 7/16/2
+          Start Date End Date        Weekdays        Spots/Week          Rate     Rating
+   Week: 10/19/26      10/25/26      -TWTF--                    5      $80.00       0.00
+N 40 WGGB 10/26/26 10/26/26 M-F 4p-5p News                  CM      4:00 PM-4:30 PM M------         :30       1    $80.00 P- 3 0.00 NM   1        $80.00
+                                   M-F 4p-5p                       (4:00 PM-4:30 PM)
+     (Program: WESTERN MASS NEWS 4PM)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 at 4pm on
+     WGGB airing 20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025,
+     7/14/2025, 7/15/2025,
+          Start Date End Date        Weekdays        Spots/Week          Rate     Rating
+   Week: 10/26/26      11/01/26      M------                    1      $80.00       0.00
+N 41 WGGB 10/19/26 10/23/26 M-F 4p-5p News                  CM      4:00 PM-4:30 PM -TWTF--         :30       6    $80.00 P- 3 0.00 NM   6       $480.00
+                                   M-F 4p-5p                       (4:00 PM-4:30 PM)
+     (Program: WESTERN MASS NEWS 4PM)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 at 4pm on
+     WGGB airing 20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025,
+     7/14/2025, 7/15/2025,
+          Start Date End Date        Weekdays        Spots/Week          Rate     Rating
+   Week: 10/19/26      10/25/26      -TWTF--                    6      $80.00       0.00
+N 42 WGGB 10/26/26 10/26/26 M-F 4p-5p News                  CM      4:30 PM-5:00 PM M------         :30       1    $80.00 P- 3 0.00 NM   1        $80.00
+                                   M-F 4p-5p                       (4:30 PM-5:00 PM)
+     (Program: WESTERN MASS NEWS 4:30PM)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 at 4:30pm on
+     WGGB airing 20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025,
+     7/14/2025, 7/15/202
+          Start Date End Date        Weekdays        Spots/Week          Rate     Rating
+   Week: 10/26/26      11/01/26      M------                    1      $80.00       0.00
+N 43 WGGB 10/19/26 10/23/26 M-F 4p-5p News                  CM      4:30 PM-5:00 PM -TWTF--         :30       6    $80.00 P- 3 0.00 NM   6       $480.00
+                                   M-F 4p-5p                       (4:30 PM-5:00 PM)
+     (Program: WESTERN MASS NEWS 4:30PM)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 at 4:30pm on
+     WGGB airing 20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025,
+     7/14/2025, 7/15/202
+          Start Date End Date        Weekdays        Spots/Week          Rate     Rating
+   Week: 10/19/26      10/25/26      -TWTF--                    6      $80.00       0.00
+N 44 WGGB 10/26/26 10/26/26 M-F 5p-530p News                CM      5:00 PM-5:30 PM M------         :30       1   $165.00 P- 3 0.00 NM   1       $165.00
+                                   M-F 5p-530p News
+     (Program: WEST MASS NEWS ABC40NWS@5PM)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 at 5pm on
+     WGGB airing 20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025,
+     7/14/2025, 7/15/2025,
+          Start Date End Date        Weekdays        Spots/Week          Rate     Rating
+   Week: 10/26/26      11/01/26      M------                    1     $165.00       0.00
+N 45 WGGB 10/19/26 10/23/26 M-F 5p-530p News                CM      5:00 PM-5:30 PM -TWTF--         :30       7   $165.00 P- 3 0.00 NM   7      $1,155.00
+                                   M-F 5p-530p News
+     (Program: WEST MASS NEWS ABC40NWS@5PM)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 at 5pm on
+     WGGB airing 20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025,
+     7/14/2025, 7/15/2025,
+          Start Date End Date        Weekdays        Spots/Week          Rate     Rating
+                                                                                                         Print Date: 10/19/26 09:25:23   Page   7 of 8
+Order / Rev:       4599865                                       Advertiser:     Richard E Neal for Congress Committee
+Alt Order #:       WOC15936662                                   Product Desc:   Richard E Neal For Congress Committee        WGGB
+Flight Dates:      10/19/26 - 11/01/26                           Estimate:       10416
+
+
+
+ Ln Ch          Start   End       Inventory Code        Break Start/End Time        Days      Len Spots        Rate Pri Rtg Type Spots          Amount
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26     10/25/26      -TWTF--                    7     $165.00       0.00
+N 46 WGGB 10/26/26 10/26/26 M-F 530p-6p News               CM      5:30 PM-6:00 PM M------          :30     1    $230.00 P- 3 0.00 NM    1       $230.00
+                                  M-F 530p-6p News
+     (Program: WEST MASS NEWS ABC40NWS@5:30P)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 at 5:30pm on
+     WGGB airing 20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025,
+     7/14/2025, 7/15/202
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+   Week: 10/26/26     11/01/26      M------                    1     $230.00       0.00
+N 47 WGGB 10/19/26 10/23/26 M-F 530p-6p News               CM      5:30 PM-6:00 PM -TWTF--          :30     7    $230.00 P- 3 0.00 NM    7      $1,610.00
+                                  M-F 530p-6p News
+     (Program: WEST MASS NEWS ABC40NWS@5:30P)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 at 5:30pm on
+     WGGB airing 20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025,
+     7/14/2025, 7/15/202
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26     10/25/26      -TWTF--                    7     $230.00       0.00
+N 48 WGGB 10/26/26 10/26/26 M-F 6p-630p News               CM      6:00 PM-6:30 PM M------          :30     1    $280.00 P- 3 0.00 NM    1       $280.00
+                                  M-F 6p-630p News
+     (Program: WEST MASS NEWS ABC40NWS@6PM)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 at 6:00p on
+     WGGB airing 20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025,
+     7/14/2025, 7/15/2025
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+   Week: 10/26/26     11/01/26      M------                    1     $280.00       0.00
+N 49 WGGB 10/19/26 10/23/26 M-F 6p-630p News               CM      6:00 PM-6:30 PM -TWTF--          :30     5    $280.00 P- 3 0.00 NM    5      $1,400.00
+                                  M-F 6p-630p News
+     (Program: WEST MASS NEWS ABC40NWS@6PM)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 at 6:00p on
+     WGGB airing 20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025,
+     7/14/2025, 7/15/2025
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26     10/25/26      -TWTF--                    5     $280.00       0.00
+N 50 WGGB 10/26/26 10/26/26 M-F 7p-730p                    CM      7:00 PM-7:30 PM M------          :30     1    $155.00 P- 3 0.00 NM    1       $155.00
+                                  M-F 7p-730p
+     (Program: FAMILY FEUD)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Family Feud on WGGB airing 20 times on
+     6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/17/2025,
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+   Week: 10/26/26     11/01/26      M------                    1     $155.00       0.00
+N 51 WGGB 10/19/26 10/23/26 M-F 7p-730p                    CM      7:00 PM-7:30 PM -TWTF--          :30     5    $155.00 P- 3 0.00 NM    5       $775.00
+                                  M-F 7p-730p
+     (Program: FAMILY FEUD)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Family Feud on WGGB airing 20 times on
+     6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/17/2025,
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26     10/25/26      -TWTF--                    5     $155.00       0.00
+N 52 WGGB 10/26/26 10/26/26 M-F 730p-8p                    CM      7:30 PM-8:00 PM M------          :30     1    $155.00 P- 3 0.00 NM    1       $155.00
+                                  M-F 730p-8p
+     (Program: FAMILY FEUD)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Family Feud on WGGB airing 20 times on
+     6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/17/2025,
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+   Week: 10/26/26     11/01/26      M------                    1     $155.00       0.00
+N 53 WGGB 10/19/26 10/23/26 M-F 730p-8p                    CM      7:30 PM-8:00 PM -TWTF--          :30     5    $155.00 P- 3 0.00 NM    5       $775.00
+                                  M-F 730p-8p
+     (Program: FAMILY FEUD)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Family Feud on WGGB airing 20 times on
+     6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/17/2025,
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+                                                                                                         Print Date: 10/19/26 09:25:23    Page    8 of 8
+Order / Rev:       4599865                                       Advertiser:     Richard E Neal for Congress Committee
+Alt Order #:       WOC15936662                                   Product Desc:   Richard E Neal For Congress Committee        WGGB
+Flight Dates:      10/19/26 - 11/01/26                           Estimate:       10416
+
+
+
+ Ln Ch          Start   End       Inventory Code        Break Start/End Time        Days      Len Spots        Rate Pri Rtg Type Spots            Amount
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26     -TWTF--                     5    $155.00        0.00
+N 54 WGGB 10/26/26 10/26/26 M-F Late News                  CM     11:00 PM-11:35 PM   M------      :30      3    $140.00 P- 3 0.00 NM      3       $420.00
+                                   M-F Late News
+     (Program: WEST MASS NEWS ABC40 ELEVN@11)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 at 11:00p on
+     WGGB airing 20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025,
+     7/14/2025, 7/15/202
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+   Week: 10/26/26      11/01/26     M------                     3    $140.00        0.00
+N 55 WGGB 10/19/26 10/23/26 M-F Late News                  CM     11:00 PM-11:35 PM   -TWTF--      :30     16    $140.00 P- 3 0.00 NM     16      $2,240.00
+                                   M-F Late News
+     (Program: WEST MASS NEWS ABC40 ELEVN@11)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Western Mass News on ABC40 at 11:00p on
+     WGGB airing 20 times on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025,
+     7/14/2025, 7/15/202
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26     -TWTF--                    16    $140.00        0.00
+N 56 WGGB 10/26/26 10/26/26 ABC Jimmy Kimmel Show          CM     11:35 PM-12:35 XM   M------      :30      1     $50.00 P- 3 0.00 NM      1        $50.00
+                                   ABC Jimmy Kimmel Show
+     (Program: JIMMY KIMMEL!-ABC)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Jimmy Kimmel Live! on WGGB airing 20 times
+     on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/17
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+   Week: 10/26/26      11/01/26     M------                     1     $50.00        0.00
+N 57 WGGB 10/19/26 10/23/26 ABC Jimmy Kimmel Show          CM     11:35 PM-12:35 XM   -TWTF--      :30      8     $50.00 P- 3 0.00 NM      8       $400.00
+                                   ABC Jimmy Kimmel Show
+     (Program: JIMMY KIMMEL!-ABC)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of Jimmy Kimmel Live! on WGGB airing 20 times
+     on 6/30/2025, 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/7/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/14/2025, 7/15/2025,
+     7/16/2025, 7/17
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26     -TWTF--                     8     $50.00        0.00
+N 58 WGGB 10/26/26 10/26/26 ABC News Nightline             CM     12:35 XM-1:05 XMM------          :30      1     $40.00 P- 3 0.00 NM      1        $40.00
+                                   ABC News Nightline
+     (Program: ABC-NITELINE)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of ABC News Nightline on WGGB airing 16 times
+     on 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/15/2025, 7/16/2025, 7/17/2025, 7/18/2025,
+     7/22/2025, 7/2
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+   Week: 10/26/26      11/01/26     M------                     1     $40.00        0.00
+N 59 WGGB 10/19/26 10/23/26 ABC News Nightline             CM     12:35 XM-1:05 XM-TWTF--          :30      8     $40.00 P- 3 0.00 NM      8       $320.00
+                                   ABC News Nightline
+     (Program: ABC-NITELINE)
+     CS 3Q EST (sell) - SPRINGFIELD-HOLYOKE - ESTIMATE IS BASED ON PAV of ABC News Nightline on WGGB airing 16 times
+     on 7/1/2025, 7/2/2025, 7/3/2025, 7/4/2025, 7/8/2025, 7/9/2025, 7/10/2025, 7/11/2025, 7/15/2025, 7/16/2025, 7/17/2025, 7/18/2025,
+     7/22/2025, 7/2
+         Start Date End Date        Weekdays         Spots/Week         Rate     Rating
+   Week: 10/19/26      10/25/26     -TWTF--                     8     $40.00        0.00
+                                                                                                                          Totals         183     $23,980.00
+

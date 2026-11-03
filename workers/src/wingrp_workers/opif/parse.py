@@ -69,13 +69,14 @@ def _to_date(m: re.Match[str]) -> date | None:
 
 def parse_file_name(name: str) -> FileNameInfo:
     lower = name.lower()
-    # Combined "Order & NAB" documents are orders; check order keywords first.
-    if re.search(r"\border\b|contract", lower) and "confirmation" not in lower:
+    # Invoices first ("Invoice ... for Contract #123" is an invoice). Combined
+    # "Order & NAB" documents are orders, so order keywords come before NAB.
+    if any(k in lower for k in ("invoice", "affidavit", "as run", "as-run", "aired")):
+        kind = "invoice"
+    elif re.search(r"\border\b|contract", lower) and "confirmation" not in lower:
         kind = "order"
     elif re.search(r"(^|[_\s-])nab([_\s-]|$)|pb-?1[89]", lower):
         kind = "nab"
-    elif any(k in lower for k in ("invoice", "affidavit", "as run", "as-run", "aired")):
-        kind = "invoice"
     elif "order" in lower:
         kind = "order"
     else:

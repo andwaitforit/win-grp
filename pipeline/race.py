@@ -133,7 +133,7 @@ def load_race(path: str | Path) -> Race:
             note=m.get("note"),
         )
         for s in m.get("stations") or []:
-            race.stations[s["call_sign"]] = Station(
-                call_sign=s["call_sign"], market=m["key"], network=s.get("network", "")
-            )
+            # Orders can print a station under another channel name (WSHM-LD as WSHM).
+            for name in [s["call_sign"], *(s.get("channels") or [])]:
+                race.stations[name] = Station(call_sign=name, market=m["key"], network=s.get("network", ""))
     return race
