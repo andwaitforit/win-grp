@@ -8,7 +8,7 @@ is_sample: false
 demo: A35+
 commission_pct: 15
 band_pct: 20
-note: "Buys are station orders parsed by win-grp. So far that covers WWLP and EWLP only; other stations file in formats we don't parse yet. Orders show what was booked, not confirmed airings."
+note: "Buys are station orders parsed by win-grp. Springfield is covered (WWLP, EWLP, WGGB, EGGB, WSHM). Albany is partial: WTEN and WXXA only, since WNYT, WRGB and WCWN orders aren't parsed yet. Orders show what was booked, not confirmed airings."
 supabase:
   url: https://tlixbywvksgpyxkwxrtb.supabase.co
   key: sb_publishable_cT6n9oBkkps55BOkk_R_NA_Q2pRguAH

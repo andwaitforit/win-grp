@@ -7,10 +7,10 @@ window.WIN_GRP_DATA = {
   "primary_day": "2026-09-01",
   "election_day": "2026-11-03",
   "is_sample": false,
-  "note": "Buys are station orders parsed by win-grp. So far that covers WWLP and EWLP only; other stations file in formats we don't parse yet. Orders show what was booked, not confirmed airings.",
+  "note": "Buys are station orders parsed by win-grp. Springfield is covered (WWLP, EWLP, WGGB, EGGB, WSHM). Albany is partial: WTEN and WXXA only, since WNYT, WRGB and WCWN orders aren't parsed yet. Orders show what was booked, not confirmed airings.",
   "demo": "A35+",
   "our_side": "neal",
-  "generated_at": "2026-11-03T13:29Z"
+  "generated_at": "2026-11-03T13:39Z"
  },
  "buyers": [
   {
