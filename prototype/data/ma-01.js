@@ -3,14 +3,14 @@ window.WIN_GRP_DATA = {
  "meta": {
   "race_id": "us-house-ma-01-2026",
   "title": "MA-01: Neal vs. Milleron",
-  "as_of": "2026-11-03",
+  "as_of": "2026-11-25",
   "primary_day": "2026-09-01",
   "election_day": "2026-11-03",
   "is_sample": false,
-  "note": "Buys are station orders parsed by win-grp. Springfield is covered (WWLP, EWLP, WGGB, EGGB, WSHM). Albany is partial: WTEN and WXXA only, since WNYT, WRGB and WCWN orders aren't parsed yet. Orders show what was booked, not confirmed airings.",
+  "note": "Buys are station orders parsed by win-grp, from Springfield (WWLP, EWLP, WGGB, EGGB, WSHM) and Albany (WTEN, WXXA, WNYT). WRGB and WCWN orders aren't parsed yet. Orders show what was booked, not confirmed airings.",
   "demo": "A35+",
   "our_side": "neal",
-  "generated_at": "2026-11-03T13:39Z"
+  "generated_at": "2026-11-25T20:43Z"
  },
  "buyers": [
   {
@@ -128,6 +128,7 @@ window.WIN_GRP_DATA = {
    "2026-08-31"
   ],
   "general": [
+   "2026-08-31",
    "2026-09-07",
    "2026-09-14",
    "2026-09-21",

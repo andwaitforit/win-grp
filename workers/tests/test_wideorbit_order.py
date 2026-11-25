@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from wingrp_workers.extract.orders import detect
+from wingrp_workers.extract.orders import detect, is_invoice
 from wingrp_workers.extract.pdftext import pdf_to_text
 from wingrp_workers.extract.wideorbit import latest_versions
 from wingrp_workers.extract.wideorbit_order import is_wideorbit_order, parse_order
@@ -77,6 +77,7 @@ def test_detect_picks_parser_and_rejects_invoices():
     assert detect(load_text("wggb-4599865")).format == "wideorbit_order"
     invoice = load_text("wggb-4539813-invoice")
     assert not is_wideorbit_order(invoice) and detect(invoice) is None
+    assert is_invoice(invoice) and not is_invoice(load_text("wggb-4599865"))
     nexstar = (Path(__file__).parents[2] / "fixtures/opif/wideorbit/wwlp-neal-2026/wwlp-5439765.txt").read_text()
     assert detect(nexstar).format == "wideorbit_contract"
 

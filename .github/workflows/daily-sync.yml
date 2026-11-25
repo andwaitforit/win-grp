@@ -51,3 +51,7 @@ jobs:
         run: uv run wingrp reparse-contracts
       - name: Fetch and parse new orders
         run: uv run wingrp fetch-contracts --config "$CONFIG"
+      # Purchasers that match no alias, orders no buyer claims, orders held
+      # for review: everything the dashboard is not showing. Read-only.
+      - name: Coverage report
+        run: uv run wingrp coverage --config "$CONFIG"

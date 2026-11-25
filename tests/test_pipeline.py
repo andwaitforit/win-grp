@@ -59,6 +59,18 @@ class WeeksTest(unittest.TestCase):
         self.assertFalse(overlaps(D("2026-08-24"), win))
 
 
+class WindowWeeksTest(unittest.TestCase):
+    def test_primary_week_is_in_both_windows(self):
+        # The primary was Tue Sep 1: its broadcast week (Aug 31) also holds the
+        # first general-election spots, e.g. Milleron's WWLP flight from Aug 31.
+        weeks = load_race(RACE).window_weeks()
+        self.assertEqual(weeks["primary"][0], D("2026-07-13"))
+        self.assertEqual(weeks["primary"][-1], D("2026-08-31"))
+        self.assertEqual(weeks["general"][0], D("2026-08-31"))
+        self.assertEqual(weeks["general"][-1], D("2026-11-02"))
+        self.assertEqual(len(set(weeks["primary"]) & set(weeks["general"])), 1)
+
+
 class EstimateTest(unittest.TestCase):
     # Reference values. The dashboard's JavaScript must produce the same numbers.
     def test_grps_reference_values(self):

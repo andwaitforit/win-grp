@@ -6,6 +6,7 @@ views don't care which traffic-system print form a station uses.
 
 from __future__ import annotations
 
+import re
 from collections.abc import Callable
 from dataclasses import dataclass
 
@@ -29,8 +30,17 @@ PARSERS = [
 # Recorded on every extraction attempt; adding or bumping a parser changes it,
 # so files no parser could read before are tried again.
 EXTRACTOR = "orders"
-EXTRACTOR_VERSION = ";".join(f"{p.format}:{p.version}" for p in PARSERS)
+INVOICE_DETECT_VERSION = "1"
+EXTRACTOR_VERSION = ";".join([*(f"{p.format}:{p.version}" for p in PARSERS), f"invoice:{INVOICE_DETECT_VERSION}"])
 
 
 def detect(text: str) -> Parser | None:
     return next((p for p in PARSERS if p.detect(text)), None)
+
+
+def is_invoice(text: str) -> bool:
+    """A station invoice (what aired). Recognised so it isn't reported as an
+    unread order; there is no invoice parser yet. Seen: WideOrbit "INVOICE"
+    form on Gray stations."""
+    head = text[:3000]
+    return bool(re.search(r"^\s*INVOICE\s*$", head, re.M)) and "Invoice #" in head

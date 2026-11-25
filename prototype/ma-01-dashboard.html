@@ -334,19 +334,29 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
   const D = window.WIN_GRP_DATA;
   if (!D || !D.supabase) { startDashboard(); return; }
   const sb = D.supabase, race = encodeURIComponent(D.meta.race_id);
-  function get(view, query) {
-    return fetch(sb.url + "/rest/v1/" + view + "?race_id=eq." + race + (query || ""), {
-      headers: { apikey: sb.key, Authorization: "Bearer " + sb.key }
-    }).then(function (r) {
-      if (!r.ok) throw new Error(view + ": HTTP " + r.status);
-      return r.json();
-    });
+  // The API returns at most PAGE rows per request; keep asking until a short page.
+  const PAGE = 1000;
+  function get(view, order) {
+    const rows = [];
+    function page(offset) {
+      return fetch(sb.url + "/rest/v1/" + view + "?race_id=eq." + race + (order ? "&order=" + order : "") +
+          "&limit=" + PAGE + "&offset=" + offset, {
+        headers: { apikey: sb.key, Authorization: "Bearer " + sb.key }
+      }).then(function (r) {
+        if (!r.ok) throw new Error(view + ": HTTP " + r.status);
+        return r.json();
+      }).then(function (part) {
+        Array.prototype.push.apply(rows, part);
+        return part.length < PAGE ? rows : page(offset + PAGE);
+      });
+    }
+    return page(0);
   }
   const today = new Date();
   const asOf = new Date(Date.UTC(today.getFullYear(), today.getMonth(), today.getDate())).toISOString().slice(0, 10);
   Promise.all([
-    get("dashboard_buy_week", "&order=week_start"),
-    get("dashboard_filing", "&order=filed_date.desc"),
+    get("dashboard_buy_week", "week_start,station,contract_number,buyer_key"),
+    get("dashboard_filing", "filed_date.desc,station,contract_number,gross_cents"),
     get("dashboard_freshness")
   ]).then(function (res) {
     const weeks = res[0], filings = res[1], fresh = res[2][0] || {};
@@ -362,16 +372,26 @@ footer { font-size: 12px; color: var(--muted); max-width: 90ch; }
       D.alerts.push({
         date: f.filed_date, buyer: f.buyer_key, doc_type: f.doc_type, station: f.station,
         gross_cents: f.gross_cents, flight_start: f.flight_start, flight_end: f.flight_end,
-        superseded: f.superseded, source_url: f.source_url
+        superseded: f.superseded, revision_in_review: f.revision_in_review, source_url: f.source_url
       });
     });
     D.alerts.sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
     D.meta.as_of = asOf;
     D.meta.parsed_source = true;
-    if (fresh.orders_in_review) {
-      D.meta.note = (D.meta.note ? D.meta.note + " " : "") + fresh.orders_in_review +
-        (fresh.orders_in_review === 1 ? " order is" : " orders are") + " held back for review because they don't add up to their own totals.";
-    }
+    // Say what is not shown. Counts come from dashboard_freshness.
+    const gaps = [];
+    function gap(n, one, many) { if (n) gaps.push(n + " " + (n === 1 ? one : many)); }
+    gap(fresh.orders_in_review, "order is left out because it doesn't add up to its own totals.",
+      "orders are left out because they don't add up to their own totals.");
+    gap(fresh.orders_on_earlier_version, "order is shown from an earlier version because its latest revision doesn't add up.",
+      "orders are shown from an earlier version because their latest revisions don't add up.");
+    gap(fresh.orders_unparsed, "order file is in a format win-grp can't read yet.",
+      "order files are in a format win-grp can't read yet.");
+    gap(fresh.files_unread, "other file in these folders couldn't be read and may be an order.",
+      "other files in these folders couldn't be read and may include orders.");
+    gap(fresh.lines_off_station, "order line is on a channel this page doesn't track.",
+      "order lines are on channels this page doesn't track.");
+    if (gaps.length) D.meta.note = (D.meta.note ? D.meta.note + " " : "") + gaps.join(" ");
     D.meta.synced_at = fresh.synced_at ? fresh.synced_at.slice(0, 16).replace("T", " ") + " UTC" : null;
     startDashboard();
   }).catch(function (e) {
@@ -408,7 +428,8 @@ function startDashboard() {
   Object.keys(D.stations).forEach(function (k) { STATIONS[k] = { dma: D.stations[k].market, net: D.stations[k].network }; });
   const PRIMARY_WEEKS = D.weeks.primary;
   const GENERAL_WEEKS = D.weeks.general;
-  const ALL_WEEKS = PRIMARY_WEEKS.concat(GENERAL_WEEKS);
+  // The week of the primary is in both lists (it holds spots from both windows); show it once.
+  const ALL_WEEKS = PRIMARY_WEEKS.concat(GENERAL_WEEKS.filter(function (w) { return PRIMARY_WEEKS.indexOf(w) < 0; }));
   const AS_OF = D.meta.as_of;
   const LUR = D.lur;
   const BUYS = D.buys.map(function (b) {
@@ -885,7 +906,8 @@ function startDashboard() {
       w.appendChild(what);
       const meta = el("div", { class: "meta" + (a.superseded ? " struck" : "") },
         fmtD(a.flight_start) + " – " + fmtD(a.flight_end) + " · " + fmtUSDfull(a.gross_cents / 100) +
-        (a.doc_type === "invoice" ? " aired" : " gross") + (a.superseded ? " · replaced by a later revision" : ""));
+        (a.doc_type === "invoice" ? " aired" : " gross") + (a.superseded ? " · replaced by a later revision" : "") +
+        (a.revision_in_review ? " · a later revision is held for review" : ""));
       w.appendChild(meta);
       if (a.source_url) {
         const m2 = el("div", { class: "meta" });

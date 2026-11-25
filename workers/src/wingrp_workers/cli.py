@@ -8,6 +8,7 @@
   wingrp fetch-contracts --config ../config/pilot/ma-01-2026.yaml [--limit N]
   wingrp seed-race --config ../config/pilot/ma-01-2026.yaml
   wingrp reparse-contracts
+  wingrp coverage --config ../config/pilot/ma-01-2026.yaml
 """
 
 from __future__ import annotations
@@ -25,7 +26,7 @@ import yaml
 
 from .extract.pdftext import pdf_to_text
 from .extract.store import sha256, store_contract
-from .extract.orders import EXTRACTOR, EXTRACTOR_VERSION, PARSERS, detect
+from .extract.orders import EXTRACTOR, EXTRACTOR_VERSION, PARSERS, detect, is_invoice
 from .extract.wideorbit import latest_versions
 from .opif.client import OpifBlocked, OpifClient
 from .opif.store import (
@@ -297,7 +298,7 @@ def cmd_fetch_contracts(args: argparse.Namespace) -> None:
              [a for _, a in _race_aliases(cfg)], args.limit),
         ).fetchall()
         print(f"{len(files)} race files not yet tried by {EXTRACTOR_VERSION}")
-        stored = review = unsupported = 0
+        stored = review = unsupported = invoices = 0
         with OpifClient() as fcc:
             for file_id, folder_id, fm_id, cs, name in files:
                 cached = PDF_CACHE / f"{file_id}.pdf"
@@ -315,6 +316,12 @@ def cmd_fetch_contracts(args: argparse.Namespace) -> None:
                 data = cached.read_bytes()
                 text = pdf_to_text(cached)
                 parser = detect(text)
+                if parser is None and is_invoice(text):
+                    invoices += 1
+                    print(f"  {cs:<8} {name[:70]}: invoice (not parsed yet)")
+                    _record_attempt(conn, file_id, sha256(data), "invoice")
+                    conn.commit()
+                    continue
                 if parser is None:
                     unsupported += 1
                     print(f"  {cs:<8} {name[:70]}: no parser for this format")
@@ -334,7 +341,123 @@ def cmd_fetch_contracts(args: argparse.Namespace) -> None:
                 flag = "ok" if k.reconciled else "REVIEW"
                 print(f"  {k.station or '?':<5} #{k.contract_number} {k.total_spots or 0:>4} spots "
                       f"${(k.gross_cents or 0) / 100:>10,.2f} gross  {flag}")  # fmt: skip
-        print(f"\nStored {stored} contracts ({review} need review); {unsupported} unsupported formats")
+        print(f"\nStored {stored} contracts ({review} need review); "
+              f"{unsupported} unsupported formats; {invoices} invoices")  # fmt: skip
+
+
+def cmd_coverage(args: argparse.Namespace) -> None:
+    """Report what the race's political files hold that the dashboard doesn't show. No FCC calls.
+
+    A purchaser that matches no alias, a stored order no buyer claims, a line on
+    a channel the race config doesn't list, and an order held for review are
+    all silent otherwise.
+    """
+    cfg = yaml.safe_load(args.config.read_text())
+    race = cfg["race"]
+    call_signs = _race_call_signs(args.config)
+    aliases = [a for _, a in _race_aliases(cfg)]
+    with _connect() as conn:
+        unmatched = conn.execute(
+            """
+            select f.pol_category, coalesce(f.purchaser_folder, '?'), string_agg(distinct f.call_sign, ' '),
+                   count(*), count(*) filter (where f.doc_kind = 'order'), min(f.file_name)
+            from public.opif_file f
+            where f.call_sign = any(%s) and f.pol_year = %s and not f.is_deleted
+              and ((f.pol_category = 'Federal' and f.pol_office = %s)
+                   or f.pol_category = 'Non-Candidate Issue Ads')
+              and not exists (select 1 from unnest(%s::text[]) a(alias)
+                              where lower(f.purchaser_folder) = lower(a.alias)
+                                 or f.file_name ilike '%%' || a.alias || '%%')
+            group by 1, 2 order by 1, 2
+            """,
+            (call_signs, race["cycle"], race["office"], aliases),
+        ).fetchall()
+        offices = conn.execute(
+            """
+            select coalesce(f.pol_office, '?'), string_agg(distinct f.call_sign, ' '), count(*)
+            from public.opif_file f
+            where f.call_sign = any(%s) and f.pol_year = %s and not f.is_deleted
+              and f.pol_category = 'Federal' and f.pol_office is distinct from %s
+            group by 1 order by 1
+            """,
+            (call_signs, race["cycle"], race["office"]),
+        ).fetchall()
+        orphans = conn.execute(
+            """
+            select coalesce(c.station, '?'), coalesce(c.contract_number, '-'), c.gross_cents,
+                   coalesce(c.advertiser, '?'), coalesce(f.purchaser_folder, '?'), coalesce(f.file_name, '(upload)')
+            from public.opif_contract c
+            left join public.opif_file f on f.file_id = c.source_file_id
+            where not coalesce(f.is_deleted, false)
+              and not exists (select 1 from internal.race_contract rc where rc.race_id = %s and rc.id = c.id)
+              and (f.call_sign = any(%s)
+                   or exists (select 1 from public.race_station rs
+                              where rs.race_id = %s and rs.call_sign = c.station))
+            order by 1, 2
+            """,
+            (race["id"], call_signs, race["id"]),
+        ).fetchall()
+        off_station = conn.execute(
+            """
+            select l.channel, rc.station, coalesce(rc.contract_number, '-'), count(*), sum(l.amount_cents)
+            from internal.race_contract rc
+            join public.opif_contract_line l on l.contract_id = rc.id and l.action <> 'D'
+            where rc.race_id = %s and rc.is_current
+              and not exists (select 1 from public.race_station rs
+                              where rs.race_id = rc.race_id and rs.call_sign = l.channel)
+            group by 1, 2, 3 order by 1, 2, 3
+            """,
+            (race["id"],),
+        ).fetchall()
+        review = conn.execute(
+            """
+            select rc.buyer_key, coalesce(rc.station, '?'), coalesce(rc.contract_number, '-'), rc.gross_cents,
+                   rc.has_reconciled, c.issues, coalesce(f.file_name, '(upload)')
+            from internal.race_contract rc
+            join public.opif_contract c on c.id = rc.id
+            left join public.opif_file f on f.file_id = rc.source_file_id
+            where rc.race_id = %s and rc.is_latest and rc.needs_review
+            order by 1, 2, 3
+            """,
+            (race["id"],),
+        ).fetchall()
+        unread = conn.execute(
+            """
+            select f.call_sign, f.doc_kind, coalesce(f.purchaser_folder, '?'), f.file_name
+            from public.opif_file_extract x
+            join public.opif_file f on f.file_id = x.file_id
+            where x.outcome = 'unsupported' and not f.is_deleted and f.call_sign = any(%s)
+            order by 1, 3, 4
+            """,
+            (call_signs,),
+        ).fetchall()
+
+    def usd(cents: int | None) -> str:
+        return "      (none)" if cents is None else f"${cents / 100:>11,.2f}"
+
+    print(f"Purchaser folders matching no alias: {len(unmatched)}")
+    for cat, folder, stations, n, n_orders, example in unmatched:
+        print(f"  {cat} / {folder}  [{stations}]  {n} files ({n_orders} named as orders), e.g. {example[:60]}")
+    print(f"\nOther Federal office folders on these stations (not searched): {len(offices)}")
+    for office, stations, n in offices:
+        print(f"  {office}  [{stations}]  {n} files")
+    print(f"\nStored orders no race buyer claims: {len(orphans)}")
+    for station, number, gross, advertiser, folder, name in orphans:
+        print(f"  {station:<5} #{number:<9} {usd(gross)}  advertiser {advertiser!r}, folder {folder!r}, file {name[:50]!r}")
+    print(f"\nCurrent order lines on channels not in the race config: {len(off_station)}")
+    for channel, station, number, n, cents in off_station:
+        print(f"  {channel:<6} on {station} #{number}: {n} lines, {usd(cents)}")
+    print(f"\nOrders whose newest version is held for review: {len(review)}")
+    for buyer, station, number, gross, has_ok, issues, name in review:
+        shown = "earlier version shown" if has_ok else "NOT on the dashboard"
+        print(f"  {buyer:<9} {station:<5} #{number:<9} {usd(gross)}  {shown}  file {name[:50]!r}")
+        for issue in issues[:3]:
+            print(f"      {issue[:110]}")
+        if len(issues) > 3:
+            print(f"      ... and {len(issues) - 3} more")
+    print(f"\nFiles no parser reads (not invoices): {len(unread)}")
+    for cs, kind, folder, name in unread:
+        print(f"  {cs:<8} {kind:<6} {folder} / {name[:70]}")
 
 
 def main() -> None:
@@ -376,6 +499,10 @@ def main() -> None:
     p = sub.add_parser("seed-race", help="Load race buyer aliases and station markets into the DB")
     p.add_argument("--config", type=Path, required=True)
     p.set_defaults(fn=cmd_seed_race)
+
+    p = sub.add_parser("coverage", help="Report race filings and orders the dashboard doesn't show (no FCC calls)")
+    p.add_argument("--config", type=Path, required=True)
+    p.set_defaults(fn=cmd_coverage)
 
     args = parser.parse_args()
     try:

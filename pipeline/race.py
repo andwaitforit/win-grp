@@ -56,11 +56,18 @@ class Race:
         """Broadcast weeks (Mondays) shown for each window.
 
         Primary: from the week the primary LUR window opens through the week
-        of the primary. General: the following week through election week.
+        of the primary. General: from the week holding the day after the
+        primary through election week.
+
+        A primary on a weekday other than Sunday splits its broadcast week
+        between the two windows, so that week is in both lists: it holds the
+        last primary spots and the first general-election spots (buys are
+        stored by week, so they can't be split by day). Leaving it out of the
+        general list hid a general-only buyer's first week.
         """
         p_start = broadcast_week(self.lur_windows["primary"][0])
         p_end = broadcast_week(self.primary_day)
-        g_start = p_end + dt.timedelta(days=7)
+        g_start = broadcast_week(self.primary_day + dt.timedelta(days=1))
         g_end = broadcast_week(self.election_day)
         return {
             "primary": _mondays(p_start, p_end),

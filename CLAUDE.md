@@ -151,7 +151,17 @@ and shows them next to public polling for the same race.
   by the API) and are the only thing anon can read. Keep them to public FCC
   data and explicit columns; never put org-scoped data behind them.
 - `race_buyer_alias` and `race_station` come from the race config via
-  `wingrp seed-race`. A purchaser that matches no alias doesn't show up.
+  `wingrp seed-race`. A purchaser that matches no alias doesn't show up, and
+  neither does a line printed on a channel `race_station` doesn't list.
+  `wingrp coverage` (last step of the daily job) lists both, plus stored
+  orders no buyer claims and orders held for review. Read its log output
+  before trusting a total.
+- `internal.race_contract` attributes a contract by purchaser folder, alias in
+  the file name, or advertiser. Keep it in step with the file filter in
+  `fetch-contracts`: a file fetched under one rule and attributed under
+  another is stored and never shown.
+- The daily job doesn't apply migrations. Run `supabase db push --linked`
+  before merging worker code that depends on a new one.
 - `opif_file_extract` logs each PDF the extractor tried, so unsupported
   formats aren't re-downloaded daily. Bumping a parser's `PARSER_VERSION`
   re-tries them.
@@ -182,6 +192,7 @@ cd workers && uv run wingrp fetch-contracts --config ../config/pilot/ma-01-2026.
 cd workers && uv run wingrp contract PDF... [--json] [--store [--file-id UUID]]   # parse local PDFs
 cd workers && uv run wingrp seed-race --config ../config/pilot/ma-01-2026.yaml  # race aliases + stations into the DB
 cd workers && uv run wingrp reparse-contracts  # re-parse stored orders after a parser version bump, no FCC calls
+cd workers && uv run wingrp coverage --config ../config/pilot/ma-01-2026.yaml  # what the dashboard isn't showing, no FCC calls
 ```
 
 Order parsers (`workers/src/wingrp_workers/extract/`, picked by content in
@@ -189,6 +200,8 @@ Order parsers (`workers/src/wingrp_workers/extract/`, picked by content in
 `wideorbit_order` (WideOrbit "ORDER" form: Gray WGGB/EGGB/WSHM, WTEN, WXXA).
 Orders that don't reconcile to their own totals get `needs_review` and stay off
 the dashboard; revised Gray orders with preemption/makegood detail land there.
+The dashboard then shows the newest version of that contract that does
+reconcile, if there is one, and `dashboard_freshness` counts both cases.
 A station's lines can print under another name (WGGB-TV as WGGB); list those
 as `channels` in the race config.
 
